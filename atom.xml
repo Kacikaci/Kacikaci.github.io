@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>花花</title>
+  
+  <subtitle>筑梦游乐园</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-11-05T12:25:00.955Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Phryne Ying</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>论文汇报</title>
+    <link href="http://yoursite.com/2019/11/04/bchbtc/"/>
+    <id>http://yoursite.com/2019/11/04/bchbtc/</id>
+    <published>2019-11-04T13:25:32.000Z</published>
+    <updated>2019-11-05T12:25:00.955Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本篇blog状态：未完更新中    &lt;/p&gt;
+&lt;p&gt;论文题目：&lt;font face=&quot;goudy old style&quot;&gt;&lt;strong&gt;Bitcoin vs. Bitcoin Cash: Coexistence or Downfull of Bitcoin Cash?&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;论文阅读进度：&lt;font color=&quot;blue&quot;&gt;11/21&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;类别：A&lt;/p&gt;
+&lt;p&gt;年份：2019&lt;/p&gt;
+&lt;p&gt;会议：IEEE Symposium on Security and Privacy&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博弈论论文集List(含中文摘要)</title>
+    <link href="http://yoursite.com/2019/10/09/papersCollection/"/>
+    <id>http://yoursite.com/2019/10/09/papersCollection/</id>
+    <published>2019-10-09T08:29:58.963Z</published>
+    <updated>2019-10-30T08:13:40.025Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;看发表在哪里的论文：四大安全会议&lt;strong&gt;CCS&lt;/strong&gt;、&lt;strong&gt;NDSS&lt;/strong&gt;、&lt;strong&gt;S&amp;amp;P(Oakland)&lt;/strong&gt;、&lt;strong&gt;USENIX&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=&quot;5&quot;&gt;&lt;strong&gt;目录&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#gap&quot;&gt;18CCS_The Gap Game&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#instability&quot;&gt;16CCS_On the Instability of Bitcoin Without the Block Reward&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#poker&quot;&gt;15CCS_How to Use Bitcoin to Play Decentralized Poker&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Mac下latex+sublime text 3安装与配置</title>
+    <link href="http://yoursite.com/2019/09/19/maclatex/"/>
+    <id>http://yoursite.com/2019/09/19/maclatex/</id>
+    <published>2019-09-19T02:25:10.665Z</published>
+    <updated>2019-09-19T06:14:01.898Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;一、MacTex&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://tug.org/mactex/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1zbKNP3UhV-ELgZGHR6hzpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;百度网盘&lt;/a&gt;  密码:aqhq&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>连接实验室共享打印机</title>
+    <link href="http://yoursite.com/2019/09/04/printer/"/>
+    <id>http://yoursite.com/2019/09/04/printer/</id>
+    <published>2019-09-04T08:10:18.605Z</published>
+    <updated>2019-09-12T12:55:18.122Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;一、Windows电脑连接步骤&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1、安装和打印机对应的驱动（实验室打印机驱动：&lt;a href=&quot;https://pan.baidu.com/s/1tD9BWSYvBwxXvE8RtxFUdw&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;百度网盘链接&lt;/a&gt; 提取码：xu7b&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/09/04/hello-world/"/>
+    <id>http://yoursite.com/2019/09/04/hello-world/</id>
+    <published>2019-09-04T02:27:10.017Z</published>
+    <updated>2019-09-04T08:21:42.056Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
