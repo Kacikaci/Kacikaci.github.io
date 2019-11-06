@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-06T06:19:04.198Z</updated>
+  <updated>2019-11-06T06:34:36.441Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,14 +21,12 @@
     <link href="http://yoursite.com/2019/11/06/nohexo/"/>
     <id>http://yoursite.com/2019/11/06/nohexo/</id>
     <published>2019-11-06T02:44:13.000Z</published>
-    <updated>2019-11-06T06:19:04.198Z</updated>
+    <updated>2019-11-06T06:34:36.441Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;问题：&lt;strong&gt;执行hexo g -d 后，github仓库更新了，但是blog页面没有更新&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;解决方法：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;git remote add origin https://github.com/Kacikaci/Kacikaci.github.io.git&lt;/code&gt;&lt;/p&gt;
     
     </summary>
     
