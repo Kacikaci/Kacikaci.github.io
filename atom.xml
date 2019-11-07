@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-07T06:46:06.929Z</updated>
+  <updated>2019-11-07T07:04:11.006Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/11/07/hexolatex/"/>
     <id>http://yoursite.com/2019/11/07/hexolatex/</id>
     <published>2019-11-07T06:38:41.000Z</published>
-    <updated>2019-11-07T06:46:06.929Z</updated>
+    <updated>2019-11-07T07:04:11.006Z</updated>
     
     <summary type="html">
     
@@ -38,6 +38,10 @@
     </summary>
     
     
+    
+      <category term="solution" scheme="http://yoursite.com/tags/solution/"/>
+    
+      <category term="latex" scheme="http://yoursite.com/tags/latex/"/>
     
   </entry>
   
