@@ -56,18 +56,22 @@
   };
 </script>
 
-  <meta name="description" content="问题：如何让Hexo的blog页面正常显示Latex公式 解决方法： 1、blog flower$ npm install">
+  <meta name="description" content="问题：如何让Hexo的blog页面正常显示LaTex公式 解决方法： 1、npm uninstall hexo-math --save 2、npm install hexo-renderer-mathjax --save 3、npm uninstall hexo-renderer-marked --save">
 <meta name="keywords" content="solution,latex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo支持Latex公式">
+<meta property="og:title" content="Hexo支持LaTex公式">
 <meta property="og:url" content="http://yoursite.com/2019/11/07/hexolatex/index.html">
 <meta property="og:site_name" content="花花">
-<meta property="og:description" content="问题：如何让Hexo的blog页面正常显示Latex公式 解决方法： 1、blog flower$ npm install">
+<meta property="og:description" content="问题：如何让Hexo的blog页面正常显示LaTex公式 解决方法： 1、npm uninstall hexo-math --save 2、npm install hexo-renderer-mathjax --save 3、npm uninstall hexo-renderer-marked --save">
 <meta property="og:locale" content="chinese">
-<meta property="og:updated_time" content="2019-11-07T07:04:11.006Z">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6ly1g8pig7meshj319c0d2ju6.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6ly1g8pi63fa83j314k0do0vl.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6ly1g8piy0ceb1j31a20hy40k.jpg">
+<meta property="og:updated_time" content="2019-11-07T08:01:44.024Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo支持Latex公式">
-<meta name="twitter:description" content="问题：如何让Hexo的blog页面正常显示Latex公式 解决方法： 1、blog flower$ npm install">
+<meta name="twitter:title" content="Hexo支持LaTex公式">
+<meta name="twitter:description" content="问题：如何让Hexo的blog页面正常显示LaTex公式 解决方法： 1、npm uninstall hexo-math --save 2、npm install hexo-renderer-mathjax --save 3、npm uninstall hexo-renderer-marked --save">
+<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/006y8mN6ly1g8pig7meshj319c0d2ju6.jpg">
   <link rel="canonical" href="http://yoursite.com/2019/11/07/hexolatex/">
 
 
@@ -82,7 +86,7 @@
   };
 </script>
 
-  <title>Hexo支持Latex公式 | 花花</title>
+  <title>Hexo支持LaTex公式 | 花花</title>
   
 
 
@@ -234,7 +238,7 @@
       <meta itemprop="name" content="花花">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hexo支持Latex公式
+        <h1 class="post-title" itemprop="name headline">Hexo支持LaTex公式
 
           
         </h1>
@@ -250,7 +254,7 @@
                 
               
 
-              <time title="Created: 2019-11-07 14:38:41 / Modified: 15:04:11" itemprop="dateCreated datePublished" datetime="2019-11-07T14:38:41+08:00">2019-11-07</time>
+              <time title="Created: 2019-11-07 14:38:41 / Modified: 16:01:44" itemprop="dateCreated datePublished" datetime="2019-11-07T14:38:41+08:00">2019-11-07</time>
             </span>
           
             
@@ -269,9 +273,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>问题：<strong>如何让Hexo的blog页面正常显示Latex公式</strong></p>
+        <p>问题：<strong>如何让Hexo的blog页面正常显示LaTex公式</strong></p>
 <p>解决方法：</p>
-<p>1、<code>blog flower$ npm install</code></p>
+<p>1、<code>npm uninstall hexo-math --save</code></p>
+<p>2、<code>npm install hexo-renderer-mathjax --save</code></p>
+<p>3、<code>npm uninstall hexo-renderer-marked --save</code></p>
+<a id="more"></a>
+<p>4、<code>npm install hexo-renderer-kramed --save</code></p>
+<p>5、修改/<em>yourBlogFolder</em>/node_moudles/hexo-renderer-mathjax/mathjax.html </p>
+<p>修改的是src中http……latest.js这一部分的内容，具体改成什么地址参见<a href="[https://www.mathjax.org/#gettingstarted%EF%BC%8C%E8%BF%99%E6%98%AF%E6%9C%80%E6%96%B0%E7%9A%84Mathjax](https://www.mathjax.org/#gettingstarted，这是最新的Mathjax">这里</a>)的NEWS页面</p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g8pig7meshj319c0d2ju6.jpg" alt></p>
+<p>6、修改主题配置文件（themes&gt;nest&gt;_config.yml）<img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g8pi63fa83j314k0do0vl.jpg" alt></p>
+<p>7、在需要LaTex渲染的post的Front-matter里写上mathjax: true <img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g8piy0ceb1j31a20hy40k.jpg" style="zoom: 48%;"></p>
 
     </div>
 
@@ -485,6 +498,56 @@
 
   
 
+  
+    
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
   
 
   

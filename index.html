@@ -230,7 +230,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/2019/11/07/hexolatex/" class="post-title-link" itemprop="url">Hexo支持Latex公式</a>
+            <a href="/2019/11/07/hexolatex/" class="post-title-link" itemprop="url">Hexo支持LaTex公式</a>
           
         </h1>
 
@@ -245,7 +245,7 @@
                 
               
 
-              <time title="Created: 2019-11-07 14:38:41 / Modified: 15:04:11" itemprop="dateCreated datePublished" datetime="2019-11-07T14:38:41+08:00">2019-11-07</time>
+              <time title="Created: 2019-11-07 14:38:41 / Modified: 16:01:44" itemprop="dateCreated datePublished" datetime="2019-11-07T14:38:41+08:00">2019-11-07</time>
             </span>
           
             
@@ -264,10 +264,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>问题：<strong>如何让Hexo的blog页面正常显示Latex公式</strong></p>
+          <p>问题：<strong>如何让Hexo的blog页面正常显示LaTex公式</strong></p>
 <p>解决方法：</p>
-<p>1、<code>blog flower$ npm install</code></p>
-
+<p>1、<code>npm uninstall hexo-math --save</code></p>
+<p>2、<code>npm install hexo-renderer-mathjax --save</code></p>
+<p>3、<code>npm uninstall hexo-renderer-marked --save</code></p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/11/07/hexolatex/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -421,7 +431,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-11-07 14:52:11" itemprop="dateModified" datetime="2019-11-07T14:52:11+08:00">2019-11-07</time>
+                <time title="Modified: 2019-11-07 15:51:59" itemprop="dateModified" datetime="2019-11-07T15:51:59+08:00">2019-11-07</time>
               </span>
             
           
@@ -983,11 +993,11 @@
   
     
       
-    
-      
-    
-      
         
+      
+    
+      
+    
       
     
       
