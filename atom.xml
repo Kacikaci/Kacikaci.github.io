@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-07T08:01:44.024Z</updated>
+  <updated>2019-11-11T06:45:33.343Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/11/07/hexolatex/"/>
     <id>http://yoursite.com/2019/11/07/hexolatex/</id>
     <published>2019-11-07T06:38:41.000Z</published>
-    <updated>2019-11-07T08:01:44.024Z</updated>
+    <updated>2019-11-11T06:45:33.343Z</updated>
     
     <summary type="html">
     
@@ -38,6 +38,73 @@
       <category term="solution" scheme="http://yoursite.com/tags/solution/"/>
     
       <category term="latex" scheme="http://yoursite.com/tags/latex/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo页面不更新</title>
+    <link href="http://yoursite.com/2019/11/06/nohexo/"/>
+    <id>http://yoursite.com/2019/11/06/nohexo/</id>
+    <published>2019-11-06T02:44:13.000Z</published>
+    <updated>2019-11-11T06:45:57.826Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;问题：&lt;strong&gt;执行hexo g -d 后，github仓库更新了，但是blog页面没有更新&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;解决方法：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>论文汇报</title>
+    <link href="http://yoursite.com/2019/11/04/bchbtc/"/>
+    <id>http://yoursite.com/2019/11/04/bchbtc/</id>
+    <published>2019-11-04T13:25:32.000Z</published>
+    <updated>2019-11-11T06:46:53.757Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本篇blog状态：未完更新中    &lt;/p&gt;
+&lt;p&gt;论文题目：&lt;font face=&quot;goudy old style&quot;&gt;&lt;strong&gt;Bitcoin vs. Bitcoin Cash: Coexistence or Downfull of Bitcoin Cash?&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;论文阅读进度： $\color{hotpink}{17/21}$&lt;/p&gt;
+&lt;p&gt;类别：A&lt;/p&gt;
+&lt;p&gt;年份：2019&lt;/p&gt;
+&lt;p&gt;会议：IEEE Symposium on Security and Privacy&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="论文与线索" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87%E4%B8%8E%E7%BA%BF%E7%B4%A2/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博弈论论文集List(含中文摘要)</title>
+    <link href="http://yoursite.com/2019/10/09/papersCollection/"/>
+    <id>http://yoursite.com/2019/10/09/papersCollection/</id>
+    <published>2019-10-09T08:29:58.963Z</published>
+    <updated>2019-11-11T06:45:51.077Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;看发表在哪里的论文：四大安全会议&lt;strong&gt;CCS&lt;/strong&gt;、&lt;strong&gt;NDSS&lt;/strong&gt;、&lt;strong&gt;S&amp;amp;P(Oakland)&lt;/strong&gt;、&lt;strong&gt;USENIX&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font size=&quot;5&quot;&gt;目录&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#gap&quot;&gt;18CCS_The Gap Game&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#instability&quot;&gt;16CCS_On the Instability of Bitcoin Without the Block Reward&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#poker&quot;&gt;15CCS_How to Use Bitcoin to Play Decentralized Poker&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="论文与线索" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87%E4%B8%8E%E7%BA%BF%E7%B4%A2/"/>
+    
     
   </entry>
   
