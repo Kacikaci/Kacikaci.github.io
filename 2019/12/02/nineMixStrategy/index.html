@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="chinese">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png?v=7.4.0">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
+  <link rel="alternate" href="/atom.xml" title="花花" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"hide","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="这篇blog主要整理了耶鲁大学博弈论公开课「第9课混合策略」的笔记。  混合策略就是在纯策略上的一个概率分布。 混合策略的预期收益是该混合策略中每个纯策略预期收益的加权平均数。">
+<meta name="keywords" content="博弈论公开课">
+<meta property="og:type" content="article">
+<meta property="og:title" content="09混合策略在网球比赛中的应用">
+<meta property="og:url" content="http://yoursite.com/2019/12/02/nineMixStrategy/index.html">
+<meta property="og:site_name" content="花花">
+<meta property="og:description" content="这篇blog主要整理了耶鲁大学博弈论公开课「第9课混合策略」的笔记。  混合策略就是在纯策略上的一个概率分布。 混合策略的预期收益是该混合策略中每个纯策略预期收益的加权平均数。">
+<meta property="og:locale" content="chinese">
+<meta property="og:updated_time" content="2019-12-03T14:34:35.298Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="09混合策略在网球比赛中的应用">
+<meta name="twitter:description" content="这篇blog主要整理了耶鲁大学博弈论公开课「第9课混合策略」的笔记。  混合策略就是在纯策略上的一个概率分布。 混合策略的预期收益是该混合策略中每个纯策略预期收益的加权平均数。">
+  <link rel="canonical" href="http://yoursite.com/2019/12/02/nineMixStrategy/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>09混合策略在网球比赛中的应用 | 花花</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="chinese">
+  <div class="container use-motion">
+    <div class="headband"></div>
+    <a href="https://github.com/Kacikaci" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">花花</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">筑梦游乐园</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-about">
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+  </ul>
+
+    
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/02/nineMixStrategy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Phryne Ying">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/../images/header.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="花花">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">09混合策略在网球比赛中的应用
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2019-12-02 20:30:21" itemprop="dateCreated datePublished" datetime="2019-12-02T20:30:21+08:00">2019-12-02</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-12-03 22:34:35" itemprop="dateModified" datetime="2019-12-03T22:34:35+08:00">2019-12-03</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/知识与理解/" itemprop="url" rel="index"><span itemprop="name">知识与理解</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>这篇blog主要整理了耶鲁大学博弈论公开课「第9课混合策略」的笔记。</p>
+<hr>
+<p>混合策略就是在纯策略上的一个概率分布。</p>
+<p>混合策略的预期收益是该混合策略中每个纯策略预期收益的加权平均数。</p>
+<a id="more"></a>
+<p>$\color{blue}{e.g.}$ <strong>性别之战</strong>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">2</th>
+<th style="text-align:center"></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">a</td>
+<td style="text-align:center">b</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">$\color{red}{2},1$</td>
+<td style="text-align:center">$\color{red}{0},0$</td>
+<td>$\frac{1}{5}$</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">$\color{green}{0},0$</td>
+<td style="text-align:center">$\color{green}{1},2$</td>
+<td>$\frac{4}{5}$</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">$\frac{1}{2}$</td>
+<td style="text-align:center">$\frac{1}{2}$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>已知$p=(\frac{1}{5},\frac{4}{5})$ ， $q=(\frac{1}{2},\frac{1}{2})$ ，求 $p=(\frac{1}{5},\frac{4}{5})$ 的预期收益是什么？</p>
+<p>（1）$EU_{1}(A,q)=\color{red}{2}\times\frac{1}{2}+\color{red}{0}\times\frac{1}{2}=1$</p>
+<p>$EU_{1}(B,q)=\color{green}{0}\times\frac{1}{2}+\color{green}{1}\times\frac{1}{2}=\frac{1}{2}$</p>
+<p>（2）$EU<em>{2}(p,q)=\frac{1}{5}EU</em>{1}(A,q)+\frac{4}{5}EU_{1}(B,q)=\frac{1}{5}\times1+\frac{4}{5}\times\frac{1}{2}=\frac{3}{5}$</p>
+<p>$\frac{1}{2}&lt;\frac{3}{5}&lt;1$ ，一般选择混合策略的预期收益介于混合策略所包含的纯策略的预期收益之间。</p>
+<p><strong>Lesson</strong>：如果一个混合策略是BR，那么混合策略中的每个纯策略必须也是BR，也就是说他们的收益必须相同。</p>
+<p><br></p>
+<p>$\color{blue}{e.g.}$ <strong>网球 Venus vs. Serena Williams</strong></p>
+<p>Serena在网前，球在Venus那半场，V接到球后要选择往S的左边还是右边击打。</p>
+<p>Serena选择l代表作为回应，向左倾；选择r代表作为回应向右倾</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">S</th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">l</td>
+<td style="text-align:center">r</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">V</td>
+<td style="text-align:center">L</td>
+<td style="text-align:center">$50,50$</td>
+<td style="text-align:center">$80,20$</td>
+<td style="text-align:center">$p$</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">R</td>
+<td style="text-align:center">$90,10$</td>
+<td style="text-align:center">$20,80$</td>
+<td style="text-align:center">$1-p$</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">$q$</td>
+<td style="text-align:center">$1-q$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>这里没有纯策略纳什均衡。</p>
+<p>下面寻找混合策略纳什均衡——</p>
+<p>（1）寻找NE时S的混合策略，关键在于用S的混合策略$(q,1-q)$分析V的收益。</p>
+<p>V的收益是：</p>
+<p>$L\to 50q+80(1-q)$ </p>
+<p>$R\to 90q+20(1-q)$</p>
+<p>假设V也同样混合她的策略，现在V处于NE中，那么无论$p$多大，V采取的一定也是BR。V采取的BR包含了有时向左有时向右的情况，那么这必须满足选左还是选右本身也是BR。这就是说，选左和选右的混合是BR，那么选左选右单独也是BR。选左和选右的收益必须是相等的。</p>
+<p>令 $50q+80(1-q)=90q+20(1-q)$ </p>
+<p>解得 $q=\frac{3}{5}$</p>
+<p>（2）寻找NE时V的混合策略，关键在于用V的混合策略$(p,1-p)$分析S的收益</p>
+<p>$l\to50p+10(1-p)$</p>
+<p>$r\to20p+80(1-p)$</p>
+<p>令 $50p+10(1-p)=20p+80(1-p)$</p>
+<p>解得 $p=\frac{7}{10}$</p>
+<p>（3）综上，$NE=[(\frac{7}{10},\frac{3}{10}),(\frac{3}{5},\frac{2}{5})]$</p>
+<p><br></p>
+<p>假设我是V的教练，我发现S防左的概率&gt;0.6，那么我会建议V朝右打（<em>总是</em>打右）；相反，如果我发现S防左的概率&lt;0.6，那么我会建议V<em>始终</em>朝左打。</p>
+<p>注意上面一段中斜体的两个词“总是”和“始终”，因为如果S采用的策略不是 $(\frac{3}{5},\frac{2}{5})$ 的混合策略，那么V的BR就是纯策略；且如果V采用的策略不是 $(\frac{7}{10},\frac{3}{10})$ 的混合策略，那么S的BR就是纯策略。</p>
+<p><br></p>
+<p><strong>改变收益矩阵</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">S</th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">l</td>
+<td style="text-align:center">r</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">V</td>
+<td style="text-align:center">L</td>
+<td style="text-align:center">$30,70$</td>
+<td style="text-align:center">$80,20$</td>
+<td style="text-align:center">$p$</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">R</td>
+<td style="text-align:center">$90,10$</td>
+<td style="text-align:center">$20,80$</td>
+<td style="text-align:center">$1-p$</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">$q$</td>
+<td style="text-align:center">$1-q$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>改变的是：当V朝S的左边打，而S左倾时，双方的收益。此时，S的收益增大了，就是说S打反手球的能力增强了。</p>
+<p>这里仍没有纯策略纳什均衡。</p>
+<p>两个可能的影响：</p>
+<p>（1）直接影响：S应该多左倾，即 $q$ 变大（70&gt;50）</p>
+<p>（2）战略影响：V知道S打反手球的能力增强了，V选L的概率降低，于是S左倾的次数减少，即 $q$ 变小</p>
+<p>那么，$q$ 到底是变大还是变小呢？下面重新求解NE：</p>
+<p>为了找到S的新的 $q$ ，利用V的收益</p>
+<p>$L\to30q+80(1-q)$</p>
+<p>$R\to90q+20(1-q)$</p>
+<p>令 $30q+80(1-q)=90q+20(1-q)$</p>
+<p>解得 $q=0.5 &lt; 0.6$</p>
+<p>可知，$q$ 变小了，战略影响更大。</p>
+<p><br></p>
+<p>《相对静态 (comparative statics)》</p>
+<p>《带双方回到NE (bing each other back into NE)》</p>
+<hr>
+<p>复习这篇笔记的原因：混合策略会最终提供一个数字上的结论，给出了对于决策的指导意见。</p>
+
+    </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/博弈论公开课/" rel="tag"># 博弈论公开课</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/11/13/relatedknow/" rel="next" title="知识搜索加油站">
+                  <i class="fa fa-chevron-left"></i> 知识搜索加油站
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/12/03/discussOFtheNew/" rel="prev" title="disscussOFtheNEWone">
+                  disscussOFtheNEWone <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/../images/header.JPG"
+      alt="Phryne Ying">
+  <p class="site-author-name" itemprop="name">Phryne Ying</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span>
+        </a>
+      </div>
+    
+  </nav>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://weibo.com/u/2886566752?is_all=1" title="Weibo &rarr; https://weibo.com/u/2886566752?is_all=1" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Phryne Ying</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.4.0</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/muse.js?v=7.4.0"></script>
+
+<script src="/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
+  
+
+  
+
+  
+
+</body>
+</html>
+
+<!-- 页面点击爱心 -->
+<script type="text/javascript" src="/js/clicklove.js"></script>
+

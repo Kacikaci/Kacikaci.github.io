@@ -56,34 +56,28 @@
   };
 </script>
 
-  <meta name="description" content="问题：执行hexo g -d 后，github仓库更新了，但是blog页面没有更新 解决方法：">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo页面不更新">
-<meta property="og:url" content="http://yoursite.com/2019/11/06/nohexo/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="花花">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="花花">
-<meta property="og:description" content="问题：执行hexo g -d 后，github仓库更新了，但是blog页面没有更新 解决方法：">
 <meta property="og:locale" content="chinese">
-<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6ly1g8o4xeoq5aj30qa08o77f.jpg">
-<meta property="og:updated_time" content="2019-11-11T06:53:20.514Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo页面不更新">
-<meta name="twitter:description" content="问题：执行hexo g -d 后，github仓库更新了，但是blog页面没有更新 解决方法：">
-<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/006y8mN6ly1g8o4xeoq5aj30qa08o77f.jpg">
-  <link rel="canonical" href="http://yoursite.com/2019/11/06/nohexo/">
+<meta name="twitter:title" content="花花">
+  <link rel="canonical" href="http://yoursite.com/page/2/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: false,
-    isPost: true,
+    isHome: true,
+    isPost: false,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>Hexo页面不更新 | 花花</title>
+  <title>花花</title>
   
 
 
@@ -227,14 +221,13 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
   <div id="posts" class="posts-expand">
-      <article itemscope itemtype="http://schema.org/Article">
+        <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/06/nohexo/">
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/04/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Phryne Ying">
@@ -246,8 +239,9 @@
       <meta itemprop="name" content="花花">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hexo页面不更新
-
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2019/09/04/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
           
         </h1>
 
@@ -262,7 +256,7 @@
                 
               
 
-              <time title="Created: 2019-11-06 10:44:13" itemprop="dateCreated datePublished" datetime="2019-11-06T10:44:13+08:00">2019-11-06</time>
+              <time title="Created: 2019-09-04 10:27:10" itemprop="dateCreated datePublished" datetime="2019-09-04T10:27:10+08:00">2019-09-04</time>
             </span>
           
             
@@ -273,7 +267,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-11-11 14:53:20" itemprop="dateModified" datetime="2019-11-11T14:53:20+08:00">2019-11-11</time>
+                <time title="Modified: 2019-11-11 14:52:11" itemprop="dateModified" datetime="2019-11-11T14:52:11+08:00">2019-11-11</time>
               </span>
             
           
@@ -302,60 +296,41 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>问题：<strong>执行hexo g -d 后，github仓库更新了，但是blog页面没有更新</strong></p>
-<p>解决方法：</p>
-<a id="more"></a>
-<ol>
-<li><code>git remote add origin https://github.com/Kacikaci/Kacikaci.github.io.git</code></li>
-<li><code>git remote -v</code></li>
-<li><code>git remote rm Cuiwen</code></li>
-</ol>
-<p>总的来说就是，只留下origin</p>
-<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g8o4xeoq5aj30qa08o77f.jpg" style="zoom: 50%;"></p>
-<p>或者-</p>
-<p>也有可能是因为一篇post的标题太长或者标题中出现了“|”等符号，导致没有办法更新页面。这种时候，标题取简单一点，并且不要出现特别的符号就可以了。</p>
-
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/09/04/hello-world/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
     </div>
 
     
     
     
-        
-      
-
       <footer class="post-footer">
-
-        
-
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-              
-                <a href="/2019/11/04/bchbtc/" rel="next" title="论文汇报">
-                  <i class="fa fa-chevron-left"></i> 论文汇报
-                </a>
-              
-            </div>
-
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/11/07/hexolatex/" rel="prev" title="Hexo支持LaTex公式">
-                  Hexo支持LaTex公式 <i class="fa fa-chevron-right"></i>
-                </a>
-              
-            </div>
-          </div>
+          <div class="post-eof"></div>
         
       </footer>
-    
   </div>
   
   
   
   </article>
 
+    
   </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
 
 
           </div>
@@ -374,11 +349,6 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
-        
-        
-        
-        
-      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -537,6 +507,10 @@
 
   
 
+  
+    
+      
+    
   
 
   
