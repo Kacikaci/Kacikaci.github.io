@@ -56,14 +56,19 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="花花">
-<meta property="og:url" content="http://yoursite.com/archives/2019/12/index.html">
+  <meta name="description" content="我们已经学过（1）在参与人较少且策略不多的博弈（2）有很多参与者但每个参与者策略不多的博弈中找出纳什均衡。 现在学习在参与者较少但策略较多的博弈中找纳什均衡。 古诺双寡头模型：假定一种产品只有两个卖者，并且相互之间没有任何勾结行为，但相互之间都知道对方将怎样行动，从而各自怎样确定最优产量以实现利润最大化。  古诺双寡头介于完全竞争和垄断之间。">
+<meta name="keywords" content="博弈论公开课">
+<meta property="og:type" content="article">
+<meta property="og:title" content="06古诺模型">
+<meta property="og:url" content="http://yoursite.com/2019/12/17/sixCournot/index.html">
 <meta property="og:site_name" content="花花">
+<meta property="og:description" content="我们已经学过（1）在参与人较少且策略不多的博弈（2）有很多参与者但每个参与者策略不多的博弈中找出纳什均衡。 现在学习在参与者较少但策略较多的博弈中找纳什均衡。 古诺双寡头模型：假定一种产品只有两个卖者，并且相互之间没有任何勾结行为，但相互之间都知道对方将怎样行动，从而各自怎样确定最优产量以实现利润最大化。  古诺双寡头介于完全竞争和垄断之间。">
 <meta property="og:locale" content="chinese">
+<meta property="og:updated_time" content="2019-12-17T08:37:48.261Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="花花">
-  <link rel="canonical" href="http://yoursite.com/archives/2019/12/">
+<meta name="twitter:title" content="06古诺模型">
+<meta name="twitter:description" content="我们已经学过（1）在参与人较少且策略不多的博弈（2）有很多参与者但每个参与者策略不多的博弈中找出纳什均衡。 现在学习在参与者较少但策略较多的博弈中找纳什均衡。 古诺双寡头模型：假定一种产品只有两个卖者，并且相互之间没有任何勾结行为，但相互之间都知道对方将怎样行动，从而各自怎样确定最优产量以实现利润最大化。  古诺双寡头介于完全竞争和垄断之间。">
+  <link rel="canonical" href="http://yoursite.com/2019/12/17/sixCournot/">
 
 
 <script id="page-configurations">
@@ -71,13 +76,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>Archive | 花花</title>
+  <title>06古诺模型 | 花花</title>
   
 
 
@@ -205,27 +210,6 @@
 
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 </nav>
 </div>
     </header>
@@ -243,153 +227,124 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        
-        
-        
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/17/sixCournot/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Phryne Ying">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/../images/header.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="花花">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">06古诺模型
+
           
-        
-        <span class="collection-header">Um..! 13 posts in total. Keep on posting.</span>
-      </div>
-      
+        </h1>
 
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
 
-  
-  
+              
+                
+              
 
-  
+              <time title="Created: 2019-12-17 16:25:43 / Modified: 16:37:48" itemprop="dateCreated datePublished" datetime="2019-12-17T16:25:43+08:00">2019-12-17</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/知识与理解/" itemprop="url" rel="index"><span itemprop="name">知识与理解</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>我们已经学过（1）在参与人较少且策略不多的博弈（2）有很多参与者但每个参与者策略不多的博弈中找出纳什均衡。</p>
+<p>现在学习在参与者较少但策略较多的博弈中找纳什均衡。</p>
+<font color="red">古诺双寡头模型：假定一种产品只有两个卖者，并且相互之间没有任何勾结行为，但相互之间都知道对方将怎样行动，从而各自怎样确定最优产量以实现利润最大化。</font>
 
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/12/17/sixCournot/" itemprop="url">
-            <span itemprop="name">06古诺模型</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-12-17T16:25:43+08:00"
-              content="2019-12-17">
-          12-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/12/17/stackel/" itemprop="url">
-            <span itemprop="name">A斯塔克尔伯格模型</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-12-17T14:58:23+08:00"
-              content="2019-12-17">
-          12-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/12/03/discussOFtheNew/" itemprop="url">
-            <span itemprop="name">disscussOFtheNEWone</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-12-03T19:52:45+08:00"
-              content="2019-12-03">
-          12-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/12/02/nineMixStrategy/" itemprop="url">
-            <span itemprop="name">09混合策略在网球比赛中的应用</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-12-02T20:30:21+08:00"
-              content="2019-12-02">
-          12-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+<p>古诺双寡头介于完全竞争和垄断之间。</p>
 
     </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/博弈论公开课/" rel="tag"># 博弈论公开课</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/12/17/stackel/" rel="next" title="A斯塔克尔伯格模型">
+                  <i class="fa fa-chevron-left"></i> A斯塔克尔伯格模型
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
@@ -408,6 +363,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -566,6 +526,56 @@
 
   
 
+  
+    
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
   
 
   
