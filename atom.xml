@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-17T08:37:48.261Z</updated>
+  <updated>2019-12-17T11:02:10.633Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,35 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>06古诺模型</title>
-    <link href="http://yoursite.com/2019/12/17/sixCournot/"/>
-    <id>http://yoursite.com/2019/12/17/sixCournot/</id>
-    <published>2019-12-17T08:25:43.000Z</published>
-    <updated>2019-12-17T08:37:48.261Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;我们已经学过（1）在参与人较少且策略不多的博弈（2）有很多参与者但每个参与者策略不多的博弈中找出纳什均衡。&lt;/p&gt;
-&lt;p&gt;现在学习在参与者较少但策略较多的博弈中找纳什均衡。&lt;/p&gt;
-&lt;font
-        
-      
-    
-    </summary>
-    
-    
-      <category term="知识与理解" scheme="http://yoursite.com/categories/%E7%9F%A5%E8%AF%86%E4%B8%8E%E7%90%86%E8%A7%A3/"/>
-    
-    
-      <category term="博弈论公开课" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA%E5%85%AC%E5%BC%80%E8%AF%BE/"/>
-    
-  </entry>
   
   <entry>
     <title>A斯塔克尔伯格模型</title>
