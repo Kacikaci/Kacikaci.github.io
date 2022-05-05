@@ -56,14 +56,18 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="title: 给图片加水印的程序|pythoncategories: - 功能与技巧问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印……找不到简单好用的手机app  pip install opencv-python==3.4.9.31   如果不带上版本号，可能会遇到长时间停留在 building wheel for opencv-python的情况，带上版本号并且">
+<meta property="og:type" content="article">
 <meta property="og:title" content="花花">
-<meta property="og:url" content="http://yoursite.com/categories/知识与理解/index.html">
+<meta property="og:url" content="http://yoursite.com/2022/05/05/watermark/index.html">
 <meta property="og:site_name" content="花花">
+<meta property="og:description" content="title: 给图片加水印的程序|pythoncategories: - 功能与技巧问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印……找不到简单好用的手机app  pip install opencv-python==3.4.9.31   如果不带上版本号，可能会遇到长时间停留在 building wheel for opencv-python的情况，带上版本号并且">
 <meta property="og:locale" content="chinese">
+<meta property="og:updated_time" content="2022-05-05T18:54:10.200Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="花花">
-  <link rel="canonical" href="http://yoursite.com/categories/知识与理解/">
+<meta name="twitter:description" content="title: 给图片加水印的程序|pythoncategories: - 功能与技巧问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印……找不到简单好用的手机app  pip install opencv-python==3.4.9.31   如果不带上版本号，可能会遇到长时间停留在 building wheel for opencv-python的情况，带上版本号并且">
+  <link rel="canonical" href="http://yoursite.com/2022/05/05/watermark/">
 
 
 <script id="page-configurations">
@@ -71,13 +75,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>Category: 知识与理解 | 花花</title>
+  <title> | 花花</title>
   
 
 
@@ -205,27 +209,6 @@
 
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 </nav>
 </div>
     </header>
@@ -243,181 +226,134 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block category">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">知识与理解<small>Category</small>
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/05/05/watermark/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Phryne Ying">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/../images/header.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="花花">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+
+          
         </h1>
-      </div>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2022-05-05 01:16:12" itemprop="dateCreated datePublished" datetime="2022-05-05T01:16:12+08:00">2022-05-05</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-05-06 02:54:10" itemprop="dateModified" datetime="2022-05-06T02:54:10+08:00">2022-05-06</time>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+        <hr>
+<p>title: 给图片加水印的程序|python<br>categories:</p>
+<h2 id="功能与技巧"><a href="#功能与技巧" class="headerlink" title="- 功能与技巧"></a>- 功能与技巧</h2><p>问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印……找不到简单好用的手机app</p>
+<ol>
+<li><code>pip install opencv-python==3.4.9.31</code>  <blockquote>
+<p>如果不带上版本号，可能会遇到长时间停留在 building wheel for opencv-python的情况，带上版本号并且是旧版本号可以很快安装好</p>
+</blockquote>
+</li>
+<li><p>测试是否成功安装opencv-python<br>运行以下程序，若正确输出版本号则成功安装opencv-python</p>
+<a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import cv2</span><br><span class="line">print(cv2.__version__)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>pipe3 install Pillow==4.0.0</code>  </p>
+<blockquote>
+<p>跟上版本号很重要，不然会出错，原因是我的mac OS没有升级到最新版本。一开始一直出错，最终找到这个解决方法，<a href="https://blog.51cto.com/u_13567403/3051637" target="_blank" rel="noopener">答案来源</a></p>
+</blockquote>
+</li>
+<li><code>cd /Users/flower/PycharmProjects</code><br><code>git clone https://github.com/2Dou/watermarker.git</code><br>watermarker文件夹中font文件夹下的青鸟华光琥珀改为bird，同时marker.py中的青鸟华光琥珀也都改为bird，改成什么名字不重要，只要都改成一样的并且都是英文就行  </li>
+<li>把要添加水印的照片放到watermark下的input文件夹内<br><code>cd /Users/flower/PycharmProjects/watermark</code><br><code>python marker.py -f ./input/a.jpg -m yingcuiwen花花</code><br>在watermark下的output文件夹内查看添加好水印的图片   </li>
+</ol>
+<h4 id="【在此过程中学会的其他知识】"><a href="#【在此过程中学会的其他知识】" class="headerlink" title="【在此过程中学会的其他知识】"></a>【在此过程中学会的其他知识】</h4><h4 id="安装OpenCV"><a href="#安装OpenCV" class="headerlink" title="安装OpenCV"></a>安装OpenCV</h4><ol>
+<li><a href="https://opencv.org/releases/" target="_blank" rel="noopener">下载OpenCV</a>  </li>
+<li>安装cmake：<a href="https://blog.csdn.net/fanyun_01/article/details/114237851" target="_blank" rel="noopener">教程</a>  </li>
+<li><code>cd opencv-4.5</code><br><code>mkdir build</code><br><code>cd build</code><br><code>cmake -G &quot;Unix Makefiles&quot; ..</code><br><code>make</code><br><code>sudo make install</code>   </li>
+</ol>
 
-  
-  
+    </div>
 
-  
     
-    <div class="collection-year">
-      <h1 class="collection-header">2020</h1>
-    </div>
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2020/06/21/Dessert/" itemprop="url">
-            <span itemprop="name">Dessert</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-06-21T01:22:17+08:00"
-              content="2020-06-21">
-          06-21
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+    
         
-          <a class="post-title-link" href="/2019/12/17/stackel/" itemprop="url">
-            <span itemprop="name">A斯塔克尔伯格模型</span>
-          </a>
+      
+
+      <footer class="post-footer">
+
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-12-17T14:58:23+08:00"
-              content="2019-12-17">
-          12-17
-        </time>
-      </div>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2020/06/21/Dessert/" rel="next" title="Dessert">
+                  <i class="fa fa-chevron-left"></i> Dessert
+                </a>
+              
+            </div>
 
-    </header>
-  </article>
+            <span class="post-nav-divider"></span>
 
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2022/05/05/ssm/" rel="prev" title="开发基于SSM的管理系统|java">
+                  开发基于SSM的管理系统|java <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
         
-          <a class="post-title-link" href="/2019/12/02/nineMixStrategy/" itemprop="url">
-            <span itemprop="name">09混合策略在网球比赛中的应用</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-12-02T20:30:21+08:00"
-              content="2019-12-02">
-          12-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/11/13/relatedknow/" itemprop="url">
-            <span itemprop="name">知识搜索加油站</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-11-13T16:27:30+08:00"
-              content="2019-11-13">
-          11-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/11/13/warcost/" itemprop="url">
-            <span itemprop="name">20战争的消耗</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-11-13T15:43:54+08:00"
-              content="2019-11-13">
-          11-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    </div>
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
@@ -436,6 +372,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -448,6 +389,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#功能与技巧"><span class="nav-number">1.</span> <span class="nav-text">- 功能与技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#【在此过程中学会的其他知识】"><span class="nav-number">1.0.1.</span> <span class="nav-text">【在此过程中学会的其他知识】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装OpenCV"><span class="nav-number">1.0.2.</span> <span class="nav-text">安装OpenCV</span></a></li></ol></li></ol></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
