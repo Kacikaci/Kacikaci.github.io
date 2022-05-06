@@ -67,31 +67,6 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2022/05/05/watermark/"/>
-    <id>http://yoursite.com/2022/05/05/watermark/</id>
-    <published>2022-05-04T17:16:12.612Z</published>
-    <updated>2022-05-05T18:54:10.200Z</updated>
-    
-    <summary type="html">
-    
-      &lt;hr&gt;
-&lt;p&gt;title: 给图片加水印的程序|python&lt;br&gt;categories:&lt;/p&gt;
-&lt;h2 id=&quot;功能与技巧&quot;&gt;&lt;a href=&quot;#功能与技巧&quot; class=&quot;headerlink&quot; title=&quot;- 功能与技巧&quot;&gt;&lt;/a&gt;- 功能与技巧&lt;/h2&gt;&lt;p&gt;问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印……找不到简单好用的手机app&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;pip install opencv-python==3.4.9.31&lt;/code&gt;  &lt;blockquote&gt;
-&lt;p&gt;如果不带上版本号，可能会遇到长时间停留在 building wheel for opencv-python的情况，带上版本号并且是旧版本号可以很快安装好&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;测试是否成功安装opencv-python&lt;br&gt;运行以下程序，若正确输出版本号则成功安装opencv-python&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Dessert</title>
     <link href="http://yoursite.com/2020/06/21/Dessert/"/>
     <id>http://yoursite.com/2020/06/21/Dessert/</id>
