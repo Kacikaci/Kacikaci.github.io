@@ -63,7 +63,7 @@
 <meta property="og:site_name" content="花花">
 <meta property="og:description" content="问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印……找不到简单好用的手机app  pip install opencv-python==3.4.9.31   如果不带上版本号，可能会遇到长时间停留在 building wheel for opencv-python的情况，带上版本号并且是旧版本号可以很快安装好   测试是否成功安装opencv-python运行以下程序，">
 <meta property="og:locale" content="chinese">
-<meta property="og:updated_time" content="2022-05-05T18:57:37.894Z">
+<meta property="og:updated_time" content="2022-05-08T16:35:41.651Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="给图片加水印的程序|python">
 <meta name="twitter:description" content="问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印……找不到简单好用的手机app  pip install opencv-python==3.4.9.31   如果不带上版本号，可能会遇到长时间停留在 building wheel for opencv-python的情况，带上版本号并且是旧版本号可以很快安装好   测试是否成功安装opencv-python运行以下程序，">
@@ -260,11 +260,19 @@
                 
               
 
-              <time title="Created: 2022-05-06 02:56:11 / Modified: 02:57:37" itemprop="dateCreated datePublished" datetime="2022-05-06T02:56:11+08:00">2022-05-06</time>
+              <time title="Created: 2022-05-06 02:56:11" itemprop="dateCreated datePublished" datetime="2022-05-06T02:56:11+08:00">2022-05-06</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-05-09 00:35:41" itemprop="dateModified" datetime="2022-05-09T00:35:41+08:00">2022-05-09</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -309,6 +317,10 @@
 </li>
 <li><code>cd /Users/flower/PycharmProjects</code><br><code>git clone https://github.com/2Dou/watermarker.git</code><br>watermarker文件夹中font文件夹下的青鸟华光琥珀改为bird，同时marker.py中的青鸟华光琥珀也都改为bird，改成什么名字不重要，只要都改成一样的并且都是英文就行  </li>
 <li>把要添加水印的照片放到watermark下的input文件夹内<br><code>cd /Users/flower/PycharmProjects/watermark</code><br><code>python marker.py -f ./input/a.jpg -m yingcuiwen花花</code><br>在watermark下的output文件夹内查看添加好水印的图片   </li>
+<li>批量处理<br>运行<code>python marker.py -f ./input -m yingcuiwen花花</code>  <blockquote>
+<p>一开始出错:cannot identify image file ‘pikachu/.DS_Store’，参考    <a href="https://its304.com/article/weixin_38411989/109311229" target="_blank" rel="noopener">此篇博文</a><br><code>cd watermarker</code><br><code>find ./ -name &quot;.DS_Store&quot;</code><br><code>find ./ -name &quot;.DS_Store&quot; -delete</code> </p>
+</blockquote>
+</li>
 </ol>
 <h4 id="【在此过程中学会的其他知识】"><a href="#【在此过程中学会的其他知识】" class="headerlink" title="【在此过程中学会的其他知识】"></a>【在此过程中学会的其他知识】</h4><h4 id="安装OpenCV"><a href="#安装OpenCV" class="headerlink" title="安装OpenCV"></a>安装OpenCV</h4><ol>
 <li><a href="https://opencv.org/releases/" target="_blank" rel="noopener">下载OpenCV</a>  </li>
@@ -331,8 +343,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2022/05/05/ssm/" rel="next" title="开发基于SSM的管理系统|java">
-                  <i class="fa fa-chevron-left"></i> 开发基于SSM的管理系统|java
+                <a href="/2022/05/05/ssm/" rel="next" title="开发基于SSM的管理系统-1安装所需软件|java">
+                  <i class="fa fa-chevron-left"></i> 开发基于SSM的管理系统-1安装所需软件|java
                 </a>
               
             </div>

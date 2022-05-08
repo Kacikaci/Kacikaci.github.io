@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-05-05T18:57:37.894Z</updated>
+  <updated>2022-05-08T16:35:41.651Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2022/05/06/watermarker/"/>
     <id>http://yoursite.com/2022/05/06/watermarker/</id>
     <published>2022-05-05T18:56:11.000Z</published>
-    <updated>2022-05-05T18:57:37.894Z</updated>
+    <updated>2022-05-08T16:35:41.651Z</updated>
     
     <summary type="html">
     
@@ -42,11 +42,11 @@
   </entry>
   
   <entry>
-    <title>开发基于SSM的管理系统|java</title>
+    <title>开发基于SSM的管理系统-1安装所需软件|java</title>
     <link href="http://yoursite.com/2022/05/05/ssm/"/>
     <id>http://yoursite.com/2022/05/05/ssm/</id>
     <published>2022-05-04T18:39:04.235Z</published>
-    <updated>2022-05-04T18:49:59.919Z</updated>
+    <updated>2022-05-06T13:17:28.613Z</updated>
     
     <summary type="html">
     
