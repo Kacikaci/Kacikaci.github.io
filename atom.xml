@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-05-08T16:35:41.651Z</updated>
+  <updated>2022-05-08T16:59:50.953Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>发布博文出错fatal、OpenSSL SSL_connect|hexo</title>
+    <link href="http://yoursite.com/2022/05/09/SSL/"/>
+    <id>http://yoursite.com/2022/05/09/SSL/</id>
+    <published>2022-05-08T16:56:59.000Z</published>
+    <updated>2022-05-08T16:59:50.953Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;问题描述：fatal: unable to access ‘&lt;a href=&quot;https://github.com/xxx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/xxx&lt;/a&gt;‘: OpenSSL
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>给图片加水印的程序|python</title>
