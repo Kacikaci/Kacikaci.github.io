@@ -3,7 +3,7 @@
   <title>花花</title>
   
   <subtitle>筑梦游乐园</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
   <updated>2022-05-08T17:01:25.620Z</updated>
@@ -14,7 +14,7 @@
     
   </author>
   
-  <generator uri="http://hexo.io/">Hexo</generator>
+  <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>发布博文出错fatal、OpenSSL SSL_connect|hexo</title>
@@ -23,17 +23,15 @@
     <published>2022-05-08T16:56:59.000Z</published>
     <updated>2022-05-08T17:01:25.620Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;问题描述：fatal: unable to access ‘&lt;a href=&quot;https://github.com/xxx&quot;&gt;https://github.com/xxx&lt;/a&gt;‘: OpenSSL SSL_connect: SSL_ERROR_SYSCALL in
+    <summary type="html">&lt;p&gt;问题描述：fatal: unable to access ‘&lt;a href=&quot;https://github.com/xxx&quot;&gt;https://github.com/xxx&lt;/a&gt;‘: OpenSSL SSL_connect: SSL_ERROR_SYSCALL in</summary>
         
       
     
-    </summary>
     
     
     
@@ -46,20 +44,18 @@
     <published>2022-05-05T18:56:11.000Z</published>
     <updated>2022-05-08T16:35:41.651Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印……找不到简单好用的手机app&lt;/p&gt;
+    <summary type="html">&lt;p&gt;问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印……找不到简单好用的手机app&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;pip install opencv-python==3.4.9.31&lt;/code&gt;  &lt;blockquote&gt;
 &lt;p&gt;如果不带上版本号，可能会遇到长时间停留在 building wheel for opencv-python的情况，带上版本号并且是旧版本号可以很快安装好&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;测试是否成功安装opencv-python&lt;br&gt;运行以下程序，若正确输出版本号则成功安装opencv-python
-    
-    </summary>
+&lt;li&gt;测试是否成功安装opencv-python&lt;br&gt;运行以下程序，若正确输出版本号则成功安装opencv-python</summary>
     
     
-      <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
+    
+    <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
     
     
   </entry>
@@ -71,20 +67,18 @@
     <published>2022-05-04T18:39:04.235Z</published>
     <updated>2022-05-06T13:17:28.613Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;span
+    <summary type="html">&lt;span</summary>
         
       
     
-    </summary>
     
     
-      <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
+    <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
     
     
   </entry>
@@ -96,23 +90,21 @@
     <published>2020-06-20T17:22:17.000Z</published>
     <updated>2020-06-22T12:40:18.191Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;ul&gt;
+    <summary type="html">&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Linux内核移植是什么意思？&lt;/p&gt;
 &lt;p&gt;Linux内核代码包含大部分硬件平台的驱动程序，用户可以自己定制内核包含哪些设备的驱动程序，就像开关一样，可以打开/关闭一些编译选项来支持不同的硬件平台。&lt;/p&gt;
-&lt;p&gt;内核移植就是根据自己的硬件平台重新编译内
+&lt;p&gt;内核移植就是根据自己的硬件平台重新编译内</summary>
         
       
     
-    </summary>
     
     
-      <category term="知识与理解" scheme="http://yoursite.com/categories/%E7%9F%A5%E8%AF%86%E4%B8%8E%E7%90%86%E8%A7%A3/"/>
+    <category term="知识与理解" scheme="http://yoursite.com/categories/%E7%9F%A5%E8%AF%86%E4%B8%8E%E7%90%86%E8%A7%A3/"/>
     
     
   </entry>
@@ -124,24 +116,22 @@
     <published>2019-12-17T06:58:23.000Z</published>
     <updated>2019-12-17T11:02:10.000Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;在有些市场，竞争厂商之间的地位不是对称的，市场地位的不对称引起了决策次序的不对称，通常，小企业先观察到大企业的行为，再决定自己的对策。主导企业知道跟随企业一定会对它的产量作出反应，因而当它在确定产量时，把跟随企业的反应也考虑进去了。&lt;/p&gt;
-&lt;p&gt;产量的决策依据以下次序：领
+    <summary type="html">&lt;p&gt;在有些市场，竞争厂商之间的地位不是对称的，市场地位的不对称引起了决策次序的不对称，通常，小企业先观察到大企业的行为，再决定自己的对策。主导企业知道跟随企业一定会对它的产量作出反应，因而当它在确定产量时，把跟随企业的反应也考虑进去了。&lt;/p&gt;
+&lt;p&gt;产量的决策依据以下次序：领</summary>
         
       
     
-    </summary>
     
     
-      <category term="知识与理解" scheme="http://yoursite.com/categories/%E7%9F%A5%E8%AF%86%E4%B8%8E%E7%90%86%E8%A7%A3/"/>
+    <category term="知识与理解" scheme="http://yoursite.com/categories/%E7%9F%A5%E8%AF%86%E4%B8%8E%E7%90%86%E8%A7%A3/"/>
     
     
-      <category term="博弈论" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    <category term="博弈论" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     
   </entry>
   
@@ -152,20 +142,18 @@
     <published>2019-12-03T11:52:45.000Z</published>
     <updated>2019-12-04T08:46:12.000Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;&lt;strong&gt;【20191203
+    <summary type="html">&lt;p&gt;&lt;strong&gt;【20191203</summary>
         
       
     
-    </summary>
     
     
-      <category term="论文与线索" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87%E4%B8%8E%E7%BA%BF%E7%B4%A2/"/>
+    <category term="论文与线索" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87%E4%B8%8E%E7%BA%BF%E7%B4%A2/"/>
     
     
   </entry>
@@ -177,9 +165,8 @@
     <published>2019-12-02T12:30:21.000Z</published>
     <updated>2019-12-03T15:11:46.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;这篇blog主要整理了耶鲁大学博弈论公开课「第9课混合策略」的笔记。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;这篇blog主要整理了耶鲁大学博弈论公开课「第9课混合策略」的笔记。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;混合策略就是在纯策略上的一个概率分布。&lt;/p&gt;
 &lt;p&gt;混合策略的预期收益是该混合策略中每个纯策略预期收益的加权平均数。&lt;/p&gt;
@@ -228,15 +215,14 @@
 &lt;/div&gt;
 &lt;p&gt;已知$p=(\frac{1}{5},\frac{4}{5})$ ， $q=(\frac{1}{2},\frac{1}{2})$ ，求 $p=(\frac{1}{5},\frac{4}{5})$ 的预期收益是什么？&lt;/p&gt;
 &lt;p&gt;（1）$EU_{1}(A,q)=\color{red}{2}\times\frac{1}{2}+\color{red}{0}\times\frac{1}{2}=1$&lt;/p&gt;
-&lt;p&gt;$EU_{1}(B,q)=\color{green}{0}\times\frac{1}{2}+\color{green}{1}\times\frac{1}{2}=\frac{1}{2}$&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;$EU_{1}(B,q)=\color{green}{0}\times\frac{1}{2}+\color{green}{1}\times\frac{1}{2}=\frac{1}{2}$&lt;/p&gt;</summary>
     
     
-      <category term="知识与理解" scheme="http://yoursite.com/categories/%E7%9F%A5%E8%AF%86%E4%B8%8E%E7%90%86%E8%A7%A3/"/>
+    
+    <category term="知识与理解" scheme="http://yoursite.com/categories/%E7%9F%A5%E8%AF%86%E4%B8%8E%E7%90%86%E8%A7%A3/"/>
     
     
-      <category term="博弈论公开课" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA%E5%85%AC%E5%BC%80%E8%AF%BE/"/>
+    <category term="博弈论公开课" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA%E5%85%AC%E5%BC%80%E8%AF%BE/"/>
     
   </entry>
   
@@ -247,18 +233,16 @@
     <published>2019-11-13T08:27:30.000Z</published>
     <updated>2019-11-13T13:30:11.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;持续更新补充中···&lt;/p&gt;
+    <summary type="html">&lt;p&gt;持续更新补充中···&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;硬分叉：比特币软件在升级的时候，如果不能向上兼容（老版本不认识新版本数据），老版本和新版本可以同时挖矿，最后产生两条各自独立的链条，这就是硬分叉。&lt;/p&gt;
 &lt;p&gt;2018年4月20日，AntPool宣布将会销毁12%从挖掘BCH中获得的交易费用。&lt;/p&gt;
-&lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;销毁是指发往黑洞地址。“黑洞地址是公开的，谁都能查询，如果以后谁发现这个地址有转出纪录，那么比特币大陆的信誉肯定破产。” https://www.chainnode.com/post/159605（20191113）&lt;/p&gt;&lt;/div&gt;
-    
-    </summary>
+&lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;销毁是指发往黑洞地址。“黑洞地址是公开的，谁都能查询，如果以后谁发现这个地址有转出纪录，那么比特币大陆的信誉肯定破产。” https://www.chainnode.com/post/159605（20191113）&lt;/p&gt;&lt;/div&gt;</summary>
     
     
-      <category term="知识与理解" scheme="http://yoursite.com/categories/%E7%9F%A5%E8%AF%86%E4%B8%8E%E7%90%86%E8%A7%A3/"/>
+    
+    <category term="知识与理解" scheme="http://yoursite.com/categories/%E7%9F%A5%E8%AF%86%E4%B8%8E%E7%90%86%E8%A7%A3/"/>
     
     
   </entry>
@@ -270,23 +254,21 @@
     <published>2019-11-13T07:43:54.000Z</published>
     <updated>2019-11-26T08:36:19.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;这篇blog主要复习并整理了耶鲁大学博弈论公开课第20课的笔记。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;这篇blog主要复习并整理了耶鲁大学博弈论公开课第20课的笔记。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;模型&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;2个参与者：每个阶段各自选择$\mathrm{F}$（攻击）或$\mathrm{Q}$（退出），一方退出则博弈结束。&lt;/p&gt;
 &lt;p&gt;好消息：如果对方先退出，你将获得奖励$\mathrm{V}$&lt;/p&gt;
 &lt;p&gt;坏消息：每个阶段双方都选择攻击，那么每个人都要付出代价$\mathrm{-C}$&lt;/p&gt;
-&lt;p&gt;如果同时退出$\rightarrow$ $\mathrm{0}$&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;如果同时退出$\rightarrow$ $\mathrm{0}$&lt;/p&gt;</summary>
     
     
-      <category term="知识与理解" scheme="http://yoursite.com/categories/%E7%9F%A5%E8%AF%86%E4%B8%8E%E7%90%86%E8%A7%A3/"/>
+    
+    <category term="知识与理解" scheme="http://yoursite.com/categories/%E7%9F%A5%E8%AF%86%E4%B8%8E%E7%90%86%E8%A7%A3/"/>
     
     
-      <category term="博弈论公开课" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA%E5%85%AC%E5%BC%80%E8%AF%BE/"/>
+    <category term="博弈论公开课" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA%E5%85%AC%E5%BC%80%E8%AF%BE/"/>
     
   </entry>
   
@@ -297,15 +279,13 @@
     <published>2019-11-11T06:53:43.000Z</published>
     <updated>2019-11-11T06:53:43.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;一、Windows电脑连接步骤&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1、安装和打印机对应的驱动（实验室打印机驱动：&lt;a href=&quot;https://pan.baidu.com/s/1tD9BWSYvBwxXvE8RtxFUdw&quot;&gt;百度网盘链接&lt;/a&gt; 提取码：xu7b&lt;br&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;&lt;strong&gt;一、Windows电脑连接步骤&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1、安装和打印机对应的驱动（实验室打印机驱动：&lt;a href=&quot;https://pan.baidu.com/s/1tD9BWSYvBwxXvE8RtxFUdw&quot;&gt;百度网盘链接&lt;/a&gt; 提取码：xu7b&lt;br&gt;</summary>
     
     
-      <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
+    
+    <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
     
     
   </entry>
@@ -317,16 +297,14 @@
     <published>2019-11-11T06:53:04.000Z</published>
     <updated>2019-11-11T06:53:04.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;一、MacTex&lt;/strong&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;strong&gt;一、MacTex&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://tug.org/mactex/&quot;&gt;官方下载&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1zbKNP3UhV-ELgZGHR6hzpg&quot;&gt;百度网盘&lt;/a&gt;  密码:aqhq&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;&lt;a href=&quot;https://pan.baidu.com/s/1zbKNP3UhV-ELgZGHR6hzpg&quot;&gt;百度网盘&lt;/a&gt;  密码:aqhq&lt;/p&gt;</summary>
     
     
-      <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
+    
+    <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
     
     
   </entry>
@@ -338,15 +316,13 @@
     <published>2019-11-11T06:52:11.000Z</published>
     <updated>2019-11-11T06:52:11.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;</summary>
     
     
-      <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
+    
+    <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
     
     
   </entry>
@@ -358,18 +334,16 @@
     <published>2019-11-11T06:45:51.000Z</published>
     <updated>2019-11-11T06:45:51.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;看发表在哪里的论文：四大安全会议&lt;strong&gt;CCS&lt;/strong&gt;、&lt;strong&gt;NDSS&lt;/strong&gt;、&lt;strong&gt;S&amp;amp;P(Oakland)&lt;/strong&gt;、&lt;strong&gt;USENIX&lt;/strong&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;看发表在哪里的论文：四大安全会议&lt;strong&gt;CCS&lt;/strong&gt;、&lt;strong&gt;NDSS&lt;/strong&gt;、&lt;strong&gt;S&amp;amp;P(Oakland)&lt;/strong&gt;、&lt;strong&gt;USENIX&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;font size=&quot;5&quot;&gt;目录&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;#gap&quot;&gt;18CCS_The Gap Game&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;#instability&quot;&gt;16CCS_On the Instability of Bitcoin Without the Block Reward&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#poker&quot;&gt;15CCS_How to Use Bitcoin to Play Decentralized Poker&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;&lt;a href=&quot;#poker&quot;&gt;15CCS_How to Use Bitcoin to Play Decentralized Poker&lt;/a&gt;&lt;/p&gt;</summary>
     
     
-      <category term="论文与线索" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87%E4%B8%8E%E7%BA%BF%E7%B4%A2/"/>
+    
+    <category term="论文与线索" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87%E4%B8%8E%E7%BA%BF%E7%B4%A2/"/>
     
     
   </entry>
@@ -381,23 +355,21 @@
     <published>2019-11-07T06:38:41.000Z</published>
     <updated>2019-11-11T06:52:40.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;问题：&lt;strong&gt;如何让Hexo的blog页面正常显示LaTex公式&lt;/strong&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;问题：&lt;strong&gt;如何让Hexo的blog页面正常显示LaTex公式&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;解决方法：&lt;/p&gt;
 &lt;p&gt;1、&lt;code&gt;npm uninstall hexo-math --save&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;2、&lt;code&gt;npm install hexo-renderer-mathjax --save&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;3、&lt;code&gt;npm uninstall hexo-renderer-marked --save&lt;/code&gt;&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;3、&lt;code&gt;npm uninstall hexo-renderer-marked --save&lt;/code&gt;&lt;/p&gt;</summary>
     
     
-      <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
+    
+    <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
     
     
-      <category term="solution" scheme="http://yoursite.com/tags/solution/"/>
+    <category term="solution" scheme="http://yoursite.com/tags/solution/"/>
     
-      <category term="latex" scheme="http://yoursite.com/tags/latex/"/>
+    <category term="latex" scheme="http://yoursite.com/tags/latex/"/>
     
   </entry>
   
@@ -408,15 +380,13 @@
     <published>2019-11-06T02:44:13.000Z</published>
     <updated>2019-11-11T06:53:20.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;问题：&lt;strong&gt;执行hexo g -d 后，github仓库更新了，但是blog页面没有更新&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;解决方法：&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;问题：&lt;strong&gt;执行hexo g -d 后，github仓库更新了，但是blog页面没有更新&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;解决方法：&lt;/p&gt;</summary>
     
     
-      <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
+    
+    <category term="功能与技巧" scheme="http://yoursite.com/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
     
     
   </entry>
