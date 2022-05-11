@@ -197,7 +197,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      949 字
+      954 字
     </span>
   
 
@@ -253,14 +253,14 @@
 <li><code>cd /Users/flower/PycharmProjects</code><br><code>git clone https://github.com/2Dou/watermarker.git</code><br>watermarker文件夹中font文件夹下的青鸟华光琥珀改为bird，同时marker.py中的青鸟华光琥珀也都改为bird，改成什么名字不重要，只要都改成一样的并且都是英文就行  </li>
 <li>把要添加水印的照片放到watermark下的input文件夹内<br><code>cd /Users/flower/PycharmProjects/watermark</code><br><code>python marker.py -f ./input/a.jpg -m yingcuiwen花花</code><br>在watermark下的output文件夹内查看添加好水印的图片   </li>
 <li>批量处理<br>运行<code>python marker.py -f ./input -m yingcuiwen花花</code>  <blockquote>
-<p>一开始出错:cannot identify image file ‘pikachu/.DS_Store’，参考    <a target="_blank" rel="noopener" href="https://its304.com/article/weixin_38411989/109311229">此篇博文</a><br><code>cd watermarker</code><br><code>find ./ -name &quot;.DS_Store&quot;</code><br><code>find ./ -name &quot;.DS_Store&quot; -delete</code> </p>
+<p>一开始出错:cannot identify image file ‘pikachu&#x2F;.DS_Store’，参考	<a target="_blank" rel="noopener" href="https://its304.com/article/weixin_38411989/109311229">此篇博文</a><br><code>cd watermarker</code><br><code>find ./ -name &quot;.DS_Store&quot;</code><br><code>find ./ -name &quot;.DS_Store&quot; -delete</code></p>
 </blockquote>
 </li>
 </ol>
 <h3 id="在此过程中学会的其他知识"><a href="#在此过程中学会的其他知识" class="headerlink" title="在此过程中学会的其他知识:"></a>在此过程中学会的其他知识:</h3><h4 id="安装OpenCV"><a href="#安装OpenCV" class="headerlink" title="安装OpenCV"></a>安装OpenCV</h4><ol>
 <li><a target="_blank" rel="noopener" href="https://opencv.org/releases/">下载OpenCV</a>  </li>
 <li>安装cmake：<a target="_blank" rel="noopener" href="https://blog.csdn.net/fanyun_01/article/details/114237851">教程</a>  </li>
-<li><code>cd opencv-4.5</code><br><code>mkdir build</code><br><code>cd build</code><br><code>cmake -G &quot;Unix Makefiles&quot; ..</code><br><code>make</code><br><code>sudo make install</code>   </li>
+<li><code>cd opencv-4.5</code><br><code>mkdir build</code><br><code>cd build</code><br><code>cmake -G &quot;Unix Makefiles&quot; ..</code><br><code>make</code><br><code>sudo make install</code></li>
 </ol>
 
             </div>
