@@ -29,47 +29,7 @@ Driver”，全称为“设备驱动程序”，是一种可以使计算机和�
 </div><footer class="post__foot u-cf"><a href="/2020/06/21/Dessert/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article><article class="post"><header class="post__head"><time datetime="2019-12-17T06:58:23.000Z" class="post__time">十二月 17, 2019</time><h1 class="post__title"><a href="/2019/12/17/stackel/">A斯塔克尔伯格模型</a></h1></header><div class="post__main echo"><p>在有些市场，竞争厂商之间的地位不是对称的，市场地位的不对称引起了决策次序的不对称，通常，小企业先观察到大企业的行为，再决定自己的对策。主导企业知道跟随企业一定会对它的产量作出反应，因而当它在确定产量时，把跟随企业的反应也考虑进去了。</p>
 <p>产量的决策依据以下次序：领导性厂商决定一个产量，然后跟随厂商可以观察这个产量，并根据领导性厂商的产量来决定他自己的产量。</p>
 <p>领导性厂商所决定的产量将是一个以跟随厂商的反应函数为约束的利润最大化产量。在斯塔克尔伯格模型中，领导性厂商的决策不再需要自己的反应函数。</p>
-<p><br /></p>
-<p><strong>一、模型分析</strong></p>
-<p>设市场需求函数为 <span
-class="math inline">\(D=D(p_1+p_2)=a-b(p_1+p_2)\)</span>，其中 <span
-class="math inline">\(p_1\)</span> 和 <span
-class="math inline">\(p_2\)</span> 分别是两个厂商的产量。</p>
-<p>假设两厂商的成本函数相同，都为 <span
-class="math inline">\(C=c_0p\)</span></p>
-<p><strong>步骤1：</strong>首先考虑在给定厂商的1的计划产量下，厂商2寻求使自己利润最大化的最有产量<span
-class="math inline">\(p_2\)</span>，即：</p>
-<p><span class="math inline">\(maxp_2[a-b(p_1+p_2)]-cp_2\)</span>，</p>
-<p>显然 <span class="math inline">\(p_2=g(p_1)\)</span></p>
-<p><strong>步骤2：</strong>接下来，求解 <span
-class="math inline">\(maxp_1=[a-b（p_1+p_2）]-cp_1\)</span></p>
-<p>得到 <span class="math inline">\(p_1\)</span> ，代入 <span
-class="math inline">\(p_2=g(p_1)\)</span> 得到 <span
-class="math inline">\(p_2\)</span></p>
-<p>于是得到斯塔克尔伯格均衡时的 <span
-class="math inline">\((p_1,p_2)\)</span></p>
-<p><br /></p>
-<p><strong>二、应用实例</strong></p>
-<p>设市场需求函数为 <span
-class="math inline">\(D=61.2-10\times(p_1+p_2)\)</span>
-，两厂商的成本函数都为 <span
-class="math inline">\(C=1.2p\)</span>，求斯塔克尔伯格均衡时两厂商的产量。（厂商1为领导者，厂商2为跟随者）</p>
-<p>解：步骤1，求解如下优化模型：</p>
-<p><span
-class="math inline">\(maxp_2[61.2-10\times(p_1+p_2)]-1.2p_2\)</span></p>
-<p>得到 <span
-class="math inline">\(p_2=\frac{61.2-10p_1}{11.2}\)</span></p>
-<p>步骤2，求解下列优化模型：</p>
-<p><span class="math inline">\(maxp_1[61.2-10(p_1+p_2)]-1.2p_1,
-s.t.p_2=\frac{61.2-10p_1}{11.2}\)</span></p>
-<p>得到结果 <span
-class="math inline">\(p_1\approx3,p_2\approx1.5\)</span></p>
-<p><strong>matlab代码：</strong></p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">clear</span><br><span class="line">clc</span><br><span class="line"></span><br><span class="line">syms x z;</span><br><span class="line">y2=-x*(<span class="number">61.2</span><span class="number">-10</span>*(x+z))+<span class="number">1.2</span>*x;</span><br><span class="line">eq=diff(y2,x);</span><br><span class="line">p2=solve(eq,x);</span><br><span class="line"></span><br><span class="line">y1=-z*(<span class="number">61.2</span><span class="number">-10</span>*(z+p2))+<span class="number">1.2</span>*z;</span><br><span class="line">vdpf = matlabFunction([y1],<span class="string">&#x27;Vars&#x27;</span>,&#123;z&#125;); </span><br><span class="line"><span class="comment">%将符号表达式转化为函数句柄!!!</span></span><br><span class="line">[p1,fval1]=fminsearch(vdpf,<span class="number">0</span>);</span><br><span class="line">p2=subs(p2,<span class="string">&#x27;z&#x27;</span>,p1);</span><br><span class="line">[p1,p2]</span><br></pre></td></tr></table></figure>
-<p><strong>运行结果：</strong></p>
-<p><img
-src="https://tva1.sinaimg.cn/large/006tNbRwly1g9zx99mv3jj316q0u0qaw.jpg" /></p>
-</div><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a href="/tags/博弈论/" class="post__tag__link">博弈论</a></li></ul><a href="/2019/12/17/stackel/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article><article class="post"><header class="post__head"><time datetime="2019-12-03T11:52:45.000Z" class="post__time">十二月 3, 2019</time><h1 class="post__title"><a href="/2019/12/03/discussOFtheNew/">disscussOFtheNEWone</a></h1></header><div class="post__main echo"><p><strong>【20191203 星期二下午16:00】</strong></p>
+<p><br /></p></div><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a href="/tags/博弈论/" class="post__tag__link">博弈论</a></li></ul><a href="/2019/12/17/stackel/#more" class="post__more u-fr">READ MORE</a></footer></article><article class="post"><header class="post__head"><time datetime="2019-12-03T11:52:45.000Z" class="post__time">十二月 3, 2019</time><h1 class="post__title"><a href="/2019/12/03/discussOFtheNew/">disscussOFtheNEWone</a></h1></header><div class="post__main echo"><p><strong>【20191203 星期二下午16:00】</strong></p>
 <p><strong>中心思想：</strong>分布式的矿工决策</p>
 <p><strong>问题来源：</strong>比特币系统中有许多个矿池，还有很多矿工。每个矿工进行盲目的个人决策，决定加入哪个矿池来挖矿。如果有人的收益高，有人的收益低，低收益的人就有动机去寻找比原本的选择更好的策略，如果找到了，那么收益高低情况会发生改变（这就是说，在之前的情况中占优势的矿工，虽然他们自己不想改变，但是别人的改变使得他们的收益情况也跟着改变了）。那么现在我们就考虑存在一个均衡点，大家都不会想要偏离，即使有人移动了，对应也会有其他人移动，算力比例仍旧不变。</p>
 <p>显然，所有矿工都去一个矿池不是均衡点，那么每个矿池多少算力才达到均衡呢？</p>
