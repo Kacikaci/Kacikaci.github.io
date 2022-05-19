@@ -238,127 +238,345 @@
             <h1 style="display: none">博弈论论文集List(含中文摘要)</h1>
             
             <div class="markdown-body">
-              <p>看发表在哪里的论文：四大安全会议<strong>CCS</strong>、<strong>NDSS</strong>、<strong>S&amp;P(Oakland)<strong>、</strong>USENIX</strong></p>
+              <p>看发表在哪里的论文：四大安全会议<strong>CCS</strong>、<strong>NDSS</strong>、<strong>S&amp;P(Oakland)</strong>、<strong>USENIX</strong></p>
 <p><strong><font size="5">目录</font></strong></p>
 <p><a href="#gap">18CCS_The Gap Game</a></p>
-<p><a href="#instability">16CCS_On the Instability of Bitcoin Without the Block Reward</a></p>
-<p><a href="#poker">15CCS_How to Use Bitcoin to Play Decentralized Poker</a></p>
+<p><a href="#instability">16CCS_On the Instability of Bitcoin Without
+the Block Reward</a></p>
+<p><a href="#poker">15CCS_How to Use Bitcoin to Play Decentralized
+Poker</a></p>
 <span id="more"></span>
-
-<p><a href="#fire">15CCS_Liar, Liar, Coins on Fire  Penalizing Equivocation By Loss of Bitcoins</a></p>
-<p><a href="#coalitions">15CCS_Nonoutsourceable Scratch-Off Puzzles to Discourage Bitcoin Mining Coalitions</a></p>
-<p><a href="#coexistence">18S&amp;P_Bitcoin vs. Bitcoin Cash Coexistence or Downfall of Bitcoin Cash</a></p>
-<p><a href="#dilemma">15S&amp;P_The Miner’s Dilemma</a></p>
-<p><a href="#tor">15S&amp;P_Bitcoin over Tor isn’t a good idea</a></p>
-<p><a href="#smartpool">17USENIX_SmartPool Practical Decentralized Pooled Mining</a></p>
-<br />
-
-<p><font size="5"><strong>18CCS_The Gap Game</strong></font><span id="gap"></span></p>
+<p><a href="#fire">15CCS_Liar, Liar, Coins on Fire Penalizing
+Equivocation By Loss of Bitcoins</a></p>
+<p><a href="#coalitions">15CCS_Nonoutsourceable Scratch-Off Puzzles to
+Discourage Bitcoin Mining Coalitions</a></p>
+<p><a href="#coexistence">18S&amp;P_Bitcoin vs. Bitcoin Cash Coexistence
+or Downfall of Bitcoin Cash</a></p>
+<p><a href="#dilemma">15S&amp;P_The Miner's Dilemma</a></p>
+<p><a href="#tor">15S&amp;P_Bitcoin over Tor isn't a good idea</a></p>
+<p><a href="#smartpool">17USENIX_SmartPool Practical Decentralized
+Pooled Mining</a></p>
+<p><br /></p>
+<p><font size="5"><strong>18CCS_The Gap Game</strong></font><span
+id="gap"></span></p>
 <p>间隙博弈</p>
-<p>​	Blockchain-based cryptocurrencies secure a decentralized consensus protocol by incentives. The protocol participants, called miners, generate (mine) a series of blocks, each containing monetary transactions created by system users. As incentive for participation, miners receive newly minted currency and transaction fees paid by transaction creators. Blockchain bandwidth limits lead users to pay increasing fees in order to prioritize their transactions. However, most prior work focused on models where fees are negligible. In a notable exception, Carlsten et al. [17] postulated in CCS’16 that if incentives come only from fees then a mining gap would form — miners would avoid mining when the available fees are insufficient.</p>
-<p>​	In this work, we analyze cryptocurrency security in realistic settings, taking into account all elements of expenses and rewards. To study when gaps form, we analyze the system as a game we call the gap game. We analyze the game with a combination of symbolic and numeric analysis tools in a wide range of scenarios.</p>
-<p>​	Our analysis confirms Carlsten et al.’s postulate; indeed, we show that gaps form well before fees are the only incentive, and analyze the implications on security. Perhaps surprisingly, we show that different miners choose different gap sizes to optimize their utility, even when their operating costs are identical. Alarmingly, we see that the system incentivizes large miner coalitions, reducing system decentralization. We describe the required conditions to avoid the incentive misalignment, providing guidelines for future cryptocurrency design.</p>
-<p>​		基于区块链的密码货币通过激励机制确保分布式共识协议的安全。协议参与者称为矿工，生成（挖矿）一系列块，每个块都包含由系统用户创建的货币的交易。作为参与的激励，矿工获得新的比特币和交易创造者支付的交易费用。区块链带宽限制导致用户支付越来越多的费用，以使自己的交易能被优先处理。然而，大多数之前的研究工作都集中在交易费可以忽略不计的模型上。值得关注的例外是，Carlsten等人[17]在CCS’16中假设，如果激励仅来自交易费，那么将形成一个挖矿间隙——当可获得的交易费不足时，矿工将避免挖矿。</p>
-<p>​		在这项工作中，我们分析密码货币在现实设置中的安全性，考虑到所有的费用和报酬因素。为了研究间隙何时形成，我们将系统作为一个博弈来分析，我们称之为间隙博弈。我们结合符号和数字分析工具，在各种场景中分析这个博弈。</p>
-<p>​		我们的分析证实了Carlsten等人的假设；事实上，我们表明，在交易费成为唯一的激励因素之前，间隙就已经形成，并分析了其对安全性的影响。或许令人惊讶的是，我们发现不同的矿工选择不同的间隙大小来优化他们的收益，即使他们的运营成本是相同的。令人担忧的是，我们看到，这一制度激励了大型矿业联盟，减少了制度分散化。我们描述了避免激励偏差的必要条件，为未来的加密货币设计提供了指导。</p>
+<p>​ Blockchain-based cryptocurrencies secure a decentralized consensus
+protocol by incentives. The protocol participants, called miners,
+generate (mine) a series of blocks, each containing monetary
+transactions created by system users. As incentive for participation,
+miners receive newly minted currency and transaction fees paid by
+transaction creators. Blockchain bandwidth limits lead users to pay
+increasing fees in order to prioritize their transactions. However, most
+prior work focused on models where fees are negligible. In a notable
+exception, Carlsten et al. [17] postulated in CCS’16 that if incentives
+come only from fees then a mining gap would form — miners would avoid
+mining when the available fees are insufficient.</p>
+<p>​ In this work, we analyze cryptocurrency security in realistic
+settings, taking into account all elements of expenses and rewards. To
+study when gaps form, we analyze the system as a game we call the gap
+game. We analyze the game with a combination of symbolic and numeric
+analysis tools in a wide range of scenarios.</p>
+<p>​ Our analysis confirms Carlsten et al.’s postulate; indeed, we show
+that gaps form well before fees are the only incentive, and analyze the
+implications on security. Perhaps surprisingly, we show that different
+miners choose different gap sizes to optimize their utility, even when
+their operating costs are identical. Alarmingly, we see that the system
+incentivizes large miner coalitions, reducing system decentralization.
+We describe the required conditions to avoid the incentive misalignment,
+providing guidelines for future cryptocurrency design.</p>
+<p>​
+基于区块链的密码货币通过激励机制确保分布式共识协议的安全。协议参与者称为矿工，生成（挖矿）一系列块，每个块都包含由系统用户创建的货币的交易。作为参与的激励，矿工获得新的比特币和交易创造者支付的交易费用。区块链带宽限制导致用户支付越来越多的费用，以使自己的交易能被优先处理。然而，大多数之前的研究工作都集中在交易费可以忽略不计的模型上。值得关注的例外是，Carlsten等人[17]在CCS'16中假设，如果激励仅来自交易费，那么将形成一个挖矿间隙——当可获得的交易费不足时，矿工将避免挖矿。</p>
+<p>​
+在这项工作中，我们分析密码货币在现实设置中的安全性，考虑到所有的费用和报酬因素。为了研究间隙何时形成，我们将系统作为一个博弈来分析，我们称之为间隙博弈。我们结合符号和数字分析工具，在各种场景中分析这个博弈。</p>
+<p>​
+我们的分析证实了Carlsten等人的假设；事实上，我们表明，在交易费成为唯一的激励因素之前，间隙就已经形成，并分析了其对安全性的影响。或许令人惊讶的是，我们发现不同的矿工选择不同的间隙大小来优化他们的收益，即使他们的运营成本是相同的。令人担忧的是，我们看到，这一制度激励了大型矿业联盟，减少了制度分散化。我们描述了避免激励偏差的必要条件，为未来的加密货币设计提供了指导。</p>
 <p><strong>BibTex</strong></p>
 <figure class="highlight awk"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></div></td><td class="code"><pre><code class="hljs awk">@inproceedings&#123;TsabaryE18,<br>  author    = &#123;Itay Tsabary and<br>               Ittay Eyal&#125;,<br>  title     = &#123;The Gap Game&#125;,<br>  booktitle = &#123;Proceedings of the <span class="hljs-number">2018</span> &#123;ACM&#125; &#123;SIGSAC&#125; Conference on Computer and<br>               Communications Security, &#123;CCS&#125; <span class="hljs-number">2018</span>, Toronto, ON, Canada, October<br>               <span class="hljs-number">15</span>-<span class="hljs-number">19</span>, <span class="hljs-number">2018</span>&#125;,<br>  pages     = &#123;<span class="hljs-number">713</span>--<span class="hljs-number">728</span>&#125;,<br>  year      = &#123;<span class="hljs-number">2018</span>&#125;,<br>  crossref  = &#123;DBLP:conf<span class="hljs-regexp">/ccs/</span><span class="hljs-number">2018</span>&#125;,<br>  url       = &#123;https:<span class="hljs-regexp">//</span>doi.org<span class="hljs-regexp">/10.1145/</span><span class="hljs-number">3243734.3243737</span>&#125;,<br>  doi       = &#123;<span class="hljs-number">10.1145</span>/<span class="hljs-number">3243734.3243737</span>&#125;,<br>  timestamp = &#123;Wed, <span class="hljs-number">21</span> Nov <span class="hljs-number">2018</span> <span class="hljs-number">12</span>:<span class="hljs-number">44</span>:<span class="hljs-number">06</span> +<span class="hljs-number">0100</span>&#125;,<br>  biburl    = &#123;https:<span class="hljs-regexp">//</span>dblp.org<span class="hljs-regexp">/rec/</span>bib<span class="hljs-regexp">/conf/</span>ccs/TsabaryE18&#125;,<br>  bibsource = &#123;dblp computer science bibliography, https:<span class="hljs-regexp">//</span>dblp.org&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<br />
-
-<p><font size="5"><strong>16CCS_On the Instability of Bitcoin Without the Block Reward</strong></font><span id="instability"></span></p>
+<p><br /></p>
+<p><font size="5"><strong>16CCS_On the Instability of Bitcoin Without
+the Block Reward</strong></font><span id="instability"></span></p>
 <p>关于无块奖励比特币的不稳定性</p>
-<p>​	Bitcoin provides two incentives for miners: block rewards and transaction fees. The former accounts for thevast majority of miner revenues at the beginning of the system, but it isexpected to transition to the latter as the block rewards dwindle. There hasbeen an implicit belief that whether miners are paid by block rewards ortransaction fees does not affect the security of the block chain.</p>
-<p>​	We show that this is not the case. Our key insight is that with only transaction fees, the variance of theblock reward is very high due to the exponentially distributed block arrival time,and it becomes attractive to fork a “wealthy” block to “steal” the rewards therein. We show that this results in an equilibrium with undesirable properties for Bitcoin’s security and performance, and even non-equilibria insome circumstances. We also revisit selfish mining and show that it can be made profitable for a miner with an arbitrarily low hash power share, and who isarbitrarily poorly connected within the network. Our results are derived from theoretical analysis and confirmed by a new Bitcoin mining simulator that maybe of independent interest.</p>
-<p>​	We discuss the troubling implications of our results for Bitcoin’s future security and draw lessons for the design of new cryptocurrencies.</p>
-<p>​		比特币为矿工提供了两种激励：区块奖励和交易费。前者在系统开始时占据了挖矿收入的绝大部分，但随着区块奖励的减少，它有望过渡到后者。有一种隐含的信念认为，矿工收入来自区块奖励还是交易费用不会影响区块链的安全。我们证明这不是事实。我们的关键观点是，只有交易费用，由于块到达时间呈指数分布，块奖励的方差非常高，因此，在其中叉出一个“富有”的块来“窃取”变得很有吸引力。</p>
-<p>​		我们表明这不是事实。我们的关键观点是，当只有交易费用，由于块到达时间呈指数分布，块奖励的方差非常高，因此，从中叉出一个“富有”的块来“窃取”变得很有吸引力。我们表明， 这会导致比特币的安全性和性能与不受欢迎的属性相平衡，甚至在某些情况下也会导致不平衡。我们还重新审视了自私挖矿，并表明，对于一个散列功率占比任意低，且在网络中连接不良的矿工来说，这是可以盈利的。我们的研究结果来源于理论分析，并被一个新的比特币挖矿模拟器所证实，该模拟器可能具有独立的吸引力。</p>
-<p>​		我们讨论了我们的结果对比特币未来安全的令人不安的影响，并为新密码货币的设计吸取了经验教训。</p>
+<p>​ Bitcoin provides two incentives for miners: block rewards and
+transaction fees. The former accounts for thevast majority of miner
+revenues at the beginning of the system, but it isexpected to transition
+to the latter as the block rewards dwindle. There hasbeen an implicit
+belief that whether miners are paid by block rewards ortransaction fees
+does not affect the security of the block chain.</p>
+<p>​ We show that this is not the case. Our key insight is that with only
+transaction fees, the variance of theblock reward is very high due to
+the exponentially distributed block arrival time,and it becomes
+attractive to fork a “wealthy" block to “steal" the rewards therein. We
+show that this results in an equilibrium with undesirable properties for
+Bitcoin's security and performance, and even non-equilibria insome
+circumstances. We also revisit selfish mining and show that it can be
+made profitable for a miner with an arbitrarily low hash power share,
+and who isarbitrarily poorly connected within the network. Our results
+are derived from theoretical analysis and confirmed by a new Bitcoin
+mining simulator that maybe of independent interest.</p>
+<p>​ We discuss the troubling implications of our results for Bitcoin's
+future security and draw lessons for the design of new
+cryptocurrencies.</p>
+<p>​
+比特币为矿工提供了两种激励：区块奖励和交易费。前者在系统开始时占据了挖矿收入的绝大部分，但随着区块奖励的减少，它有望过渡到后者。有一种隐含的信念认为，矿工收入来自区块奖励还是交易费用不会影响区块链的安全。我们证明这不是事实。我们的关键观点是，只有交易费用，由于块到达时间呈指数分布，块奖励的方差非常高，因此，在其中叉出一个“富有”的块来“窃取”变得很有吸引力。</p>
+<p>​
+我们表明这不是事实。我们的关键观点是，当只有交易费用，由于块到达时间呈指数分布，块奖励的方差非常高，因此，从中叉出一个“富有”的块来“窃取”变得很有吸引力。我们表明，
+这会导致比特币的安全性和性能与不受欢迎的属性相平衡，甚至在某些情况下也会导致不平衡。我们还重新审视了自私挖矿，并表明，对于一个散列功率占比任意低，且在网络中连接不良的矿工来说，这是可以盈利的。我们的研究结果来源于理论分析，并被一个新的比特币挖矿模拟器所证实，该模拟器可能具有独立的吸引力。</p>
+<p>​
+我们讨论了我们的结果对比特币未来安全的令人不安的影响，并为新密码货币的设计吸取了经验教训。</p>
 <p><strong>BibTex</strong></p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs awk">@inproceedings&#123;CarlstenKWN16,<br>  author    = &#123;Miles Carlsten and<br>               Harry A. Kalodner and<br>               S. Matthew Weinberg and<br>               Arvind Narayanan&#125;,<br>  title     = &#123;On the Instability of Bitcoin Without the Block Reward&#125;,<br>  booktitle = &#123;Proceedings of the <span class="hljs-number">2016</span> &#123;ACM&#125; &#123;SIGSAC&#125; Conference on Computer and<br>               Communications Security, Vienna, Austria, October <span class="hljs-number">24</span>-<span class="hljs-number">28</span>, <span class="hljs-number">2016</span>&#125;,<br>  pages     = &#123;<span class="hljs-number">154</span>--<span class="hljs-number">167</span>&#125;,<br>  year      = &#123;<span class="hljs-number">2016</span>&#125;,<br>  crossref  = &#123;DBLP:conf<span class="hljs-regexp">/ccs/</span><span class="hljs-number">2016</span>&#125;,<br>  url       = &#123;https:<span class="hljs-regexp">//</span>doi.org<span class="hljs-regexp">/10.1145/</span><span class="hljs-number">2976749.2978408</span>&#125;,<br>  doi       = &#123;<span class="hljs-number">10.1145</span>/<span class="hljs-number">2976749.2978408</span>&#125;,<br>  timestamp = &#123;Tue, <span class="hljs-number">06</span> Nov <span class="hljs-number">2018</span> <span class="hljs-number">11</span>:<span class="hljs-number">07</span>:<span class="hljs-number">30</span> +<span class="hljs-number">0100</span>&#125;,<br>  biburl    = &#123;https:<span class="hljs-regexp">//</span>dblp.org<span class="hljs-regexp">/rec/</span>bib<span class="hljs-regexp">/conf/</span>ccs/CarlstenKWN16&#125;,<br>  bibsource = &#123;dblp computer science bibliography, https:<span class="hljs-regexp">//</span>dblp.org&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<br />
-
-<p><font size="5"><strong>15CCS_How to Use Bitcoin to Play Decentralized Poker</strong></font><span id="poker"></span></p>
+<p><br /></p>
+<p><font size="5"><strong>15CCS_How to Use Bitcoin to Play Decentralized
+Poker</strong></font><span id="poker"></span></p>
 <p>如何用比特币玩分布式扑克</p>
-<p>​	We present practical protocols for playing poker over the internet without having to trust a third party. Our poker protocols are dropout-tolerant in the sense that any party that drops out during the middle of the game is forced to pay a monetary penalty to all other parties.</p>
-<p>​	More generally, we introduce and design protocols for secure cash distribution with penalties, a primitive that simultaneously generalizes secure computation with penalties of Bentov and Kumaresan (Crypto 2014), and secure lottery with penalties of Andrychowicz et al. (Security and Privacy 2014). Since secure cash distribution with penalties is a reactive functionality by design, it suffices to capture a wide variety of card games (including poker), board games, and auctions. Our protocol realizing secure cash distribution with penalties works in a hybrid model where parties have access to a claim-or-refund transaction functionality FCR which can be efficiently realized in (a variant of) Bitcoin.</p>
-<p>​		我们提供了在网上玩扑克而不必信任第三方的实用协议。我们的扑克协议是允许退出的，前提是任何一方在游戏中途退出，都必须向所有其他方支付罚款。</p>
-<p>​		更广泛地说，我们引入并设计了带惩罚的安全现金分配协议。这是一个原始的协议，它同时概括了Bentov和Kumaresan（Crypto 2014）的安全计算惩罚进行归纳的原语，以及Andrychowicz等人（Security and Privacy 2014）的惩罚进行安全彩票。由于安全现金分配和惩罚是一个设计的反应性功能，它足以捕获各种各样的纸牌游戏（包括扑克）、棋盘游戏和拍卖。我们的协议实现了安全的现金分配和罚款，在混合模型中，当事方可以使用索赔或退款交易功能fcr，该功能可以在比特币（的变体）中有效实现。</p>
+<p>​ We present practical protocols for playing poker over the internet
+without having to trust a third party. Our poker protocols are
+dropout-tolerant in the sense that any party that drops out during the
+middle of the game is forced to pay a monetary penalty to all other
+parties.</p>
+<p>​ More generally, we introduce and design protocols for secure cash
+distribution with penalties, a primitive that simultaneously generalizes
+secure computation with penalties of Bentov and Kumaresan (Crypto 2014),
+and secure lottery with penalties of Andrychowicz et al. (Security and
+Privacy 2014). Since secure cash distribution with penalties is a
+reactive functionality by design, it suffices to capture a wide variety
+of card games (including poker), board games, and auctions. Our protocol
+realizing secure cash distribution with penalties works in a hybrid
+model where parties have access to a claim-or-refund transaction
+functionality FCR which can be efficiently realized in (a variant of)
+Bitcoin.</p>
+<p>​
+我们提供了在网上玩扑克而不必信任第三方的实用协议。我们的扑克协议是允许退出的，前提是任何一方在游戏中途退出，都必须向所有其他方支付罚款。</p>
+<p>​
+更广泛地说，我们引入并设计了带惩罚的安全现金分配协议。这是一个原始的协议，它同时概括了Bentov和Kumaresan（Crypto
+2014）的安全计算惩罚进行归纳的原语，以及Andrychowicz等人（Security and
+Privacy
+2014）的惩罚进行安全彩票。由于安全现金分配和惩罚是一个设计的反应性功能，它足以捕获各种各样的纸牌游戏（包括扑克）、棋盘游戏和拍卖。我们的协议实现了安全的现金分配和罚款，在混合模型中，当事方可以使用索赔或退款交易功能fcr，该功能可以在比特币（的变体）中有效实现。</p>
 <p><strong>BibTex</strong></p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs awk">@inproceedings&#123;DBLP:conf<span class="hljs-regexp">/ccs/</span>KumaresanMB15,<br>  author    = &#123;Ranjit Kumaresan and<br>               Tal Moran and<br>               Iddo Bentov&#125;,<br>  title     = &#123;How to Use Bitcoin to Play Decentralized Poker&#125;,<br>  booktitle = &#123;Proceedings of the <span class="hljs-number">22</span>nd &#123;ACM&#125; &#123;SIGSAC&#125; Conference on Computer and<br>               Communications Security, Denver, CO, USA, October <span class="hljs-number">12</span>-<span class="hljs-number">16</span>, <span class="hljs-number">2015</span>&#125;,<br>  pages     = &#123;<span class="hljs-number">195</span>--<span class="hljs-number">206</span>&#125;,<br>  year      = &#123;<span class="hljs-number">2015</span>&#125;,<br>  crossref  = &#123;DBLP:conf<span class="hljs-regexp">/ccs/</span><span class="hljs-number">2015</span>&#125;,<br>  url       = &#123;https:<span class="hljs-regexp">//</span>doi.org<span class="hljs-regexp">/10.1145/</span><span class="hljs-number">2810103.2813712</span>&#125;,<br>  doi       = &#123;<span class="hljs-number">10.1145</span>/<span class="hljs-number">2810103.2813712</span>&#125;,<br>  timestamp = &#123;Tue, <span class="hljs-number">06</span> Nov <span class="hljs-number">2018</span> <span class="hljs-number">11</span>:<span class="hljs-number">07</span>:<span class="hljs-number">29</span> +<span class="hljs-number">0100</span>&#125;,<br>  biburl    = &#123;https:<span class="hljs-regexp">//</span>dblp.org<span class="hljs-regexp">/rec/</span>bib<span class="hljs-regexp">/conf/</span>ccs/KumaresanMB15&#125;,<br>  bibsource = &#123;dblp computer science bibliography, https:<span class="hljs-regexp">//</span>dblp.org&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<br />
-
-<p><font size="5"><strong>15CCS_Liar, Liar, Coins on Fire!: Penalizing Equivocation By Loss of Bitcoins</strong></font><span id="fire"></span></p>
+<p><br /></p>
+<p><font size="5"><strong>15CCS_Liar, Liar, Coins on Fire!: Penalizing
+Equivocation By Loss of Bitcoins</strong></font><span
+id="fire"></span></p>
 <p>骗子，骗子，硬币起火！：通过丢失比特币惩罚模棱两可的一方</p>
-<p>​	We show that equivocation, i.e., making conflicting statements to others in a distributed protocol, can be monetarily disincentivized by the use of crypto-currencies such as Bitcoin. To this end, we design completely decentralized non-equivocation contracts, which make it possible to penalize an equivocating party by the loss of its money. At the core of these contracts, there is a novel cryptographic primitive called accountable assertions, which reveals the party’s Bitcoin credentials if it equivocates.</p>
-<p>​	Non-equivocation contracts are particularly useful for distributed systems that employ public append-only logs to protect data integrity, e.g., in cloud storage and social networks. Moreover, as double-spending in Bitcoin is a special case of equivocation, the contracts enable us to design a payment protocol that allows a payee to receive funds at several unsynchronized points of sale, while being able to penalize a double-spending payer after the fact.</p>
-<p>​		我们表明，在分布式协议中，模棱两可，即与其他人作出相互冲突的声明，可以通过使用比特币等加密货币从金钱上抑制。为此，我们设计了完全分散的非模棱两可的合同，使模棱两可的一方可能因损失金钱而受到惩罚。在这些合同的核心，有一个新的密码原语称为责任断言，它揭示了该方的比特币凭证，如果它含糊其辞。</p>
-<p>​		非含糊合同对于使用公共仅附加日志来保护数据完整性的分布式系统尤其有用，例如在云存储和社交网络中。此外，由于比特币的双重支出是一种模棱两可的特殊情况，合同使我们能够设计一种支付协议，允许收款人在几个不同步的销售点接收资金，同时能够在事后惩罚双重支出的支付人。</p>
+<p>​ We show that equivocation, i.e., making conflicting statements to
+others in a distributed protocol, can be monetarily disincentivized by
+the use of crypto-currencies such as Bitcoin. To this end, we design
+completely decentralized non-equivocation contracts, which make it
+possible to penalize an equivocating party by the loss of its money. At
+the core of these contracts, there is a novel cryptographic primitive
+called accountable assertions, which reveals the party’s Bitcoin
+credentials if it equivocates.</p>
+<p>​ Non-equivocation contracts are particularly useful for distributed
+systems that employ public append-only logs to protect data integrity,
+e.g., in cloud storage and social networks. Moreover, as double-spending
+in Bitcoin is a special case of equivocation, the contracts enable us to
+design a payment protocol that allows a payee to receive funds at
+several unsynchronized points of sale, while being able to penalize a
+double-spending payer after the fact.</p>
+<p>​
+我们表明，在分布式协议中，模棱两可，即与其他人作出相互冲突的声明，可以通过使用比特币等加密货币从金钱上抑制。为此，我们设计了完全分散的非模棱两可的合同，使模棱两可的一方可能因损失金钱而受到惩罚。在这些合同的核心，有一个新的密码原语称为责任断言，它揭示了该方的比特币凭证，如果它含糊其辞。</p>
+<p>​
+非含糊合同对于使用公共仅附加日志来保护数据完整性的分布式系统尤其有用，例如在云存储和社交网络中。此外，由于比特币的双重支出是一种模棱两可的特殊情况，合同使我们能够设计一种支付协议，允许收款人在几个不同步的销售点接收资金，同时能够在事后惩罚双重支出的支付人。</p>
 <p><strong>BibTex</strong></p>
 <figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs dust"><span class="language-xml">@inproceedings</span><span class="hljs-template-variable">&#123;RuffingKS15,</span><br><span class="hljs-template-variable">  author    = &#123;Tim Ruffing and</span><br><span class="hljs-template-variable">               Aniket Kate and</span><br><span class="hljs-template-variable">               Dominique Schr&#123;\&quot;&#123;o&#125;</span><span class="language-xml">&#125;der&#125;,</span><br><span class="language-xml">  title     = </span><span class="hljs-template-variable">&#123;Liar, Liar, Coins on Fire!: Penalizing Equivocation By Loss of Bitcoins&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  booktitle = </span><span class="hljs-template-variable">&#123;Proceedings of the 22nd &#123;ACM&#125;</span><span class="language-xml"> </span><span class="hljs-template-variable">&#123;SIGSAC&#125;</span><span class="language-xml"> Conference on Computer and</span><br><span class="language-xml">               Communications Security, Denver, CO, USA, October 12-16, 2015&#125;,</span><br><span class="language-xml">  pages     = </span><span class="hljs-template-variable">&#123;219--230&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  year      = </span><span class="hljs-template-variable">&#123;2015&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  crossref  = </span><span class="hljs-template-variable">&#123;DBLP:conf/ccs/2015&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  url       = </span><span class="hljs-template-variable">&#123;https://doi.org/10.1145/2810103.2813686&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  doi       = </span><span class="hljs-template-variable">&#123;10.1145/2810103.2813686&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  timestamp = </span><span class="hljs-template-variable">&#123;Tue, 06 Nov 2018 11:07:29 +0100&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  biburl    = </span><span class="hljs-template-variable">&#123;https://dblp.org/rec/bib/conf/ccs/RuffingKS15&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  bibsource = </span><span class="hljs-template-variable">&#123;dblp computer science bibliography, https://dblp.org&#125;</span><span class="language-xml"></span><br><span class="language-xml">&#125;</span><br></code></pre></td></tr></table></figure>
-
-<br />
-
-<p><font size="5"><strong>15CCS_Nonoutsourceable Scratch-Off Puzzles to Discourage Bitcoin Mining Coalitions</strong></font><span id="coalitions"></span></p>
+<p><br /></p>
+<p><font size="5"><strong>15CCS_Nonoutsourceable Scratch-Off Puzzles to
+Discourage Bitcoin Mining Coalitions</strong></font><span
+id="coalitions"></span></p>
 <p>不可外包的刮刮谜题以阻止比特币矿业联盟</p>
-<p>​	An implicit goal of Bitcoin’s reward structure is to diffuse network influence over a diverse, decentralized population of individual participants. Indeed, Bitcoin’s security claims rely on no single entity wielding a sufficiently large portion of the network’s overall computational power. Unfortunately, rather than participating independently, most Bitcoin miners join coalitions called mining pools in which a central pool administrator largely directs the pool’s activity, leading to a consolidation of power. Recently, the largest mining pool has accounted for more than half of network’s total mining capacity. Relatedly, “hosted mining” service providers offer their clients the benefit of economiesof- scale, tempting them away from independent participation. We argue that the prevalence of mining coalitions is due to a limitation of the Bitcoin proof-of-work puzzle – specifically, that it affords an effective mechanism for enforcing cooperation in a coalition. We present several definitions and constructions for “nonoutsourceable” puzzles that thwart such enforcement mechanisms, thereby deterring coalitions. We also provide an implementation and benchmark results for our schemes to show they are practical. </p>
-<p>​		比特币奖励结构的一个隐含目标是将网络影响分散到不同的、分散的个人参与者群体中。事实上，比特币的安全声明并不依赖于任何一个实体使用网络整体计算能力的足够大的一部分。不幸的是，大多数比特币矿商没有独立参与，而是加入了一个称为“采矿池”的联盟，在这个联盟中，中央池管理员主要指导池的活动，从而导致权力的巩固。最近，最大的采矿池已经占到网络总采矿能力的一半以上。与此相关的是，“托管采矿”服务提供商为客户提供规模经济效益，吸引他们远离独立参与。我们认为，采矿联盟的盛行是由于比特币工作证明难题的局限性——特别是，它提供了一个有效的机制来加强联盟中的合作。我们对“不可外包”难题提出了几个定义和解释，这些难题阻碍了此类执行机制，从而阻碍了联盟。我们还为我们的方案提供了一个实现和基准结果，以证明它们是可行的。</p>
+<p>​ An implicit goal of Bitcoin’s reward structure is to diffuse network
+influence over a diverse, decentralized population of individual
+participants. Indeed, Bitcoin’s security claims rely on no single entity
+wielding a sufficiently large portion of the network’s overall
+computational power. Unfortunately, rather than participating
+independently, most Bitcoin miners join coalitions called mining pools
+in which a central pool administrator largely directs the pool’s
+activity, leading to a consolidation of power. Recently, the largest
+mining pool has accounted for more than half of network’s total mining
+capacity. Relatedly, “hosted mining” service providers offer their
+clients the benefit of economiesof- scale, tempting them away from
+independent participation. We argue that the prevalence of mining
+coalitions is due to a limitation of the Bitcoin proof-of-work puzzle –
+specifically, that it affords an effective mechanism for enforcing
+cooperation in a coalition. We present several definitions and
+constructions for “nonoutsourceable” puzzles that thwart such
+enforcement mechanisms, thereby deterring coalitions. We also provide an
+implementation and benchmark results for our schemes to show they are
+practical.</p>
+<p>​
+比特币奖励结构的一个隐含目标是将网络影响分散到不同的、分散的个人参与者群体中。事实上，比特币的安全声明并不依赖于任何一个实体使用网络整体计算能力的足够大的一部分。不幸的是，大多数比特币矿商没有独立参与，而是加入了一个称为“采矿池”的联盟，在这个联盟中，中央池管理员主要指导池的活动，从而导致权力的巩固。最近，最大的采矿池已经占到网络总采矿能力的一半以上。与此相关的是，“托管采矿”服务提供商为客户提供规模经济效益，吸引他们远离独立参与。我们认为，采矿联盟的盛行是由于比特币工作证明难题的局限性——特别是，它提供了一个有效的机制来加强联盟中的合作。我们对“不可外包”难题提出了几个定义和解释，这些难题阻碍了此类执行机制，从而阻碍了联盟。我们还为我们的方案提供了一个实现和基准结果，以证明它们是可行的。</p>
 <p><strong>BibTex</strong></p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs awk">@inproceedings&#123;MillerKKS15,<br>  author    = &#123;Andrew Miller and<br>               Ahmed E. Kosba and<br>               Jonathan Katz and<br>               Elaine Shi&#125;,<br>  title     = &#123;Nonoutsourceable Scratch-Off Puzzles to Discourage Bitcoin Mining<br>               Coalitions&#125;,<br>  booktitle = &#123;Proceedings of the <span class="hljs-number">22</span>nd &#123;ACM&#125; &#123;SIGSAC&#125; Conference on Computer and<br>               Communications Security, Denver, CO, USA, October <span class="hljs-number">12</span>-<span class="hljs-number">16</span>, <span class="hljs-number">2015</span>&#125;,<br>  pages     = &#123;<span class="hljs-number">680</span>--<span class="hljs-number">691</span>&#125;,<br>  year      = &#123;<span class="hljs-number">2015</span>&#125;,<br>  crossref  = &#123;DBLP:conf<span class="hljs-regexp">/ccs/</span><span class="hljs-number">2015</span>&#125;,<br>  url       = &#123;https:<span class="hljs-regexp">//</span>doi.org<span class="hljs-regexp">/10.1145/</span><span class="hljs-number">2810103.2813621</span>&#125;,<br>  doi       = &#123;<span class="hljs-number">10.1145</span>/<span class="hljs-number">2810103.2813621</span>&#125;,<br>  timestamp = &#123;Mon, <span class="hljs-number">08</span> Jul <span class="hljs-number">2019</span> <span class="hljs-number">08</span>:<span class="hljs-number">49</span>:<span class="hljs-number">32</span> +<span class="hljs-number">0200</span>&#125;,<br>  biburl    = &#123;https:<span class="hljs-regexp">//</span>dblp.org<span class="hljs-regexp">/rec/</span>bib<span class="hljs-regexp">/conf/</span>ccs/MillerKKS15&#125;,<br>  bibsource = &#123;dblp computer science bibliography, https:<span class="hljs-regexp">//</span>dblp.org&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<br />
-
-<p><font size="5"><strong>19S&amp;P_Bitcoin vs. Bitcoin Cash: Coexistence or Downfall of Bitcoin Cash</strong></font><span id="coexistence"></span></p>
+<p><br /></p>
+<p><font size="5"><strong>19S&amp;P_Bitcoin vs. Bitcoin Cash:
+Coexistence or Downfall of Bitcoin Cash</strong></font><span
+id="coexistence"></span></p>
 <p>BTC vs. BCH：BCH的共存还是衰落</p>
-<p>​	Bitcoin has become the most popular cryptocur- rency based on a peer-to-peer network. In Aug. 2017, Bitcoin was split into the original Bitcoin (BTC) and Bitcoin Cash (BCH). Since then, miners have had a choice between BTC and BCH mining because they have compatible proof-of-work algorithms. Therefore, they can freely choose which coin to mine for higher profit, where the profitability depends on both the coin price and mining difficulty. Some miners can immediately switch the coin to mine only when mining difficulty changes because the difficulty changes are more predictable than that for the coin price, and we call this behavior fickle mining.</p>
-<p>​	In this paper, we study the effects of fickle mining by modeling a game between two coins. To do this, we consider both fickle miners and some factions (e.g., BITMAIN for BCH mining) that stick to mining one coin to maintain that chain. In this model, we show that fickle mining leads to a Nash equilibrium in which only a faction sticking to its coin mining remains as a loyal miner to the less valued coin (e.g., BCH), where loyal miners refer to those who conduct mining even after coin mining difficulty increases. This situation would cause severe centralization, weakening the security of the coin system.</p>
-<p>​	To determine which equilibrium the competing coin systems (e.g., BTC vs. BCH) are moving toward, we traced the historical changes of mining power for BTC and BCH and found that BCH often lacked loyal miners until Nov. 13, 2017, when the difficulty adjustment algorithm of BCH mining was changed. However, the change in difficulty adjustment algorithm of BCH mining led to a state close to the stable coexistence of BTC and BCH. We also demonstrate that the lack of BCH loyal miners may still be reached when a fraction of miners automatically and repeatedly switches to the most profitable coin to mine (i.e., automatic mining). According to our analysis, as of Dec. 2018, loyal miners to BCH would leave if more than about 5% of the total mining capacity for BTC and BCH has engaged in the automatic mining. In addition, we analyze the recent “hash war” between Bitcoin ABC and SV, which confirms our theoretical analysis. Finally, we note that our results can be applied to any competing cryptocurrency systems in which the same hardware (e.g., ASICs or GPUs) can be used for mining. Therefore, our study brings new and important angles in competitive coin markets: a coin can intentionally weaken the security and decentralization level of the other rival coin when mining hardware is shared between them, allowing for automatic mining.</p>
-<p>​		比特币已经成为最流行的基于对等网络的加密技术。2017年8月，比特币分为原始比特币（BTC）和比特币现金（BCH）。从那以后，矿工们在btc和bch采矿之间有了选择，因为他们有兼容的工作证明算法。因此，他们可以自由选择开采哪种硬币以获得更高的利润，而利润率取决于硬币价格和开采难度。有些矿工只有在开采难度发生变化时才能立即将硬币换成矿币，因为难度的变化比硬币价格的变化更容易预测，我们称这种行为为变化无常的开采。		</p>
-<p>​		本文通过建立两个硬币之间的博弈模型，研究了易变开采的效果。为了做到这一点，我们考虑了易变的矿工和一些派别（例如，BCH矿业的Bitmain）坚持开采一枚硬币来维持这条链。在这个模型中，我们发现变化无常的开采导致了纳什均衡，在纳什均衡中，只有一个坚持其硬币开采的派别仍然是价值较低的硬币（如bch）的忠实矿工，忠诚矿工指的是那些即使在硬币开采难度增加后仍进行开采的人。这种情况将导致严重的集权，削弱硬币系统的安全性</p>
-<p>​		为了确定竞争硬币系统（如BTC与BCH）走向哪种均衡，我们追踪了BTC与BCH采矿能力的历史变化，发现BCH在2017年11月13日BCH采矿难度调整算法改变之前，往往缺乏忠诚的矿工。然而，BCH挖掘中难度调整算法的改变导致了状态接近BTC和BCH的稳定共存。我们还证明，当一小部分矿工自动、反复地转换到利润最高的硬币进行开采（即自动开采）时，仍然可能会出现BCH忠诚矿工的短缺。根据我们的分析，截至2018年12月，如果BTC和BCH的总开采能力的5%以上从事自动开采，那么BCH的忠实矿工将离开。此外，我们分析了比特币ABC和SV之间最近的“散列战争”，这证实了我们的理论分析。最后，我们注意到，我们的结果可应用于任何竞争的加密货币系统，其中相同的硬件（如asic或gpu）可用于挖掘。因此，我们的研究为竞争性硬币市场带来了新的重要视角：当一枚硬币与另一枚硬币共享开采硬件时，它会有意削弱另一枚硬币的安全性和分散性水平，从而允许自动开采。</p>
+<p>​ Bitcoin has become the most popular cryptocur- rency based on a
+peer-to-peer network. In Aug. 2017, Bitcoin was split into the original
+Bitcoin (BTC) and Bitcoin Cash (BCH). Since then, miners have had a
+choice between BTC and BCH mining because they have compatible
+proof-of-work algorithms. Therefore, they can freely choose which coin
+to mine for higher profit, where the profitability depends on both the
+coin price and mining difficulty. Some miners can immediately switch the
+coin to mine only when mining difficulty changes because the difficulty
+changes are more predictable than that for the coin price, and we call
+this behavior fickle mining.</p>
+<p>​ In this paper, we study the effects of fickle mining by modeling a
+game between two coins. To do this, we consider both fickle miners and
+some factions (e.g., BITMAIN for BCH mining) that stick to mining one
+coin to maintain that chain. In this model, we show that fickle mining
+leads to a Nash equilibrium in which only a faction sticking to its coin
+mining remains as a loyal miner to the less valued coin (e.g., BCH),
+where loyal miners refer to those who conduct mining even after coin
+mining difficulty increases. This situation would cause severe
+centralization, weakening the security of the coin system.</p>
+<p>​ To determine which equilibrium the competing coin systems (e.g., BTC
+vs. BCH) are moving toward, we traced the historical changes of mining
+power for BTC and BCH and found that BCH often lacked loyal miners until
+Nov. 13, 2017, when the difficulty adjustment algorithm of BCH mining
+was changed. However, the change in difficulty adjustment algorithm of
+BCH mining led to a state close to the stable coexistence of BTC and
+BCH. We also demonstrate that the lack of BCH loyal miners may still be
+reached when a fraction of miners automatically and repeatedly switches
+to the most profitable coin to mine (i.e., automatic mining). According
+to our analysis, as of Dec. 2018, loyal miners to BCH would leave if
+more than about 5% of the total mining capacity for BTC and BCH has
+engaged in the automatic mining. In addition, we analyze the recent
+“hash war” between Bitcoin ABC and SV, which confirms our theoretical
+analysis. Finally, we note that our results can be applied to any
+competing cryptocurrency systems in which the same hardware (e.g., ASICs
+or GPUs) can be used for mining. Therefore, our study brings new and
+important angles in competitive coin markets: a coin can intentionally
+weaken the security and decentralization level of the other rival coin
+when mining hardware is shared between them, allowing for automatic
+mining.</p>
+<p>​
+比特币已经成为最流行的基于对等网络的加密技术。2017年8月，比特币分为原始比特币（BTC）和比特币现金（BCH）。从那以后，矿工们在btc和bch采矿之间有了选择，因为他们有兼容的工作证明算法。因此，他们可以自由选择开采哪种硬币以获得更高的利润，而利润率取决于硬币价格和开采难度。有些矿工只有在开采难度发生变化时才能立即将硬币换成矿币，因为难度的变化比硬币价格的变化更容易预测，我们称这种行为为变化无常的开采。</p>
+<p>​
+本文通过建立两个硬币之间的博弈模型，研究了易变开采的效果。为了做到这一点，我们考虑了易变的矿工和一些派别（例如，BCH矿业的Bitmain）坚持开采一枚硬币来维持这条链。在这个模型中，我们发现变化无常的开采导致了纳什均衡，在纳什均衡中，只有一个坚持其硬币开采的派别仍然是价值较低的硬币（如bch）的忠实矿工，忠诚矿工指的是那些即使在硬币开采难度增加后仍进行开采的人。这种情况将导致严重的集权，削弱硬币系统的安全性</p>
+<p>​
+为了确定竞争硬币系统（如BTC与BCH）走向哪种均衡，我们追踪了BTC与BCH采矿能力的历史变化，发现BCH在2017年11月13日BCH采矿难度调整算法改变之前，往往缺乏忠诚的矿工。然而，BCH挖掘中难度调整算法的改变导致了状态接近BTC和BCH的稳定共存。我们还证明，当一小部分矿工自动、反复地转换到利润最高的硬币进行开采（即自动开采）时，仍然可能会出现BCH忠诚矿工的短缺。根据我们的分析，截至2018年12月，如果BTC和BCH的总开采能力的5%以上从事自动开采，那么BCH的忠实矿工将离开。此外，我们分析了比特币ABC和SV之间最近的“散列战争”，这证实了我们的理论分析。最后，我们注意到，我们的结果可应用于任何竞争的加密货币系统，其中相同的硬件（如asic或gpu）可用于挖掘。因此，我们的研究为竞争性硬币市场带来了新的重要视角：当一枚硬币与另一枚硬币共享开采硬件时，它会有意削弱另一枚硬币的安全性和分散性水平，从而允许自动开采。</p>
 <p><strong>BibTex</strong></p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs awk">@inproceedings&#123;KwonKSK19,<br>  author    = &#123;Yujin Kwon and<br>               Hyoungshick Kim and<br>               Jinwoo Shin and<br>               Yongdae Kim&#125;,<br>  title     = &#123;Bitcoin vs. Bitcoin Cash: Coexistence or Downfall of Bitcoin Cash?&#125;,<br>  booktitle = &#123;<span class="hljs-number">2019</span> &#123;IEEE&#125; Symposium on Security and Privacy, &#123;SP&#125; <span class="hljs-number">2019</span>, San Francisco,<br>               CA, USA, May <span class="hljs-number">19</span>-<span class="hljs-number">23</span>, <span class="hljs-number">2019</span>&#125;,<br>  pages     = &#123;<span class="hljs-number">935</span>--<span class="hljs-number">951</span>&#125;,<br>  year      = &#123;<span class="hljs-number">2019</span>&#125;,<br>  crossref  = &#123;DBLP:conf<span class="hljs-regexp">/sp/</span><span class="hljs-number">2019</span>&#125;,<br>  url       = &#123;https:<span class="hljs-regexp">//</span>doi.org<span class="hljs-regexp">/10.1109/</span>SP.<span class="hljs-number">2019.00075</span>&#125;,<br>  doi       = &#123;<span class="hljs-number">10.1109</span>/SP.<span class="hljs-number">2019.00075</span>&#125;,<br>  timestamp = &#123;Wed, <span class="hljs-number">16</span> Oct <span class="hljs-number">2019</span> <span class="hljs-number">14</span>:<span class="hljs-number">14</span>:<span class="hljs-number">51</span> +<span class="hljs-number">0200</span>&#125;,<br>  biburl    = &#123;https:<span class="hljs-regexp">//</span>dblp.org<span class="hljs-regexp">/rec/</span>bib<span class="hljs-regexp">/conf/</span>sp/KwonKSK19&#125;,<br>  bibsource = &#123;dblp computer science bibliography, https:<span class="hljs-regexp">//</span>dblp.org&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<br />
-
-<p><font size="5"><strong>15S&amp;P_The Miner’s Dilemma</strong></font><span id="dilemma"></span></p>
+<p><br /></p>
+<p><font size="5"><strong>15S&amp;P_The Miner's
+Dilemma</strong></font><span id="dilemma"></span></p>
 <p>矿工困境</p>
-<p>​	An open distributed system can be secured by requiring participants to present proof of work and rewarding them for participation. The Bitcoin digital currency introduced this mechanism, which is adopted by almost all contemporary digital currencies and related services. A natural process leads participants of such systems to form pools, where members aggregate their power and share the rewards. Experience with Bitcoin shows that the largest pools are often open, allowing anyone to join. It has long been known that a member can sabotage an open pool by seemingly joining it but never sharing its proofs of work. The pool shares its revenue with the attacker, and so each of its participants earns less. We define and analyze a game where pools use some of their participants to infiltrate other pools and perform such an attack. With any number of pools, no-pool-attacks is not a Nash equilibrium. We study the special cases where either two pools or any number of identical pools play the game and the rest of the participants are uninvolved. In both of these cases there exists an equilibrium that constitutes a tragedy of the commons where the participating pools attack one another and earn less than they would have if none had attacked. For two pools, the decision whether or not to attack is the miner’s dilemma, an instance of the iterative prisoner’s dilemma. The game is played daily by the active Bitcoin pools, which apparently choose not to attack. If this balance breaks, the revenue of open pools might diminish, making them unattractive to participants.</p>
-<p>​	An opendistributed system can be secured by requiring participants to present proof ofwork and rewarding them for participation. The Bitcoin digital currencyintroduced this mechanism, which is adopted by almost all contemporary digitalcurrencies and related services.</p>
-<p>​	A naturalprocess leads participants of such systems to form pools, where membersaggregate their power and share the rewards. Experience with Bitcoin shows thatthe largest pools are often open, allowing anyone to join. It has long beenknown that a member can sabotage an open pool by seemingly joining it but neversharing its proofs of work. The pool shares its revenue with the attacker, andso each of its participants earns less.</p>
-<p>​	We define andanalyze a game where pools use some of their participants to infiltrate otherpools and perform such an attack. With any number of pools, no-pool-attacks isnot a Nash equilibrium. We study the special cases where either two pools orany number of identical pools play the game and the rest of the participantsare uninvolved. In both of these cases there exists an equilibrium thatconstitutes a tragedy of the commons where the participating pools attack oneanother and earn less than they would have if none had attacked.</p>
-<p>​	For two pools,the decision whether or not to attack is the miner’s dilemma, an instanceof the iterative prisoner’s dilemma. The game is played daily by the activeBitcoin pools, which apparently choose not to attack. If this balance breaks,the revenue of open pools might diminish, making them unattractive toparticipants.</p>
-<p>​		一个开放的分布式系统可以通过要求参与者出示工作证明并奖励他们的参与来得到保障。比特币数字货币引入了这种机制，几乎所有当代数字货币和相关服务都采用这种机制。一个自然的过程引导这些系统的参与者形成一个池，在那里成员聚集他们的力量并分享奖励。比特币的经验表明，最大的矿池往往是开放的，允许任何人加入。长期以来，人们都知道，一个成员可以通过加入一个开放池来破坏它，但从不分享它的工作证明。该池与攻击者共享其收入，因此每个参与者的收入都较低。我们定义并分析一个游戏，在这个博弈中，池使用一些参与者渗透到其他池中并执行这样的攻击。对于任意数量的池，没有池攻击不是纳什均衡。我们研究两个矿池或任何数量相同的矿池池玩游戏的特殊情况，其余的参与者不受干扰。在这两种情况下，都存在着一种平衡，这构成了一场公地悲剧，即参与池之间相互攻击，收入低于如果没有人攻击的话所能获得的收入。对于两个矿池，决定是否攻击是矿工困境，一个反复囚徒困境的例子。该游戏每天由活跃的比特币池进行，显然这些池选择了不攻击。如果这种平衡打破，开放池的收入可能会减少，使其对参与者没有吸引力。</p>
-<p>​		开放式分布式系统可以通过要求参与者出示工作证明并奖励他们的参与来获得安全保障。比特币数字货币引入了这种机制，几乎所有现代数字货币和相关服务都采用这种机制。</p>
-<p>​		一个自然的过程会引导这些系统的参与者形成一个池，在那里，成员们可以分享他们的权力和奖励。比特币的经验表明，最大的矿池往往是开放的，允许任何人加入。长期以来人们都知道，一个成员可以通过加入一个开放的矿池来破坏它，但却从不分享它的工作证明。该池与攻击者共享其收入，因此每个参与者的收入都较低。</p>
-<p>​		我们定义并分析一个博弈，在这个博弈中，矿池使用他们的一些参与者渗透到其他游泳池并执行这样的攻击。对于任意数量的池，没有池攻击不是纳什均衡。我们研究两个游泳池或任意多个相同的游泳池玩游戏的特殊情况，其余的参与者则不参与其中。在这两种情况下，都存在着一种平衡，即公共场所的悲剧，参与的泳池互相攻击，赚的比没有人攻击的时候少。对于两个池，决定是否攻击是矿工困境，一个反复囚徒困境的例子。这个游戏每天都由activebitcoin池进行，显然他们选择不攻击。如果这种平衡打破，开放式游泳池的收入可能会减少，使其对参与者没有吸引力。</p>
+<p>​ An open distributed system can be secured by requiring participants
+to present proof of work and rewarding them for participation. The
+Bitcoin digital currency introduced this mechanism, which is adopted by
+almost all contemporary digital currencies and related services. A
+natural process leads participants of such systems to form pools, where
+members aggregate their power and share the rewards. Experience with
+Bitcoin shows that the largest pools are often open, allowing anyone to
+join. It has long been known that a member can sabotage an open pool by
+seemingly joining it but never sharing its proofs of work. The pool
+shares its revenue with the attacker, and so each of its participants
+earns less. We define and analyze a game where pools use some of their
+participants to infiltrate other pools and perform such an attack. With
+any number of pools, no-pool-attacks is not a Nash equilibrium. We study
+the special cases where either two pools or any number of identical
+pools play the game and the rest of the participants are uninvolved. In
+both of these cases there exists an equilibrium that constitutes a
+tragedy of the commons where the participating pools attack one another
+and earn less than they would have if none had attacked. For two pools,
+the decision whether or not to attack is the miner’s dilemma, an
+instance of the iterative prisoner’s dilemma. The game is played daily
+by the active Bitcoin pools, which apparently choose not to attack. If
+this balance breaks, the revenue of open pools might diminish, making
+them unattractive to participants.</p>
+<p>​ An opendistributed system can be secured by requiring participants
+to present proof ofwork and rewarding them for participation. The
+Bitcoin digital currencyintroduced this mechanism, which is adopted by
+almost all contemporary digitalcurrencies and related services.</p>
+<p>​ A naturalprocess leads participants of such systems to form pools,
+where membersaggregate their power and share the rewards. Experience
+with Bitcoin shows thatthe largest pools are often open, allowing anyone
+to join. It has long beenknown that a member can sabotage an open pool
+by seemingly joining it but neversharing its proofs of work. The pool
+shares its revenue with the attacker, andso each of its participants
+earns less.</p>
+<p>​ We define andanalyze a game where pools use some of their
+participants to infiltrate otherpools and perform such an attack. With
+any number of pools, no-pool-attacks isnot a Nash equilibrium. We study
+the special cases where either two pools orany number of identical pools
+play the game and the rest of the participantsare uninvolved. In both of
+these cases there exists an equilibrium thatconstitutes a tragedy of the
+commons where the participating pools attack oneanother and earn less
+than they would have if none had attacked.</p>
+<p>​ For two pools,the decision whether or not to attack is the miner’s
+dilemma, an instanceof the iterative prisoner’s dilemma. The game is
+played daily by the activeBitcoin pools, which apparently choose not to
+attack. If this balance breaks,the revenue of open pools might diminish,
+making them unattractive toparticipants.</p>
+<p>​
+一个开放的分布式系统可以通过要求参与者出示工作证明并奖励他们的参与来得到保障。比特币数字货币引入了这种机制，几乎所有当代数字货币和相关服务都采用这种机制。一个自然的过程引导这些系统的参与者形成一个池，在那里成员聚集他们的力量并分享奖励。比特币的经验表明，最大的矿池往往是开放的，允许任何人加入。长期以来，人们都知道，一个成员可以通过加入一个开放池来破坏它，但从不分享它的工作证明。该池与攻击者共享其收入，因此每个参与者的收入都较低。我们定义并分析一个游戏，在这个博弈中，池使用一些参与者渗透到其他池中并执行这样的攻击。对于任意数量的池，没有池攻击不是纳什均衡。我们研究两个矿池或任何数量相同的矿池池玩游戏的特殊情况，其余的参与者不受干扰。在这两种情况下，都存在着一种平衡，这构成了一场公地悲剧，即参与池之间相互攻击，收入低于如果没有人攻击的话所能获得的收入。对于两个矿池，决定是否攻击是矿工困境，一个反复囚徒困境的例子。该游戏每天由活跃的比特币池进行，显然这些池选择了不攻击。如果这种平衡打破，开放池的收入可能会减少，使其对参与者没有吸引力。</p>
+<p>​
+开放式分布式系统可以通过要求参与者出示工作证明并奖励他们的参与来获得安全保障。比特币数字货币引入了这种机制，几乎所有现代数字货币和相关服务都采用这种机制。</p>
+<p>​
+一个自然的过程会引导这些系统的参与者形成一个池，在那里，成员们可以分享他们的权力和奖励。比特币的经验表明，最大的矿池往往是开放的，允许任何人加入。长期以来人们都知道，一个成员可以通过加入一个开放的矿池来破坏它，但却从不分享它的工作证明。该池与攻击者共享其收入，因此每个参与者的收入都较低。</p>
+<p>​
+我们定义并分析一个博弈，在这个博弈中，矿池使用他们的一些参与者渗透到其他游泳池并执行这样的攻击。对于任意数量的池，没有池攻击不是纳什均衡。我们研究两个游泳池或任意多个相同的游泳池玩游戏的特殊情况，其余的参与者则不参与其中。在这两种情况下，都存在着一种平衡，即公共场所的悲剧，参与的泳池互相攻击，赚的比没有人攻击的时候少。对于两个池，决定是否攻击是矿工困境，一个反复囚徒困境的例子。这个游戏每天都由activebitcoin池进行，显然他们选择不攻击。如果这种平衡打破，开放式游泳池的收入可能会减少，使其对参与者没有吸引力。</p>
 <p><strong>BibTex</strong></p>
 <figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs dust"><span class="language-xml">@inproceedings</span><span class="hljs-template-variable">&#123;Eyal15,</span><br><span class="hljs-template-variable">  author    = &#123;Ittay Eyal&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  title     = </span><span class="hljs-template-variable">&#123;The Miner&#x27;s Dilemma&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  booktitle = </span><span class="hljs-template-variable">&#123;2015 &#123;IEEE&#125;</span><span class="language-xml"> Symposium on Security and Privacy, </span><span class="hljs-template-variable">&#123;SP&#125;</span><span class="language-xml"> 2015, San Jose,</span><br><span class="language-xml">               CA, USA, May 17-21, 2015&#125;,</span><br><span class="language-xml">  pages     = </span><span class="hljs-template-variable">&#123;89--103&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  year      = </span><span class="hljs-template-variable">&#123;2015&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  crossref  = </span><span class="hljs-template-variable">&#123;DBLP:conf/sp/2015&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  url       = </span><span class="hljs-template-variable">&#123;https://doi.org/10.1109/SP.2015.13&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  doi       = </span><span class="hljs-template-variable">&#123;10.1109/SP.2015.13&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  timestamp = </span><span class="hljs-template-variable">&#123;Wed, 16 Oct 2019 14:14:51 +0200&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  biburl    = </span><span class="hljs-template-variable">&#123;https://dblp.org/rec/bib/conf/sp/Eyal15&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  bibsource = </span><span class="hljs-template-variable">&#123;dblp computer science bibliography, https://dblp.org&#125;</span><span class="language-xml"></span><br><span class="language-xml">&#125;</span><br></code></pre></td></tr></table></figure>
-
-<br />
-
-<p><font size="5"><strong>15S&amp;P_Bitcoin over Tor isn’t a good idea</strong></font><span id="tor"></span></p>
+<p><br /></p>
+<p><font size="5"><strong>15S&amp;P_Bitcoin over Tor isn't a good
+idea</strong></font><span id="tor"></span></p>
 <p>比特币对Tor来说不是个好主意</p>
-<p>​	Bitcoin is a decentralized P2P digital currency in which coins are generated by a distributed set of miners and transactions are broadcasted via a peer-to-peer network. While Bitcoin provides some level of anonymity (or rather pseudonymity) by encouraging the users to have any number of random-looking Bitcoin addresses, recent research shows that this level of anonymity is rather low. This encourages users to connect to the Bitcoin network through anonymizers like Tor and motivates development of default Tor functionality for popular mobile SPV clients. In this paper we show that combining Tor and Bitcoin creates a new attack vector. A low-resource attacker can gain full control of information flows between all users who chose to use Bitcoin over Tor. In particular the attacker can link together user’s transactions regardless of pseudonyms used, control which Bitcoin blocks and transactions are relayed to user and can delay or discard user’s transactions and blocks. Moreover, we show how an attacker can fingerprint users and then recognize them and learn their IP addresses when they decide to connect to the Bitcoin network directly.</p>
-<p>​		比特币是一种分布式的P2P数字货币，其中硬币由一组分散的矿工产生，交易通过对等网络广播。虽然比特币通过鼓励用户拥有任意数量的随机看起来的比特币地址来提供某种程度的匿名性（或更确切地说是假名），但最近的研究表明，这种匿名性水平相当低。这鼓励用户通过匿名者（如Tor）连接比特币网络，并推动流行移动SPV客户机的默认Tor功能的开发。本文证明了Tor和比特币的结合产生了一种新的攻击向量。低资源攻击者可以完全控制所有选择使用比特币而非Tor的用户之间的信息流。特别是，攻击者可以将用户的交易链接在一起，而不考虑使用的假名，控制将哪些比特币区块和交易中继给用户，并可以延迟或丢弃用户的交易和区块。此外，我们还演示了攻击者如何在决定直接连接比特币网络时，对用户进行指纹识别，然后识别他们并学习他们的IP地址。</p>
+<p>​ Bitcoin is a decentralized P2P digital currency in which coins are
+generated by a distributed set of miners and transactions are
+broadcasted via a peer-to-peer network. While Bitcoin provides some
+level of anonymity (or rather pseudonymity) by encouraging the users to
+have any number of random-looking Bitcoin addresses, recent research
+shows that this level of anonymity is rather low. This encourages users
+to connect to the Bitcoin network through anonymizers like Tor and
+motivates development of default Tor functionality for popular mobile
+SPV clients. In this paper we show that combining Tor and Bitcoin
+creates a new attack vector. A low-resource attacker can gain full
+control of information flows between all users who chose to use Bitcoin
+over Tor. In particular the attacker can link together user’s
+transactions regardless of pseudonyms used, control which Bitcoin blocks
+and transactions are relayed to user and can delay or discard user’s
+transactions and blocks. Moreover, we show how an attacker can
+fingerprint users and then recognize them and learn their IP addresses
+when they decide to connect to the Bitcoin network directly.</p>
+<p>​
+比特币是一种分布式的P2P数字货币，其中硬币由一组分散的矿工产生，交易通过对等网络广播。虽然比特币通过鼓励用户拥有任意数量的随机看起来的比特币地址来提供某种程度的匿名性（或更确切地说是假名），但最近的研究表明，这种匿名性水平相当低。这鼓励用户通过匿名者（如Tor）连接比特币网络，并推动流行移动SPV客户机的默认Tor功能的开发。本文证明了Tor和比特币的结合产生了一种新的攻击向量。低资源攻击者可以完全控制所有选择使用比特币而非Tor的用户之间的信息流。特别是，攻击者可以将用户的交易链接在一起，而不考虑使用的假名，控制将哪些比特币区块和交易中继给用户，并可以延迟或丢弃用户的交易和区块。此外，我们还演示了攻击者如何在决定直接连接比特币网络时，对用户进行指纹识别，然后识别他们并学习他们的IP地址。</p>
 <p><strong>BibTex</strong></p>
 <figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs dust"><span class="language-xml">@inproceedings</span><span class="hljs-template-variable">&#123;BiryukovP15,</span><br><span class="hljs-template-variable">  author    = &#123;Alex Biryukov and</span><br><span class="hljs-template-variable">               Ivan Pustogarov&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  title     = </span><span class="hljs-template-variable">&#123;Bitcoin over Tor isn&#x27;t a Good Idea&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  booktitle = </span><span class="hljs-template-variable">&#123;2015 &#123;IEEE&#125;</span><span class="language-xml"> Symposium on Security and Privacy, </span><span class="hljs-template-variable">&#123;SP&#125;</span><span class="language-xml"> 2015, San Jose,</span><br><span class="language-xml">               CA, USA, May 17-21, 2015&#125;,</span><br><span class="language-xml">  pages     = </span><span class="hljs-template-variable">&#123;122--134&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  year      = </span><span class="hljs-template-variable">&#123;2015&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  crossref  = </span><span class="hljs-template-variable">&#123;DBLP:conf/sp/2015&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  url       = </span><span class="hljs-template-variable">&#123;https://doi.org/10.1109/SP.2015.15&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  doi       = </span><span class="hljs-template-variable">&#123;10.1109/SP.2015.15&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  timestamp = </span><span class="hljs-template-variable">&#123;Wed, 16 Oct 2019 14:14:51 +0200&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  biburl    = </span><span class="hljs-template-variable">&#123;https://dblp.org/rec/bib/conf/sp/BiryukovP15&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  bibsource = </span><span class="hljs-template-variable">&#123;dblp computer science bibliography, https://dblp.org&#125;</span><span class="language-xml"></span><br><span class="language-xml">&#125;</span><br></code></pre></td></tr></table></figure>
-
-<br />
-
-<p><font size="5"><strong>17USENIX_SmartPool: Practical Decentralized Pooled Mining</strong></font><span id="smartpool"></span></p>
+<p><br /></p>
+<p><font size="5"><strong>17USENIX_SmartPool: Practical Decentralized
+Pooled Mining</strong></font><span id="smartpool"></span></p>
 <p>智能池：实用分散式池挖矿</p>
-<p>​	Cryptocurrenciessuch as Bitcoin and Ethereum are operated by a handful of mining pools. Nearly95% of Bitcoin’s and 80% of Ethereum’s mining power resides with less than tenand six mining pools respectively. Although miners benefit from low payoutvariance in pooled mining, centralized mining pools require members to trust thatpool operators will remunerate them fairly. Furthermore, centralized pools posethe risk of transaction censorship from pool operators, and open uppossibilities for collusion between pools for perpetrating severe attacks.</p>
-<p>​	In this work, wepropose SMARTPOOL, a novel protocol design for adecentralized mining pool. Our protocol shows how one can leverage smartcontracts, autonomous blockchainprograms, to decentralize cryptocurrency mining. SMARTPOOL gives transaction selection controlback to miners while yielding lowvariance payouts. SMARTPOOL incurs mining fees lower thancentralized mining pools and is designed to scale to a large number of miners.We implemented and deployed a robust SMARTPOOL implementation on the Ethereum and Ethereum Classicnetworks. To date, our deployed pools have handled a peak hashrate of 30 GHsfrom Ethereum miners, resulting in 105 blocks, costing miners a mere 0:6% of block rewards in transaction fees.</p>
-<p>​		比特币和以太坊等加密货币由少数采矿池操作。比特币近95%和以太坊80%的采矿权分别位于少于Tenand和6个采矿池。尽管矿商从集中开采的低回报差异中获益，但集中开采池要求成员相信集中开采池运营商会公平地给予他们报酬。此外，集中池还存在来自池运营商的交易审查风险，并公开支持池之间串通实施严重攻击。</p>
-<p>​		在这项工作中，wepropose smartpool是一种新的集中式挖掘池协议设计。我们的协议展示了如何利用智能合约、自主区块链程序分散加密货币挖掘。SmartPool为矿工提供事务选择控制，同时产生低方差支出。智能池产生的采矿费用低于集中采矿池，旨在扩大到大量矿工。我们在以太坊和以太坊ClassicNetworks上实施并部署了强大的智能池实施。到目前为止，我们部署的池已经处理了以太坊矿工30 GHS的峰值哈希率，导致105个区块，仅为交易费用中区块奖励的0:6%。</p>
+<p>​ Cryptocurrenciessuch as Bitcoin and Ethereum are operated by a
+handful of mining pools. Nearly95% of Bitcoin’s and 80% of Ethereum’s
+mining power resides with less than tenand six mining pools
+respectively. Although miners benefit from low payoutvariance in pooled
+mining, centralized mining pools require members to trust thatpool
+operators will remunerate them fairly. Furthermore, centralized pools
+posethe risk of transaction censorship from pool operators, and open
+uppossibilities for collusion between pools for perpetrating severe
+attacks.</p>
+<p>​ In this work, wepropose SMARTPOOL, a novel protocol design for
+adecentralized mining pool. Our protocol shows how one can leverage
+smartcontracts, autonomous blockchainprograms, to decentralize
+cryptocurrency mining. SMARTPOOL gives transaction selection controlback
+to miners while yielding lowvariance payouts. SMARTPOOL incurs mining
+fees lower thancentralized mining pools and is designed to scale to a
+large number of miners.We implemented and deployed a robust SMARTPOOL
+implementation on the Ethereum and Ethereum Classicnetworks. To date,
+our deployed pools have handled a peak hashrate of 30 GHsfrom Ethereum
+miners, resulting in 105 blocks, costing miners a mere 0:6% of block
+rewards in transaction fees.</p>
+<p>​
+比特币和以太坊等加密货币由少数采矿池操作。比特币近95%和以太坊80%的采矿权分别位于少于Tenand和6个采矿池。尽管矿商从集中开采的低回报差异中获益，但集中开采池要求成员相信集中开采池运营商会公平地给予他们报酬。此外，集中池还存在来自池运营商的交易审查风险，并公开支持池之间串通实施严重攻击。</p>
+<p>​ 在这项工作中，wepropose
+smartpool是一种新的集中式挖掘池协议设计。我们的协议展示了如何利用智能合约、自主区块链程序分散加密货币挖掘。SmartPool为矿工提供事务选择控制，同时产生低方差支出。智能池产生的采矿费用低于集中采矿池，旨在扩大到大量矿工。我们在以太坊和以太坊ClassicNetworks上实施并部署了强大的智能池实施。到目前为止，我们部署的池已经处理了以太坊矿工30
+GHS的峰值哈希率，导致105个区块，仅为交易费用中区块奖励的0:6%。</p>
 <p><strong>BibTex</strong></p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs awk">@inproceedings&#123;LuuVTS17,<br>  author    = &#123;Loi Luu and<br>               Yaron Velner and<br>               Jason Teutsch and<br>               Prateek Saxena&#125;,<br>  title     = &#123;SmartPool: Practical Decentralized Pooled Mining&#125;,<br>  booktitle = &#123;<span class="hljs-number">26</span>th &#123;USENIX&#125; Security Symposium, &#123;USENIX&#125; Security <span class="hljs-number">2017</span>, Vancouver,<br>               BC, Canada, August <span class="hljs-number">16</span>-<span class="hljs-number">18</span>, <span class="hljs-number">2017</span>.&#125;,<br>  pages     = &#123;<span class="hljs-number">1409</span>--<span class="hljs-number">1426</span>&#125;,<br>  year      = &#123;<span class="hljs-number">2017</span>&#125;,<br>  crossref  = &#123;DBLP:conf<span class="hljs-regexp">/uss/</span><span class="hljs-number">2017</span>&#125;,<br>  url       = &#123;https:<span class="hljs-regexp">//</span>www.usenix.org<span class="hljs-regexp">/conference/u</span>senixsecurity17<span class="hljs-regexp">/technical-sessions/</span>presentation/luu&#125;,<br>  timestamp = &#123;Fri, <span class="hljs-number">01</span> Sep <span class="hljs-number">2017</span> <span class="hljs-number">12</span>:<span class="hljs-number">29</span>:<span class="hljs-number">11</span> +<span class="hljs-number">0200</span>&#125;,<br>  biburl    = &#123;https:<span class="hljs-regexp">//</span>dblp.org<span class="hljs-regexp">/rec/</span>bib<span class="hljs-regexp">/conf/u</span>ss/LuuVTS17&#125;,<br>  bibsource = &#123;dblp computer science bibliography, https:<span class="hljs-regexp">//</span>dblp.org&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-
-
 
             </div>
             <hr>

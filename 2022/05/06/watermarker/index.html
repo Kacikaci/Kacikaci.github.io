@@ -16,12 +16,12 @@
   <meta name="author" content="Phryne Ying">
   <meta name="keywords" content="">
   
-    <meta name="description" content="问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印……找不到简单好用的手机app  pip install opencv-python&#x3D;&#x3D;3.4.9.31   如果不带上版本号，可能会遇到长时间停留在 building wheel for opencv-python的情况，带上版本号并且是旧版本号可以很快安装好   测试是否成功安装opencv-python运行以下程序，">
+    <meta name="description" content="问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印......找不到简单好用的手机app 1. pip install opencv-python&#x3D;&#x3D;3.4.9.31 &gt; 如果不带上版本号，可能会遇到长时间停留在 building wheel for opencv-python的情况，带上版本号并且是旧版本号可以很快安装好 2. 测试是否成功安装opencv-pyt">
 <meta property="og:type" content="article">
 <meta property="og:title" content="给图片加水印的程序|python">
 <meta property="og:url" content="http://yoursite.com/2022/05/06/watermarker/index.html">
 <meta property="og:site_name" content="花花">
-<meta property="og:description" content="问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印……找不到简单好用的手机app  pip install opencv-python&#x3D;&#x3D;3.4.9.31   如果不带上版本号，可能会遇到长时间停留在 building wheel for opencv-python的情况，带上版本号并且是旧版本号可以很快安装好   测试是否成功安装opencv-python运行以下程序，">
+<meta property="og:description" content="问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印......找不到简单好用的手机app 1. pip install opencv-python&#x3D;&#x3D;3.4.9.31 &gt; 如果不带上版本号，可能会遇到长时间停留在 building wheel for opencv-python的情况，带上版本号并且是旧版本号可以很快安装好 2. 测试是否成功安装opencv-pyt">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-05T18:56:11.000Z">
 <meta property="article:modified_time" content="2022-05-10T21:32:52.864Z">
@@ -197,7 +197,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      954 字
+      947 字
     </span>
   
 
@@ -238,29 +238,43 @@
             <h1 style="display: none">给图片加水印的程序|python</h1>
             
             <div class="markdown-body">
-              <p>问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印……找不到简单好用的手机app</p>
-<ol>
-<li><code>pip install opencv-python==3.4.9.31</code>  <blockquote>
-<p>如果不带上版本号，可能会遇到长时间停留在 building wheel for opencv-python的情况，带上版本号并且是旧版本号可以很快安装好</p>
-</blockquote>
+              <p>问题来源：在闲鱼卖东西的时候为了防盗要给照片加水印、实习时身份证照片要打水印......找不到简单好用的手机app
+1. <code>pip install opencv-python==3.4.9.31</code><br />
+&gt; 如果不带上版本号，可能会遇到长时间停留在 building wheel for
+opencv-python的情况，带上版本号并且是旧版本号可以很快安装好 2.
+测试是否成功安装opencv-python<br />
+运行以下程序，若正确输出版本号则成功安装opencv-python <span id="more"></span>
+<figure class="highlight stylus"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><pre><code class="hljs stylus">import cv2<br><span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(cv2.__version__)</span></span><br></code></pre></td></tr></table></figure> 3. <code>pipe3 install Pillow==4.0.0</code><br />
+&gt; 跟上版本号很重要，不然会出错，原因是我的mac
+OS没有升级到最新版本。一开始一直出错，最终找到这个解决方法，<a
+target="_blank" rel="noopener" href="https://blog.51cto.com/u_13567403/3051637">答案来源</a> 4.
+<code>cd /Users/flower/PycharmProjects</code><br />
+<code>git clone https://github.com/2Dou/watermarker.git</code><br />
+watermarker文件夹中font文件夹下的青鸟华光琥珀改为bird，同时marker.py中的青鸟华光琥珀也都改为bird，改成什么名字不重要，只要都改成一样的并且都是英文就行<br />
+5. 把要添加水印的照片放到watermark下的input文件夹内<br />
+<code>cd /Users/flower/PycharmProjects/watermark</code><br />
+<code>python marker.py -f ./input/a.jpg -m yingcuiwen花花</code><br />
+在watermark下的output文件夹内查看添加好水印的图片<br />
+6. 批量处理<br />
+运行<code>python marker.py -f ./input -m yingcuiwen花花</code><br />
+&gt; 一开始出错:cannot identify image file ‘pikachu/.DS_Store’，参考 <a
+target="_blank" rel="noopener" href="https://its304.com/article/weixin_38411989/109311229">此篇博文</a><br />
+<code>cd watermarker</code><br />
+<code>find ./ -name ".DS_Store"</code><br />
+<code>find ./ -name ".DS_Store" -delete</code></p>
+<h3 id="在此过程中学会的其他知识">在此过程中学会的其他知识:</h3>
+<h4 id="安装opencv">安装OpenCV</h4>
+<ol type="1">
+<li><a target="_blank" rel="noopener" href="https://opencv.org/releases/">下载OpenCV</a><br />
 </li>
-<li>测试是否成功安装opencv-python<br>运行以下程序，若正确输出版本号则成功安装opencv-python<span id="more"></span>
-<figure class="highlight stylus"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><pre><code class="hljs stylus">import cv2<br><span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(cv2.__version__)</span></span><br></code></pre></td></tr></table></figure></li>
-<li><code>pipe3 install Pillow==4.0.0</code>  <blockquote>
-<p>跟上版本号很重要，不然会出错，原因是我的mac OS没有升级到最新版本。一开始一直出错，最终找到这个解决方法，<a target="_blank" rel="noopener" href="https://blog.51cto.com/u_13567403/3051637">答案来源</a></p>
-</blockquote>
+<li>安装cmake：<a
+target="_blank" rel="noopener" href="https://blog.csdn.net/fanyun_01/article/details/114237851">教程</a><br />
 </li>
-<li><code>cd /Users/flower/PycharmProjects</code><br><code>git clone https://github.com/2Dou/watermarker.git</code><br>watermarker文件夹中font文件夹下的青鸟华光琥珀改为bird，同时marker.py中的青鸟华光琥珀也都改为bird，改成什么名字不重要，只要都改成一样的并且都是英文就行  </li>
-<li>把要添加水印的照片放到watermark下的input文件夹内<br><code>cd /Users/flower/PycharmProjects/watermark</code><br><code>python marker.py -f ./input/a.jpg -m yingcuiwen花花</code><br>在watermark下的output文件夹内查看添加好水印的图片   </li>
-<li>批量处理<br>运行<code>python marker.py -f ./input -m yingcuiwen花花</code>  <blockquote>
-<p>一开始出错:cannot identify image file ‘pikachu&#x2F;.DS_Store’，参考	<a target="_blank" rel="noopener" href="https://its304.com/article/weixin_38411989/109311229">此篇博文</a><br><code>cd watermarker</code><br><code>find ./ -name &quot;.DS_Store&quot;</code><br><code>find ./ -name &quot;.DS_Store&quot; -delete</code></p>
-</blockquote>
-</li>
-</ol>
-<h3 id="在此过程中学会的其他知识"><a href="#在此过程中学会的其他知识" class="headerlink" title="在此过程中学会的其他知识:"></a>在此过程中学会的其他知识:</h3><h4 id="安装OpenCV"><a href="#安装OpenCV" class="headerlink" title="安装OpenCV"></a>安装OpenCV</h4><ol>
-<li><a target="_blank" rel="noopener" href="https://opencv.org/releases/">下载OpenCV</a>  </li>
-<li>安装cmake：<a target="_blank" rel="noopener" href="https://blog.csdn.net/fanyun_01/article/details/114237851">教程</a>  </li>
-<li><code>cd opencv-4.5</code><br><code>mkdir build</code><br><code>cd build</code><br><code>cmake -G &quot;Unix Makefiles&quot; ..</code><br><code>make</code><br><code>sudo make install</code></li>
+<li><code>cd opencv-4.5</code><br />
+<code>mkdir build</code><br />
+<code>cd build</code> <code>cmake -G "Unix Makefiles" ..</code><br />
+<code>make</code><br />
+<code>sudo make install</code></li>
 </ol>
 
             </div>

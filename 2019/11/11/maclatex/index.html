@@ -16,12 +16,12 @@
   <meta name="author" content="Phryne Ying">
   <meta name="keywords" content="">
   
-    <meta name="description" content="一、MacTex 官方下载 百度网盘  密码:aqhq">
+    <meta name="description" content="一、MacTex 官方下载 百度网盘 密码:aqhq">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac下latex+sublime text 3安装与配置">
 <meta property="og:url" content="http://yoursite.com/2019/11/11/maclatex/index.html">
 <meta property="og:site_name" content="花花">
-<meta property="og:description" content="一、MacTex 官方下载 百度网盘  密码:aqhq">
+<meta property="og:description" content="一、MacTex 官方下载 百度网盘 密码:aqhq">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2019-11-11T06:53:04.000Z">
 <meta property="article:modified_time" content="2022-05-10T21:36:50.490Z">
@@ -240,45 +240,41 @@
             <div class="markdown-body">
               <p><strong>一、MacTex</strong></p>
 <p><a target="_blank" rel="noopener" href="http://tug.org/mactex/">官方下载</a></p>
-<p><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1zbKNP3UhV-ELgZGHR6hzpg">百度网盘</a>  密码:aqhq</p>
+<p><a
+target="_blank" rel="noopener" href="https://pan.baidu.com/s/1zbKNP3UhV-ELgZGHR6hzpg">百度网盘</a>
+密码:aqhq</p>
 <span id="more"></span>
-
-
-
 <p><strong>二、Sublime Text 3</strong></p>
 <p><a target="_blank" rel="noopener" href="http://www.sublimetext.com/3">官方下载</a></p>
-<p><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1318l7rtoI886Hiwk51FnDA">百度网盘</a>  密码:qqtk</p>
-<p><strong>安装package control</strong> </p>
-<ol>
-<li><p>打开Sublime Text 3</p>
-</li>
-<li><p>ctrl+&#96;，打开控制台</p>
-</li>
-<li><p>粘贴如下代码，回车（<a target="_blank" rel="noopener" href="https://packagecontrol.io/installation">代码来源</a>）</p>
-</li>
+<p><a
+target="_blank" rel="noopener" href="https://pan.baidu.com/s/1318l7rtoI886Hiwk51FnDA">百度网盘</a>
+密码:qqtk</p>
+<p><strong>安装package control</strong></p>
+<ol type="1">
+<li><p>打开Sublime Text 3</p></li>
+<li><p>ctrl+`，打开控制台</p></li>
+<li><p>粘贴如下代码，回车（<a
+target="_blank" rel="noopener" href="https://packagecontrol.io/installation">代码来源</a>）</p></li>
 </ol>
 <figure class="highlight python"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> urllib.request,os,hashlib; h = <span class="hljs-string">&#x27;6f4c264a24d933ce70df5dedcf1dcaee&#x27;</span> + <span class="hljs-string">&#x27;ebe013ee18cced0ef93d5f746d80ef60&#x27;</span>; pf = <span class="hljs-string">&#x27;Package Control.sublime-package&#x27;</span>; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( <span class="hljs-string">&#x27;http://packagecontrol.io/&#x27;</span> + pf.replace(<span class="hljs-string">&#x27; &#x27;</span>, <span class="hljs-string">&#x27;%20&#x27;</span>)).read(); dh = hashlib.sha256(by).hexdigest(); <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Error validating download (got %s instead of %s), please try manual install&#x27;</span> % (dh, h)) <span class="hljs-keyword">if</span> dh != h <span class="hljs-keyword">else</span> <span class="hljs-built_in">open</span>(os.path.join( ipp, pf), <span class="hljs-string">&#x27;wb&#x27;</span> ).write(by)<br></code></pre></td></tr></table></figure>
-
-<ol start="4">
+<ol start="4" type="1">
 <li>重启Sublime Text 3</li>
 </ol>
-<p>（关于package control安装启发：安装失败的时候，去找官方手册，比网络教程好用）</p>
+<p>（关于package
+control安装启发：安装失败的时候，去找官方手册，比网络教程好用）</p>
 <p><strong>安装Latextools</strong></p>
-<ol>
-<li><p>ctrl+shift+p，打开管理器</p>
-</li>
-<li><p>输入install，回车</p>
-</li>
-<li><p>输入Latextools</p>
-</li>
+<ol type="1">
+<li><p>ctrl+shift+p，打开管理器</p></li>
+<li><p>输入install，回车</p></li>
+<li><p>输入Latextools</p></li>
 </ol>
 <p><strong>三、编译</strong></p>
-<ol>
-<li><p>编译环境：tools &gt; build system &gt; new build system，复制以下内容，保存。（<a target="_blank" rel="noopener" href="https://www.moehrenzahn.de/How-to-create-a-custom-LaTeX-build-system-for-Sublime-Text/">参考</a>）</p>
-<figure class="highlight nsis"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs nsis">&#123;<br><br><span class="hljs-string">&quot;cmd&quot;</span>: [<span class="hljs-string">&quot;rm -rf \`biber --cache` &amp;&amp; latexmk -pdf -xelatex -silent -output-directory=output -interaction=nonstopmode \<span class="hljs-variable">$file_name</span> | grep -i -E \&quot;</span>warn|!\<span class="hljs-string">&quot; &amp;&amp; open output/<span class="hljs-variable">$file_base_name.pdf</span>&quot;</span>], <br><br><span class="hljs-string">&quot;shell&quot;</span>: <span class="hljs-literal">true</span>, <br><br><span class="hljs-string">&quot;path&quot;</span>: <span class="hljs-string">&quot;<span class="hljs-variable">$PATH</span>:/usr/texbin:/usr/local/bin:/opt/local/bin:/usr/local/:/usr/local/texlive/2014/bin/x86_64-darwin/&quot;</span>, <br><br><span class="hljs-string">&quot;file_regex&quot;</span>: <span class="hljs-string">&quot;^(…*?):([0-9]*):?([0-9]*)&quot;</span>, <br><br><span class="hljs-string">&quot;selector&quot;</span>: <span class="hljs-string">&quot;text.tex.latex&quot;</span> <br><br>&#125;<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>command+b操作两次，进行编译</p>
-</li>
+<ol type="1">
+<li><p>编译环境：tools &gt; build system &gt; new build
+system，复制以下内容，保存。（<a
+target="_blank" rel="noopener" href="https://www.moehrenzahn.de/How-to-create-a-custom-LaTeX-build-system-for-Sublime-Text/">参考</a>）</p>
+<figure class="highlight nsis"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs nsis">&#123;<br><br><span class="hljs-string">&quot;cmd&quot;</span>: [<span class="hljs-string">&quot;rm -rf \`biber --cache` &amp;&amp; latexmk -pdf -xelatex -silent -output-directory=output -interaction=nonstopmode \<span class="hljs-variable">$file_name</span> | grep -i -E \&quot;</span>warn|!\<span class="hljs-string">&quot; &amp;&amp; open output/<span class="hljs-variable">$file_base_name.pdf</span>&quot;</span>], <br><br><span class="hljs-string">&quot;shell&quot;</span>: <span class="hljs-literal">true</span>, <br><br><span class="hljs-string">&quot;path&quot;</span>: <span class="hljs-string">&quot;<span class="hljs-variable">$PATH</span>:/usr/texbin:/usr/local/bin:/opt/local/bin:/usr/local/:/usr/local/texlive/2014/bin/x86_64-darwin/&quot;</span>, <br><br><span class="hljs-string">&quot;file_regex&quot;</span>: <span class="hljs-string">&quot;^(…*?):([0-9]*):?([0-9]*)&quot;</span>, <br><br><span class="hljs-string">&quot;selector&quot;</span>: <span class="hljs-string">&quot;text.tex.latex&quot;</span> <br><br>&#125;<br></code></pre></td></tr></table></figure></li>
+<li><p>command+b操作两次，进行编译</p></li>
 </ol>
 
             </div>

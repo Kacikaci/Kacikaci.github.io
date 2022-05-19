@@ -240,18 +240,17 @@
             <h1 style="display: none">Hexo页面不更新</h1>
             
             <div class="markdown-body">
-              <p>问题：<strong>执行hexo g -d 后，github仓库更新了，但是blog页面没有更新</strong></p>
+              <p>问题：<strong>执行hexo g -d
+后，github仓库更新了，但是blog页面没有更新</strong></p>
 <p>解决方法：</p>
 <span id="more"></span>
-
-<ol>
+<ol type="1">
 <li><code>git remote add origin https://github.com/Kacikaci/Kacikaci.github.io.git</code></li>
 <li><code>git remote -v</code></li>
-<li><code>git remote rm Cuiwen </code></li>
+<li><code>git remote rm Cuiwen</code></li>
 </ol>
 <p>总的来说就是，只留下origin</p>
-<img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g8o4xeoq5aj30qa08o77f.jpg" srcset="/img/loading.gif" lazyload style="zoom: 50%;" />
-
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g8o4xeoq5aj30qa08o77f.jpg" srcset="/img/loading.gif" lazyload style="zoom: 50%;" /></p>
 <p>或者-</p>
 <p>也有可能是因为一篇post的标题太长或者标题中出现了“|”等符号，导致没有办法更新页面。这种时候，标题取简单一点，并且不要出现特别的符号就可以了。</p>
 
