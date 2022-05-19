@@ -1,244 +1,6 @@
-
-
-<!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
-  <link rel="icon" href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Phryne Ying">
-  <meta name="keywords" content="">
-  
-    <meta name="description" content="看发表在哪里的论文：四大安全会议CCS、NDSS、S&amp;P(Oakland)、USENIX 目录 18CCS_The Gap Game 16CCS_On the Instability of Bitcoin Without the Block Reward 15CCS_How to Use Bitcoin to Play Decentralized Poker">
-<meta property="og:type" content="article">
-<meta property="og:title" content="博弈论论文集List(含中文摘要)">
-<meta property="og:url" content="http://yoursite.com/2019/11/11/papersCollection/index.html">
-<meta property="og:site_name" content="花花">
-<meta property="og:description" content="看发表在哪里的论文：四大安全会议CCS、NDSS、S&amp;P(Oakland)、USENIX 目录 18CCS_The Gap Game 16CCS_On the Instability of Bitcoin Without the Block Reward 15CCS_How to Use Bitcoin to Play Decentralized Poker">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2019-11-11T06:45:51.000Z">
-<meta property="article:modified_time" content="2019-11-11T06:45:51.000Z">
-<meta property="article:author" content="Phryne Ying">
-<meta name="twitter:card" content="summary_large_image">
-  
-  
-  <title>博弈论论文集List(含中文摘要) - 花花</title>
-
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
-
-
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
-
-  
-    
-    
-      
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
-    
-  
-
-  
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
-  
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-<!-- 自定义样式保持在最底部 -->
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="花花" type="application/atom+xml">
-</head>
-
-
-<body>
-  <header style="height: 70vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>Celestine</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="iconfont icon-home-fill"></i>
-                首页
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                归档
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                分类
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
-            </a>
-          </li>
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="博弈论论文集List(含中文摘要)">
-              
-            </span>
-
-            
-              <div class="mt-3">
-  
-  
-    <span class="post-meta">
-      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2019-11-11 14:45" pubdate>
-        2019年11月11日 下午
-      </time>
-    </span>
-  
-</div>
-
-<div class="mt-1">
-  
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      24k 字
-    </span>
-  
-
-  
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      
-      
-      200 分钟
-    </span>
-  
-
-  
-  
-</div>
-
-            
-          </div>
-
-          
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    
-      
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="d-none d-lg-block col-lg-2"></div>
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div class="py-5" id="board">
-          <article class="post-content mx-auto">
-            <!-- SEO header -->
-            <h1 style="display: none">博弈论论文集List(含中文摘要)</h1>
-            
-            <div class="markdown-body">
-              <p>看发表在哪里的论文：四大安全会议<strong>CCS</strong>、<strong>NDSS</strong>、<strong>S&amp;P(Oakland)</strong>、<strong>USENIX</strong></p>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternative" href="/atom.xml" title="花花" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>博弈论论文集List(含中文摘要) - 花花</title>
+<link rel="stylesheet" href="/css/main.css">
+<!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--><meta name="generator" content="Hexo 5.4.2"></head><body><header class="head"><h1 class="head-title u-fl"><a href="/">花花</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a href="/" class="head-nav__link">Home</a></li><li class="head-nav__item"><a href="/archives" class="head-nav__link">Archives</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time datetime="2019-11-11T06:45:51.000Z" class="post__time">十一月 11, 2019</time><h1 class="post__title"><a href="/2019/11/11/papersCollection/">博弈论论文集List(含中文摘要)</a></h1></header><div class="post__main echo"><p>看发表在哪里的论文：四大安全会议<strong>CCS</strong>、<strong>NDSS</strong>、<strong>S&amp;P(Oakland)</strong>、<strong>USENIX</strong></p>
 <p><strong><font size="5">目录</font></strong></p>
 <p><a href="#gap">18CCS_The Gap Game</a></p>
 <p><a href="#instability">16CCS_On the Instability of Bitcoin Without
@@ -291,7 +53,7 @@ providing guidelines for future cryptocurrency design.</p>
 <p>​
 我们的分析证实了Carlsten等人的假设；事实上，我们表明，在交易费成为唯一的激励因素之前，间隙就已经形成，并分析了其对安全性的影响。或许令人惊讶的是，我们发现不同的矿工选择不同的间隙大小来优化他们的收益，即使他们的运营成本是相同的。令人担忧的是，我们看到，这一制度激励了大型矿业联盟，减少了制度分散化。我们描述了避免激励偏差的必要条件，为未来的加密货币设计提供了指导。</p>
 <p><strong>BibTex</strong></p>
-<figure class="highlight awk"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></div></td><td class="code"><pre><code class="hljs awk">@inproceedings&#123;TsabaryE18,<br>  author    = &#123;Itay Tsabary and<br>               Ittay Eyal&#125;,<br>  title     = &#123;The Gap Game&#125;,<br>  booktitle = &#123;Proceedings of the <span class="hljs-number">2018</span> &#123;ACM&#125; &#123;SIGSAC&#125; Conference on Computer and<br>               Communications Security, &#123;CCS&#125; <span class="hljs-number">2018</span>, Toronto, ON, Canada, October<br>               <span class="hljs-number">15</span>-<span class="hljs-number">19</span>, <span class="hljs-number">2018</span>&#125;,<br>  pages     = &#123;<span class="hljs-number">713</span>--<span class="hljs-number">728</span>&#125;,<br>  year      = &#123;<span class="hljs-number">2018</span>&#125;,<br>  crossref  = &#123;DBLP:conf<span class="hljs-regexp">/ccs/</span><span class="hljs-number">2018</span>&#125;,<br>  url       = &#123;https:<span class="hljs-regexp">//</span>doi.org<span class="hljs-regexp">/10.1145/</span><span class="hljs-number">3243734.3243737</span>&#125;,<br>  doi       = &#123;<span class="hljs-number">10.1145</span>/<span class="hljs-number">3243734.3243737</span>&#125;,<br>  timestamp = &#123;Wed, <span class="hljs-number">21</span> Nov <span class="hljs-number">2018</span> <span class="hljs-number">12</span>:<span class="hljs-number">44</span>:<span class="hljs-number">06</span> +<span class="hljs-number">0100</span>&#125;,<br>  biburl    = &#123;https:<span class="hljs-regexp">//</span>dblp.org<span class="hljs-regexp">/rec/</span>bib<span class="hljs-regexp">/conf/</span>ccs/TsabaryE18&#125;,<br>  bibsource = &#123;dblp computer science bibliography, https:<span class="hljs-regexp">//</span>dblp.org&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@inproceedings&#123;TsabaryE18,</span><br><span class="line">  author    = &#123;Itay Tsabary and</span><br><span class="line">               Ittay Eyal&#125;,</span><br><span class="line">  title     = &#123;The Gap Game&#125;,</span><br><span class="line">  booktitle = &#123;Proceedings of the 2018 &#123;ACM&#125; &#123;SIGSAC&#125; Conference on Computer and</span><br><span class="line">               Communications Security, &#123;CCS&#125; 2018, Toronto, ON, Canada, October</span><br><span class="line">               15-19, 2018&#125;,</span><br><span class="line">  pages     = &#123;713--728&#125;,</span><br><span class="line">  year      = &#123;2018&#125;,</span><br><span class="line">  crossref  = &#123;DBLP:conf/ccs/2018&#125;,</span><br><span class="line">  url       = &#123;https://doi.org/10.1145/3243734.3243737&#125;,</span><br><span class="line">  doi       = &#123;10.1145/3243734.3243737&#125;,</span><br><span class="line">  timestamp = &#123;Wed, 21 Nov 2018 12:44:06 +0100&#125;,</span><br><span class="line">  biburl    = &#123;https://dblp.org/rec/bib/conf/ccs/TsabaryE18&#125;,</span><br><span class="line">  bibsource = &#123;dblp computer science bibliography, https://dblp.org&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><br /></p>
 <p><font size="5"><strong>16CCS_On the Instability of Bitcoin Without
 the Block Reward</strong></font><span id="instability"></span></p>
@@ -324,7 +86,7 @@ cryptocurrencies.</p>
 <p>​
 我们讨论了我们的结果对比特币未来安全的令人不安的影响，并为新密码货币的设计吸取了经验教训。</p>
 <p><strong>BibTex</strong></p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs awk">@inproceedings&#123;CarlstenKWN16,<br>  author    = &#123;Miles Carlsten and<br>               Harry A. Kalodner and<br>               S. Matthew Weinberg and<br>               Arvind Narayanan&#125;,<br>  title     = &#123;On the Instability of Bitcoin Without the Block Reward&#125;,<br>  booktitle = &#123;Proceedings of the <span class="hljs-number">2016</span> &#123;ACM&#125; &#123;SIGSAC&#125; Conference on Computer and<br>               Communications Security, Vienna, Austria, October <span class="hljs-number">24</span>-<span class="hljs-number">28</span>, <span class="hljs-number">2016</span>&#125;,<br>  pages     = &#123;<span class="hljs-number">154</span>--<span class="hljs-number">167</span>&#125;,<br>  year      = &#123;<span class="hljs-number">2016</span>&#125;,<br>  crossref  = &#123;DBLP:conf<span class="hljs-regexp">/ccs/</span><span class="hljs-number">2016</span>&#125;,<br>  url       = &#123;https:<span class="hljs-regexp">//</span>doi.org<span class="hljs-regexp">/10.1145/</span><span class="hljs-number">2976749.2978408</span>&#125;,<br>  doi       = &#123;<span class="hljs-number">10.1145</span>/<span class="hljs-number">2976749.2978408</span>&#125;,<br>  timestamp = &#123;Tue, <span class="hljs-number">06</span> Nov <span class="hljs-number">2018</span> <span class="hljs-number">11</span>:<span class="hljs-number">07</span>:<span class="hljs-number">30</span> +<span class="hljs-number">0100</span>&#125;,<br>  biburl    = &#123;https:<span class="hljs-regexp">//</span>dblp.org<span class="hljs-regexp">/rec/</span>bib<span class="hljs-regexp">/conf/</span>ccs/CarlstenKWN16&#125;,<br>  bibsource = &#123;dblp computer science bibliography, https:<span class="hljs-regexp">//</span>dblp.org&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">@inproceedings&#123;CarlstenKWN16,</span><br><span class="line">  author    = &#123;Miles Carlsten and</span><br><span class="line">               Harry A. Kalodner and</span><br><span class="line">               S. Matthew Weinberg and</span><br><span class="line">               Arvind Narayanan&#125;,</span><br><span class="line">  title     = &#123;On the Instability of Bitcoin Without the Block Reward&#125;,</span><br><span class="line">  booktitle = &#123;Proceedings of the 2016 &#123;ACM&#125; &#123;SIGSAC&#125; Conference on Computer and</span><br><span class="line">               Communications Security, Vienna, Austria, October 24-28, 2016&#125;,</span><br><span class="line">  pages     = &#123;154--167&#125;,</span><br><span class="line">  year      = &#123;2016&#125;,</span><br><span class="line">  crossref  = &#123;DBLP:conf/ccs/2016&#125;,</span><br><span class="line">  url       = &#123;https://doi.org/10.1145/2976749.2978408&#125;,</span><br><span class="line">  doi       = &#123;10.1145/2976749.2978408&#125;,</span><br><span class="line">  timestamp = &#123;Tue, 06 Nov 2018 11:07:30 +0100&#125;,</span><br><span class="line">  biburl    = &#123;https://dblp.org/rec/bib/conf/ccs/CarlstenKWN16&#125;,</span><br><span class="line">  bibsource = &#123;dblp computer science bibliography, https://dblp.org&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><br /></p>
 <p><font size="5"><strong>15CCS_How to Use Bitcoin to Play Decentralized
 Poker</strong></font><span id="poker"></span></p>
@@ -353,7 +115,7 @@ Bitcoin.</p>
 Privacy
 2014）的惩罚进行安全彩票。由于安全现金分配和惩罚是一个设计的反应性功能，它足以捕获各种各样的纸牌游戏（包括扑克）、棋盘游戏和拍卖。我们的协议实现了安全的现金分配和罚款，在混合模型中，当事方可以使用索赔或退款交易功能fcr，该功能可以在比特币（的变体）中有效实现。</p>
 <p><strong>BibTex</strong></p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs awk">@inproceedings&#123;DBLP:conf<span class="hljs-regexp">/ccs/</span>KumaresanMB15,<br>  author    = &#123;Ranjit Kumaresan and<br>               Tal Moran and<br>               Iddo Bentov&#125;,<br>  title     = &#123;How to Use Bitcoin to Play Decentralized Poker&#125;,<br>  booktitle = &#123;Proceedings of the <span class="hljs-number">22</span>nd &#123;ACM&#125; &#123;SIGSAC&#125; Conference on Computer and<br>               Communications Security, Denver, CO, USA, October <span class="hljs-number">12</span>-<span class="hljs-number">16</span>, <span class="hljs-number">2015</span>&#125;,<br>  pages     = &#123;<span class="hljs-number">195</span>--<span class="hljs-number">206</span>&#125;,<br>  year      = &#123;<span class="hljs-number">2015</span>&#125;,<br>  crossref  = &#123;DBLP:conf<span class="hljs-regexp">/ccs/</span><span class="hljs-number">2015</span>&#125;,<br>  url       = &#123;https:<span class="hljs-regexp">//</span>doi.org<span class="hljs-regexp">/10.1145/</span><span class="hljs-number">2810103.2813712</span>&#125;,<br>  doi       = &#123;<span class="hljs-number">10.1145</span>/<span class="hljs-number">2810103.2813712</span>&#125;,<br>  timestamp = &#123;Tue, <span class="hljs-number">06</span> Nov <span class="hljs-number">2018</span> <span class="hljs-number">11</span>:<span class="hljs-number">07</span>:<span class="hljs-number">29</span> +<span class="hljs-number">0100</span>&#125;,<br>  biburl    = &#123;https:<span class="hljs-regexp">//</span>dblp.org<span class="hljs-regexp">/rec/</span>bib<span class="hljs-regexp">/conf/</span>ccs/KumaresanMB15&#125;,<br>  bibsource = &#123;dblp computer science bibliography, https:<span class="hljs-regexp">//</span>dblp.org&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@inproceedings&#123;DBLP:conf/ccs/KumaresanMB15,</span><br><span class="line">  author    = &#123;Ranjit Kumaresan and</span><br><span class="line">               Tal Moran and</span><br><span class="line">               Iddo Bentov&#125;,</span><br><span class="line">  title     = &#123;How to Use Bitcoin to Play Decentralized Poker&#125;,</span><br><span class="line">  booktitle = &#123;Proceedings of the 22nd &#123;ACM&#125; &#123;SIGSAC&#125; Conference on Computer and</span><br><span class="line">               Communications Security, Denver, CO, USA, October 12-16, 2015&#125;,</span><br><span class="line">  pages     = &#123;195--206&#125;,</span><br><span class="line">  year      = &#123;2015&#125;,</span><br><span class="line">  crossref  = &#123;DBLP:conf/ccs/2015&#125;,</span><br><span class="line">  url       = &#123;https://doi.org/10.1145/2810103.2813712&#125;,</span><br><span class="line">  doi       = &#123;10.1145/2810103.2813712&#125;,</span><br><span class="line">  timestamp = &#123;Tue, 06 Nov 2018 11:07:29 +0100&#125;,</span><br><span class="line">  biburl    = &#123;https://dblp.org/rec/bib/conf/ccs/KumaresanMB15&#125;,</span><br><span class="line">  bibsource = &#123;dblp computer science bibliography, https://dblp.org&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><br /></p>
 <p><font size="5"><strong>15CCS_Liar, Liar, Coins on Fire!: Penalizing
 Equivocation By Loss of Bitcoins</strong></font><span
@@ -379,7 +141,7 @@ double-spending payer after the fact.</p>
 <p>​
 非含糊合同对于使用公共仅附加日志来保护数据完整性的分布式系统尤其有用，例如在云存储和社交网络中。此外，由于比特币的双重支出是一种模棱两可的特殊情况，合同使我们能够设计一种支付协议，允许收款人在几个不同步的销售点接收资金，同时能够在事后惩罚双重支出的支付人。</p>
 <p><strong>BibTex</strong></p>
-<figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs dust"><span class="language-xml">@inproceedings</span><span class="hljs-template-variable">&#123;RuffingKS15,</span><br><span class="hljs-template-variable">  author    = &#123;Tim Ruffing and</span><br><span class="hljs-template-variable">               Aniket Kate and</span><br><span class="hljs-template-variable">               Dominique Schr&#123;\&quot;&#123;o&#125;</span><span class="language-xml">&#125;der&#125;,</span><br><span class="language-xml">  title     = </span><span class="hljs-template-variable">&#123;Liar, Liar, Coins on Fire!: Penalizing Equivocation By Loss of Bitcoins&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  booktitle = </span><span class="hljs-template-variable">&#123;Proceedings of the 22nd &#123;ACM&#125;</span><span class="language-xml"> </span><span class="hljs-template-variable">&#123;SIGSAC&#125;</span><span class="language-xml"> Conference on Computer and</span><br><span class="language-xml">               Communications Security, Denver, CO, USA, October 12-16, 2015&#125;,</span><br><span class="language-xml">  pages     = </span><span class="hljs-template-variable">&#123;219--230&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  year      = </span><span class="hljs-template-variable">&#123;2015&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  crossref  = </span><span class="hljs-template-variable">&#123;DBLP:conf/ccs/2015&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  url       = </span><span class="hljs-template-variable">&#123;https://doi.org/10.1145/2810103.2813686&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  doi       = </span><span class="hljs-template-variable">&#123;10.1145/2810103.2813686&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  timestamp = </span><span class="hljs-template-variable">&#123;Tue, 06 Nov 2018 11:07:29 +0100&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  biburl    = </span><span class="hljs-template-variable">&#123;https://dblp.org/rec/bib/conf/ccs/RuffingKS15&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  bibsource = </span><span class="hljs-template-variable">&#123;dblp computer science bibliography, https://dblp.org&#125;</span><span class="language-xml"></span><br><span class="language-xml">&#125;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@inproceedings&#123;RuffingKS15,</span><br><span class="line">  author    = &#123;Tim Ruffing and</span><br><span class="line">               Aniket Kate and</span><br><span class="line">               Dominique Schr&#123;\&quot;&#123;o&#125;&#125;der&#125;,</span><br><span class="line">  title     = &#123;Liar, Liar, Coins on Fire!: Penalizing Equivocation By Loss of Bitcoins&#125;,</span><br><span class="line">  booktitle = &#123;Proceedings of the 22nd &#123;ACM&#125; &#123;SIGSAC&#125; Conference on Computer and</span><br><span class="line">               Communications Security, Denver, CO, USA, October 12-16, 2015&#125;,</span><br><span class="line">  pages     = &#123;219--230&#125;,</span><br><span class="line">  year      = &#123;2015&#125;,</span><br><span class="line">  crossref  = &#123;DBLP:conf/ccs/2015&#125;,</span><br><span class="line">  url       = &#123;https://doi.org/10.1145/2810103.2813686&#125;,</span><br><span class="line">  doi       = &#123;10.1145/2810103.2813686&#125;,</span><br><span class="line">  timestamp = &#123;Tue, 06 Nov 2018 11:07:29 +0100&#125;,</span><br><span class="line">  biburl    = &#123;https://dblp.org/rec/bib/conf/ccs/RuffingKS15&#125;,</span><br><span class="line">  bibsource = &#123;dblp computer science bibliography, https://dblp.org&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><br /></p>
 <p><font size="5"><strong>15CCS_Nonoutsourceable Scratch-Off Puzzles to
 Discourage Bitcoin Mining Coalitions</strong></font><span
@@ -407,7 +169,7 @@ practical.</p>
 <p>​
 比特币奖励结构的一个隐含目标是将网络影响分散到不同的、分散的个人参与者群体中。事实上，比特币的安全声明并不依赖于任何一个实体使用网络整体计算能力的足够大的一部分。不幸的是，大多数比特币矿商没有独立参与，而是加入了一个称为“采矿池”的联盟，在这个联盟中，中央池管理员主要指导池的活动，从而导致权力的巩固。最近，最大的采矿池已经占到网络总采矿能力的一半以上。与此相关的是，“托管采矿”服务提供商为客户提供规模经济效益，吸引他们远离独立参与。我们认为，采矿联盟的盛行是由于比特币工作证明难题的局限性——特别是，它提供了一个有效的机制来加强联盟中的合作。我们对“不可外包”难题提出了几个定义和解释，这些难题阻碍了此类执行机制，从而阻碍了联盟。我们还为我们的方案提供了一个实现和基准结果，以证明它们是可行的。</p>
 <p><strong>BibTex</strong></p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs awk">@inproceedings&#123;MillerKKS15,<br>  author    = &#123;Andrew Miller and<br>               Ahmed E. Kosba and<br>               Jonathan Katz and<br>               Elaine Shi&#125;,<br>  title     = &#123;Nonoutsourceable Scratch-Off Puzzles to Discourage Bitcoin Mining<br>               Coalitions&#125;,<br>  booktitle = &#123;Proceedings of the <span class="hljs-number">22</span>nd &#123;ACM&#125; &#123;SIGSAC&#125; Conference on Computer and<br>               Communications Security, Denver, CO, USA, October <span class="hljs-number">12</span>-<span class="hljs-number">16</span>, <span class="hljs-number">2015</span>&#125;,<br>  pages     = &#123;<span class="hljs-number">680</span>--<span class="hljs-number">691</span>&#125;,<br>  year      = &#123;<span class="hljs-number">2015</span>&#125;,<br>  crossref  = &#123;DBLP:conf<span class="hljs-regexp">/ccs/</span><span class="hljs-number">2015</span>&#125;,<br>  url       = &#123;https:<span class="hljs-regexp">//</span>doi.org<span class="hljs-regexp">/10.1145/</span><span class="hljs-number">2810103.2813621</span>&#125;,<br>  doi       = &#123;<span class="hljs-number">10.1145</span>/<span class="hljs-number">2810103.2813621</span>&#125;,<br>  timestamp = &#123;Mon, <span class="hljs-number">08</span> Jul <span class="hljs-number">2019</span> <span class="hljs-number">08</span>:<span class="hljs-number">49</span>:<span class="hljs-number">32</span> +<span class="hljs-number">0200</span>&#125;,<br>  biburl    = &#123;https:<span class="hljs-regexp">//</span>dblp.org<span class="hljs-regexp">/rec/</span>bib<span class="hljs-regexp">/conf/</span>ccs/MillerKKS15&#125;,<br>  bibsource = &#123;dblp computer science bibliography, https:<span class="hljs-regexp">//</span>dblp.org&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">@inproceedings&#123;MillerKKS15,</span><br><span class="line">  author    = &#123;Andrew Miller and</span><br><span class="line">               Ahmed E. Kosba and</span><br><span class="line">               Jonathan Katz and</span><br><span class="line">               Elaine Shi&#125;,</span><br><span class="line">  title     = &#123;Nonoutsourceable Scratch-Off Puzzles to Discourage Bitcoin Mining</span><br><span class="line">               Coalitions&#125;,</span><br><span class="line">  booktitle = &#123;Proceedings of the 22nd &#123;ACM&#125; &#123;SIGSAC&#125; Conference on Computer and</span><br><span class="line">               Communications Security, Denver, CO, USA, October 12-16, 2015&#125;,</span><br><span class="line">  pages     = &#123;680--691&#125;,</span><br><span class="line">  year      = &#123;2015&#125;,</span><br><span class="line">  crossref  = &#123;DBLP:conf/ccs/2015&#125;,</span><br><span class="line">  url       = &#123;https://doi.org/10.1145/2810103.2813621&#125;,</span><br><span class="line">  doi       = &#123;10.1145/2810103.2813621&#125;,</span><br><span class="line">  timestamp = &#123;Mon, 08 Jul 2019 08:49:32 +0200&#125;,</span><br><span class="line">  biburl    = &#123;https://dblp.org/rec/bib/conf/ccs/MillerKKS15&#125;,</span><br><span class="line">  bibsource = &#123;dblp computer science bibliography, https://dblp.org&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><br /></p>
 <p><font size="5"><strong>19S&amp;P_Bitcoin vs. Bitcoin Cash:
 Coexistence or Downfall of Bitcoin Cash</strong></font><span
@@ -459,7 +221,7 @@ mining.</p>
 <p>​
 为了确定竞争硬币系统（如BTC与BCH）走向哪种均衡，我们追踪了BTC与BCH采矿能力的历史变化，发现BCH在2017年11月13日BCH采矿难度调整算法改变之前，往往缺乏忠诚的矿工。然而，BCH挖掘中难度调整算法的改变导致了状态接近BTC和BCH的稳定共存。我们还证明，当一小部分矿工自动、反复地转换到利润最高的硬币进行开采（即自动开采）时，仍然可能会出现BCH忠诚矿工的短缺。根据我们的分析，截至2018年12月，如果BTC和BCH的总开采能力的5%以上从事自动开采，那么BCH的忠实矿工将离开。此外，我们分析了比特币ABC和SV之间最近的“散列战争”，这证实了我们的理论分析。最后，我们注意到，我们的结果可应用于任何竞争的加密货币系统，其中相同的硬件（如asic或gpu）可用于挖掘。因此，我们的研究为竞争性硬币市场带来了新的重要视角：当一枚硬币与另一枚硬币共享开采硬件时，它会有意削弱另一枚硬币的安全性和分散性水平，从而允许自动开采。</p>
 <p><strong>BibTex</strong></p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs awk">@inproceedings&#123;KwonKSK19,<br>  author    = &#123;Yujin Kwon and<br>               Hyoungshick Kim and<br>               Jinwoo Shin and<br>               Yongdae Kim&#125;,<br>  title     = &#123;Bitcoin vs. Bitcoin Cash: Coexistence or Downfall of Bitcoin Cash?&#125;,<br>  booktitle = &#123;<span class="hljs-number">2019</span> &#123;IEEE&#125; Symposium on Security and Privacy, &#123;SP&#125; <span class="hljs-number">2019</span>, San Francisco,<br>               CA, USA, May <span class="hljs-number">19</span>-<span class="hljs-number">23</span>, <span class="hljs-number">2019</span>&#125;,<br>  pages     = &#123;<span class="hljs-number">935</span>--<span class="hljs-number">951</span>&#125;,<br>  year      = &#123;<span class="hljs-number">2019</span>&#125;,<br>  crossref  = &#123;DBLP:conf<span class="hljs-regexp">/sp/</span><span class="hljs-number">2019</span>&#125;,<br>  url       = &#123;https:<span class="hljs-regexp">//</span>doi.org<span class="hljs-regexp">/10.1109/</span>SP.<span class="hljs-number">2019.00075</span>&#125;,<br>  doi       = &#123;<span class="hljs-number">10.1109</span>/SP.<span class="hljs-number">2019.00075</span>&#125;,<br>  timestamp = &#123;Wed, <span class="hljs-number">16</span> Oct <span class="hljs-number">2019</span> <span class="hljs-number">14</span>:<span class="hljs-number">14</span>:<span class="hljs-number">51</span> +<span class="hljs-number">0200</span>&#125;,<br>  biburl    = &#123;https:<span class="hljs-regexp">//</span>dblp.org<span class="hljs-regexp">/rec/</span>bib<span class="hljs-regexp">/conf/</span>sp/KwonKSK19&#125;,<br>  bibsource = &#123;dblp computer science bibliography, https:<span class="hljs-regexp">//</span>dblp.org&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">@inproceedings&#123;KwonKSK19,</span><br><span class="line">  author    = &#123;Yujin Kwon and</span><br><span class="line">               Hyoungshick Kim and</span><br><span class="line">               Jinwoo Shin and</span><br><span class="line">               Yongdae Kim&#125;,</span><br><span class="line">  title     = &#123;Bitcoin vs. Bitcoin Cash: Coexistence or Downfall of Bitcoin Cash?&#125;,</span><br><span class="line">  booktitle = &#123;2019 &#123;IEEE&#125; Symposium on Security and Privacy, &#123;SP&#125; 2019, San Francisco,</span><br><span class="line">               CA, USA, May 19-23, 2019&#125;,</span><br><span class="line">  pages     = &#123;935--951&#125;,</span><br><span class="line">  year      = &#123;2019&#125;,</span><br><span class="line">  crossref  = &#123;DBLP:conf/sp/2019&#125;,</span><br><span class="line">  url       = &#123;https://doi.org/10.1109/SP.2019.00075&#125;,</span><br><span class="line">  doi       = &#123;10.1109/SP.2019.00075&#125;,</span><br><span class="line">  timestamp = &#123;Wed, 16 Oct 2019 14:14:51 +0200&#125;,</span><br><span class="line">  biburl    = &#123;https://dblp.org/rec/bib/conf/sp/KwonKSK19&#125;,</span><br><span class="line">  bibsource = &#123;dblp computer science bibliography, https://dblp.org&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><br /></p>
 <p><font size="5"><strong>15S&amp;P_The Miner's
 Dilemma</strong></font><span id="dilemma"></span></p>
@@ -520,7 +282,7 @@ making them unattractive toparticipants.</p>
 <p>​
 我们定义并分析一个博弈，在这个博弈中，矿池使用他们的一些参与者渗透到其他游泳池并执行这样的攻击。对于任意数量的池，没有池攻击不是纳什均衡。我们研究两个游泳池或任意多个相同的游泳池玩游戏的特殊情况，其余的参与者则不参与其中。在这两种情况下，都存在着一种平衡，即公共场所的悲剧，参与的泳池互相攻击，赚的比没有人攻击的时候少。对于两个池，决定是否攻击是矿工困境，一个反复囚徒困境的例子。这个游戏每天都由activebitcoin池进行，显然他们选择不攻击。如果这种平衡打破，开放式游泳池的收入可能会减少，使其对参与者没有吸引力。</p>
 <p><strong>BibTex</strong></p>
-<figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs dust"><span class="language-xml">@inproceedings</span><span class="hljs-template-variable">&#123;Eyal15,</span><br><span class="hljs-template-variable">  author    = &#123;Ittay Eyal&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  title     = </span><span class="hljs-template-variable">&#123;The Miner&#x27;s Dilemma&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  booktitle = </span><span class="hljs-template-variable">&#123;2015 &#123;IEEE&#125;</span><span class="language-xml"> Symposium on Security and Privacy, </span><span class="hljs-template-variable">&#123;SP&#125;</span><span class="language-xml"> 2015, San Jose,</span><br><span class="language-xml">               CA, USA, May 17-21, 2015&#125;,</span><br><span class="language-xml">  pages     = </span><span class="hljs-template-variable">&#123;89--103&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  year      = </span><span class="hljs-template-variable">&#123;2015&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  crossref  = </span><span class="hljs-template-variable">&#123;DBLP:conf/sp/2015&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  url       = </span><span class="hljs-template-variable">&#123;https://doi.org/10.1109/SP.2015.13&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  doi       = </span><span class="hljs-template-variable">&#123;10.1109/SP.2015.13&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  timestamp = </span><span class="hljs-template-variable">&#123;Wed, 16 Oct 2019 14:14:51 +0200&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  biburl    = </span><span class="hljs-template-variable">&#123;https://dblp.org/rec/bib/conf/sp/Eyal15&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  bibsource = </span><span class="hljs-template-variable">&#123;dblp computer science bibliography, https://dblp.org&#125;</span><span class="language-xml"></span><br><span class="language-xml">&#125;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">@inproceedings&#123;Eyal15,</span><br><span class="line">  author    = &#123;Ittay Eyal&#125;,</span><br><span class="line">  title     = &#123;The Miner&#x27;s Dilemma&#125;,</span><br><span class="line">  booktitle = &#123;2015 &#123;IEEE&#125; Symposium on Security and Privacy, &#123;SP&#125; 2015, San Jose,</span><br><span class="line">               CA, USA, May 17-21, 2015&#125;,</span><br><span class="line">  pages     = &#123;89--103&#125;,</span><br><span class="line">  year      = &#123;2015&#125;,</span><br><span class="line">  crossref  = &#123;DBLP:conf/sp/2015&#125;,</span><br><span class="line">  url       = &#123;https://doi.org/10.1109/SP.2015.13&#125;,</span><br><span class="line">  doi       = &#123;10.1109/SP.2015.13&#125;,</span><br><span class="line">  timestamp = &#123;Wed, 16 Oct 2019 14:14:51 +0200&#125;,</span><br><span class="line">  biburl    = &#123;https://dblp.org/rec/bib/conf/sp/Eyal15&#125;,</span><br><span class="line">  bibsource = &#123;dblp computer science bibliography, https://dblp.org&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><br /></p>
 <p><font size="5"><strong>15S&amp;P_Bitcoin over Tor isn't a good
 idea</strong></font><span id="tor"></span></p>
@@ -545,7 +307,7 @@ when they decide to connect to the Bitcoin network directly.</p>
 <p>​
 比特币是一种分布式的P2P数字货币，其中硬币由一组分散的矿工产生，交易通过对等网络广播。虽然比特币通过鼓励用户拥有任意数量的随机看起来的比特币地址来提供某种程度的匿名性（或更确切地说是假名），但最近的研究表明，这种匿名性水平相当低。这鼓励用户通过匿名者（如Tor）连接比特币网络，并推动流行移动SPV客户机的默认Tor功能的开发。本文证明了Tor和比特币的结合产生了一种新的攻击向量。低资源攻击者可以完全控制所有选择使用比特币而非Tor的用户之间的信息流。特别是，攻击者可以将用户的交易链接在一起，而不考虑使用的假名，控制将哪些比特币区块和交易中继给用户，并可以延迟或丢弃用户的交易和区块。此外，我们还演示了攻击者如何在决定直接连接比特币网络时，对用户进行指纹识别，然后识别他们并学习他们的IP地址。</p>
 <p><strong>BibTex</strong></p>
-<figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs dust"><span class="language-xml">@inproceedings</span><span class="hljs-template-variable">&#123;BiryukovP15,</span><br><span class="hljs-template-variable">  author    = &#123;Alex Biryukov and</span><br><span class="hljs-template-variable">               Ivan Pustogarov&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  title     = </span><span class="hljs-template-variable">&#123;Bitcoin over Tor isn&#x27;t a Good Idea&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  booktitle = </span><span class="hljs-template-variable">&#123;2015 &#123;IEEE&#125;</span><span class="language-xml"> Symposium on Security and Privacy, </span><span class="hljs-template-variable">&#123;SP&#125;</span><span class="language-xml"> 2015, San Jose,</span><br><span class="language-xml">               CA, USA, May 17-21, 2015&#125;,</span><br><span class="language-xml">  pages     = </span><span class="hljs-template-variable">&#123;122--134&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  year      = </span><span class="hljs-template-variable">&#123;2015&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  crossref  = </span><span class="hljs-template-variable">&#123;DBLP:conf/sp/2015&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  url       = </span><span class="hljs-template-variable">&#123;https://doi.org/10.1109/SP.2015.15&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  doi       = </span><span class="hljs-template-variable">&#123;10.1109/SP.2015.15&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  timestamp = </span><span class="hljs-template-variable">&#123;Wed, 16 Oct 2019 14:14:51 +0200&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  biburl    = </span><span class="hljs-template-variable">&#123;https://dblp.org/rec/bib/conf/sp/BiryukovP15&#125;</span><span class="language-xml">,</span><br><span class="language-xml">  bibsource = </span><span class="hljs-template-variable">&#123;dblp computer science bibliography, https://dblp.org&#125;</span><span class="language-xml"></span><br><span class="language-xml">&#125;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">@inproceedings&#123;BiryukovP15,</span><br><span class="line">  author    = &#123;Alex Biryukov and</span><br><span class="line">               Ivan Pustogarov&#125;,</span><br><span class="line">  title     = &#123;Bitcoin over Tor isn&#x27;t a Good Idea&#125;,</span><br><span class="line">  booktitle = &#123;2015 &#123;IEEE&#125; Symposium on Security and Privacy, &#123;SP&#125; 2015, San Jose,</span><br><span class="line">               CA, USA, May 17-21, 2015&#125;,</span><br><span class="line">  pages     = &#123;122--134&#125;,</span><br><span class="line">  year      = &#123;2015&#125;,</span><br><span class="line">  crossref  = &#123;DBLP:conf/sp/2015&#125;,</span><br><span class="line">  url       = &#123;https://doi.org/10.1109/SP.2015.15&#125;,</span><br><span class="line">  doi       = &#123;10.1109/SP.2015.15&#125;,</span><br><span class="line">  timestamp = &#123;Wed, 16 Oct 2019 14:14:51 +0200&#125;,</span><br><span class="line">  biburl    = &#123;https://dblp.org/rec/bib/conf/sp/BiryukovP15&#125;,</span><br><span class="line">  bibsource = &#123;dblp computer science bibliography, https://dblp.org&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><br /></p>
 <p><font size="5"><strong>17USENIX_SmartPool: Practical Decentralized
 Pooled Mining</strong></font><span id="smartpool"></span></p>
@@ -576,219 +338,5 @@ rewards in transaction fees.</p>
 smartpool是一种新的集中式挖掘池协议设计。我们的协议展示了如何利用智能合约、自主区块链程序分散加密货币挖掘。SmartPool为矿工提供事务选择控制，同时产生低方差支出。智能池产生的采矿费用低于集中采矿池，旨在扩大到大量矿工。我们在以太坊和以太坊ClassicNetworks上实施并部署了强大的智能池实施。到目前为止，我们部署的池已经处理了以太坊矿工30
 GHS的峰值哈希率，导致105个区块，仅为交易费用中区块奖励的0:6%。</p>
 <p><strong>BibTex</strong></p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs awk">@inproceedings&#123;LuuVTS17,<br>  author    = &#123;Loi Luu and<br>               Yaron Velner and<br>               Jason Teutsch and<br>               Prateek Saxena&#125;,<br>  title     = &#123;SmartPool: Practical Decentralized Pooled Mining&#125;,<br>  booktitle = &#123;<span class="hljs-number">26</span>th &#123;USENIX&#125; Security Symposium, &#123;USENIX&#125; Security <span class="hljs-number">2017</span>, Vancouver,<br>               BC, Canada, August <span class="hljs-number">16</span>-<span class="hljs-number">18</span>, <span class="hljs-number">2017</span>.&#125;,<br>  pages     = &#123;<span class="hljs-number">1409</span>--<span class="hljs-number">1426</span>&#125;,<br>  year      = &#123;<span class="hljs-number">2017</span>&#125;,<br>  crossref  = &#123;DBLP:conf<span class="hljs-regexp">/uss/</span><span class="hljs-number">2017</span>&#125;,<br>  url       = &#123;https:<span class="hljs-regexp">//</span>www.usenix.org<span class="hljs-regexp">/conference/u</span>senixsecurity17<span class="hljs-regexp">/technical-sessions/</span>presentation/luu&#125;,<br>  timestamp = &#123;Fri, <span class="hljs-number">01</span> Sep <span class="hljs-number">2017</span> <span class="hljs-number">12</span>:<span class="hljs-number">29</span>:<span class="hljs-number">11</span> +<span class="hljs-number">0200</span>&#125;,<br>  biburl    = &#123;https:<span class="hljs-regexp">//</span>dblp.org<span class="hljs-regexp">/rec/</span>bib<span class="hljs-regexp">/conf/u</span>ss/LuuVTS17&#125;,<br>  bibsource = &#123;dblp computer science bibliography, https:<span class="hljs-regexp">//</span>dblp.org&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-            </div>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/%E8%AE%BA%E6%96%87%E4%B8%8E%E7%BA%BF%E7%B4%A2/">论文与线索</a>
-                    
-                  </div>
-                
-                
-              </div>
-              
-                <p class="note note-warning">
-                  
-                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
-                  
-                </p>
-              
-              
-                <div class="post-prevnext">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2019/11/11/hello-world/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Hello World</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2019/11/07/hexolatex/">
-                        <span class="hidden-mobile">Hexo支持LaTex公式</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
-            </div>
-
-            
-          </article>
-        </div>
-      </div>
-    </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-      </div>
-    
-  </div>
-</div>
-
-<!-- Custom -->
-
-
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-    
-
-    
-  </main>
-
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-  </div>
-  
-
-  
-
-  
-</footer>
-
-
-  <!-- SCRIPTS -->
-  
-  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
-<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-<!-- Plugins -->
-
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-  
-
-
-
-  
-    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
-  
-  
-    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
-  
-  
-    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
-  
-  
-    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
-  
-
-
-
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-        typing(title);
-      
-    })(window, document);
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
-<script  src="/js/boot.js" ></script>
-
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</body>
-</html>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@inproceedings&#123;LuuVTS17,</span><br><span class="line">  author    = &#123;Loi Luu and</span><br><span class="line">               Yaron Velner and</span><br><span class="line">               Jason Teutsch and</span><br><span class="line">               Prateek Saxena&#125;,</span><br><span class="line">  title     = &#123;SmartPool: Practical Decentralized Pooled Mining&#125;,</span><br><span class="line">  booktitle = &#123;26th &#123;USENIX&#125; Security Symposium, &#123;USENIX&#125; Security 2017, Vancouver,</span><br><span class="line">               BC, Canada, August 16-18, 2017.&#125;,</span><br><span class="line">  pages     = &#123;1409--1426&#125;,</span><br><span class="line">  year      = &#123;2017&#125;,</span><br><span class="line">  crossref  = &#123;DBLP:conf/uss/2017&#125;,</span><br><span class="line">  url       = &#123;https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/luu&#125;,</span><br><span class="line">  timestamp = &#123;Fri, 01 Sep 2017 12:29:11 +0200&#125;,</span><br><span class="line">  biburl    = &#123;https://dblp.org/rec/bib/conf/uss/LuuVTS17&#125;,</span><br><span class="line">  bibsource = &#123;dblp computer science bibliography, https://dblp.org&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</div><footer class="post__foot u-cf"><a href="/2019/11/11/papersCollection/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article></main><footer class="foot"><div class="foot-copy u-fl">&copy; 2022 Phryne Ying</div><menu class="page-menu u-fr"><li class="page-menu__item"><a title="Previous" href="/2019/11/11/hello-world/" class="page-menu__link icon-arrow-left"></a></li><li class="page-menu__item"><a title="Next" href="/2019/11/07/hexolatex/" class="page-menu__link icon-arrow-right"></a></li></menu></footer></body></html>
