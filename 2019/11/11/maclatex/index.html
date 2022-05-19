@@ -1,6 +1,244 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternative" href="/atom.xml" title="花花" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>Mac下latex+sublime text 3安装与配置 - 花花</title>
-<link rel="stylesheet" href="/css/main.css">
-<!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--><meta name="generator" content="Hexo 5.4.2"></head><body><header class="head"><h1 class="head-title u-fl"><a href="/">花花</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a href="/" class="head-nav__link">Home</a></li><li class="head-nav__item"><a href="/archives" class="head-nav__link">Archives</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time datetime="2019-11-11T06:53:04.000Z" class="post__time">十一月 11, 2019</time><h1 class="post__title"><a href="/2019/11/11/maclatex/">Mac下latex+sublime text 3安装与配置</a></h1></header><div class="post__main echo"><p><strong>一、MacTex</strong></p>
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Phryne Ying">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="一、MacTex 官方下载 百度网盘 密码:aqhq">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac下latex+sublime text 3安装与配置">
+<meta property="og:url" content="http://yoursite.com/2019/11/11/maclatex/index.html">
+<meta property="og:site_name" content="花花">
+<meta property="og:description" content="一、MacTex 官方下载 百度网盘 密码:aqhq">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-11-11T06:53:04.000Z">
+<meta property="article:modified_time" content="2022-05-10T21:36:50.490Z">
+<meta property="article:author" content="Phryne Ying">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  <title>Mac下latex+sublime text 3安装与配置 - 花花</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="花花" type="application/atom+xml">
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Celestine</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Mac下latex+sublime text 3安装与配置">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2019-11-11 14:53" pubdate>
+        2019年11月11日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.4k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      12 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Mac下latex+sublime text 3安装与配置</h1>
+            
+            <div class="markdown-body">
+              <p><strong>一、MacTex</strong></p>
 <p><a target="_blank" rel="noopener" href="http://tug.org/mactex/">官方下载</a></p>
 <p><a
 target="_blank" rel="noopener" href="https://pan.baidu.com/s/1zbKNP3UhV-ELgZGHR6hzpg">百度网盘</a>
@@ -18,7 +256,7 @@ target="_blank" rel="noopener" href="https://pan.baidu.com/s/1318l7rtoI886Hiwk51
 <li><p>粘贴如下代码，回车（<a
 target="_blank" rel="noopener" href="https://packagecontrol.io/installation">代码来源</a>）</p></li>
 </ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request,os,hashlib; h = <span class="string">&#x27;6f4c264a24d933ce70df5dedcf1dcaee&#x27;</span> + <span class="string">&#x27;ebe013ee18cced0ef93d5f746d80ef60&#x27;</span>; pf = <span class="string">&#x27;Package Control.sublime-package&#x27;</span>; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( <span class="string">&#x27;http://packagecontrol.io/&#x27;</span> + pf.replace(<span class="string">&#x27; &#x27;</span>, <span class="string">&#x27;%20&#x27;</span>)).read(); dh = hashlib.sha256(by).hexdigest(); <span class="built_in">print</span>(<span class="string">&#x27;Error validating download (got %s instead of %s), please try manual install&#x27;</span> % (dh, h)) <span class="keyword">if</span> dh != h <span class="keyword">else</span> <span class="built_in">open</span>(os.path.join( ipp, pf), <span class="string">&#x27;wb&#x27;</span> ).write(by)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> urllib.request,os,hashlib; h = <span class="hljs-string">&#x27;6f4c264a24d933ce70df5dedcf1dcaee&#x27;</span> + <span class="hljs-string">&#x27;ebe013ee18cced0ef93d5f746d80ef60&#x27;</span>; pf = <span class="hljs-string">&#x27;Package Control.sublime-package&#x27;</span>; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( <span class="hljs-string">&#x27;http://packagecontrol.io/&#x27;</span> + pf.replace(<span class="hljs-string">&#x27; &#x27;</span>, <span class="hljs-string">&#x27;%20&#x27;</span>)).read(); dh = hashlib.sha256(by).hexdigest(); <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Error validating download (got %s instead of %s), please try manual install&#x27;</span> % (dh, h)) <span class="hljs-keyword">if</span> dh != h <span class="hljs-keyword">else</span> <span class="hljs-built_in">open</span>(os.path.join( ipp, pf), <span class="hljs-string">&#x27;wb&#x27;</span> ).write(by)<br></code></pre></td></tr></table></figure>
 <ol start="4" type="1">
 <li>重启Sublime Text 3</li>
 </ol>
@@ -35,7 +273,221 @@ control安装启发：安装失败的时候，去找官方手册，比网络教�
 <li><p>编译环境：tools &gt; build system &gt; new build
 system，复制以下内容，保存。（<a
 target="_blank" rel="noopener" href="https://www.moehrenzahn.de/How-to-create-a-custom-LaTeX-build-system-for-Sublime-Text/">参考</a>）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&quot;cmd&quot;: [&quot;rm -rf \`biber --cache` &amp;&amp; latexmk -pdf -xelatex -silent -output-directory=output -interaction=nonstopmode \$file_name | grep -i -E \&quot;warn|!\&quot; &amp;&amp; open output/$file_base_name.pdf&quot;], </span><br><span class="line"></span><br><span class="line">&quot;shell&quot;: true, </span><br><span class="line"></span><br><span class="line">&quot;path&quot;: &quot;$PATH:/usr/texbin:/usr/local/bin:/opt/local/bin:/usr/local/:/usr/local/texlive/2014/bin/x86_64-darwin/&quot;, </span><br><span class="line"></span><br><span class="line">&quot;file_regex&quot;: &quot;^(…*?):([0-9]*):?([0-9]*)&quot;, </span><br><span class="line"></span><br><span class="line">&quot;selector&quot;: &quot;text.tex.latex&quot; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight nsis"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs nsis">&#123;<br><br><span class="hljs-string">&quot;cmd&quot;</span>: [<span class="hljs-string">&quot;rm -rf \`biber --cache` &amp;&amp; latexmk -pdf -xelatex -silent -output-directory=output -interaction=nonstopmode \<span class="hljs-variable">$file_name</span> | grep -i -E \&quot;</span>warn|!\<span class="hljs-string">&quot; &amp;&amp; open output/<span class="hljs-variable">$file_base_name.pdf</span>&quot;</span>], <br><br><span class="hljs-string">&quot;shell&quot;</span>: <span class="hljs-literal">true</span>, <br><br><span class="hljs-string">&quot;path&quot;</span>: <span class="hljs-string">&quot;<span class="hljs-variable">$PATH</span>:/usr/texbin:/usr/local/bin:/opt/local/bin:/usr/local/:/usr/local/texlive/2014/bin/x86_64-darwin/&quot;</span>, <br><br><span class="hljs-string">&quot;file_regex&quot;</span>: <span class="hljs-string">&quot;^(…*?):([0-9]*):?([0-9]*)&quot;</span>, <br><br><span class="hljs-string">&quot;selector&quot;</span>: <span class="hljs-string">&quot;text.tex.latex&quot;</span> <br><br>&#125;<br></code></pre></td></tr></table></figure></li>
 <li><p>command+b操作两次，进行编译</p></li>
 </ol>
-</div><footer class="post__foot u-cf"><a href="/2019/11/11/maclatex/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article></main><footer class="foot"><div class="foot-copy u-fl">&copy; 2022 Phryne Ying</div><menu class="page-menu u-fr"><li class="page-menu__item"><a title="Previous" href="/2019/11/11/printer/" class="page-menu__link icon-arrow-left"></a></li><li class="page-menu__item"><a title="Next" href="/2019/11/11/hello-world/" class="page-menu__link icon-arrow-right"></a></li></menu></footer></body></html>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E5%8A%9F%E8%83%BD%E4%B8%8E%E6%8A%80%E5%B7%A7/">功能与技巧</a>
+                    
+                  </div>
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2019/11/11/printer/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">连接实验室共享打印机</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2019/11/11/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
